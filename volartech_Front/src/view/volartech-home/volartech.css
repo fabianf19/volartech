@@ -1,0 +1,233 @@
+/** Estilos inicio page **/
+.background-inicio-page{
+	width: 100%;
+    height: 716px;
+    background: url(./imagen-inicio-volartech.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.navbar-volartech{
+	width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    align-items: center;
+}
+.logo-navbar-volartech{
+	width: 178px;
+    height: 35px;
+    position: relative;
+    background: url(./logo-volartech.png) no-repeat;
+    background-size: cover;
+    margin-right: 207px;
+    margin-left: auto;
+}
+.text-navbar-volartech{
+	font-size: 16px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.boton-contact-v{
+	border: 1px solid #FFFFFF;
+	background-color: transparent;
+	width: 74px;
+	height: 23px;
+	border-radius: 3px;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: auto;
+}
+.contenedor-navbar{
+	width: 100%;
+	height: 73px;
+	margin-bottom: 148px;
+}
+
+.contenedor-textos-navb{
+	margin-right: 28px;
+}
+.volartech-title{
+	font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.volartech-sub-title1{
+	font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.volartech-sub-title2{
+	font-size: 21px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.icono-play-volartech{
+	background: url(./boton-play-nuevo.png) no-repeat;
+	width: 47px;
+	height: 47px;
+	background-size: contain;
+	margin-right: 11px;
+	cursor: pointer;
+}
+.content-play{
+	display: flex;
+	align-items: center;
+}
+.text-play{
+	font-size: 23px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.content-textos-play{
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+}
+.background-inicio-imagen{
+	/*width: 100%;
+	height: 1078px;
+	background: url(./imagen-inicio-volartech.png) no-repeat;
+	background-size: cover;
+	position: absolute;*/
+}
+.circulo-cambio{
+	width: 8px;
+	height: 8px;
+	border: 1px solid transparent;
+	border-radius: 100px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-bottom: 12px;
+}
+.contentedor-texto-perspectiva{
+	margin-left: auto;
+    margin-right: 491px;
+}
+.contenedor-circulos{
+	margin-right: auto;
+}
+.circulo-cambio.active{
+	background-color: rgba(255, 255, 255, 0.9);
+}
+/*** Estilos home produccion ***/
+.background-inicio-page-prod{
+	width: 100%;
+    height: 716px;
+    background: url(./imagen-page-prod.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.volartech-description-prod{
+	font-size: 16px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #FFFFFF;
+	margin-bottom: 42px;
+	width: 557px;
+}
+.volartech-sub-title2-prod{
+	font-size: 27px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    color: #FFFFFF;
+    margin-bottom: 39px;
+}
+.boton-product-page{
+	width: 196px;
+	height: 51px;
+	background-color: #8E0A2D;
+	border-radius: 4px;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.text-ver-mas{
+	font-size: 20px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #FFFFFF;
+}
+a {
+	text-decoration: none;
+}
+.contentedor-texto-produccion{
+	margin-left: auto;
+    margin-right: 377px;
+}
+.circulo-cambio.active3{
+	background-color: #8E0A2D;
+}
+/*** Estilos home ingenieria ***/
+.boton-ingenieria-page{
+	width: 196px;
+	height: 51px;
+	background-color: #EDA532;
+	border-radius: 4px;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.volartech-description-ing{
+	font-size: 16px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #FFFFFF;
+	margin-bottom: 42px;
+	width: 580px;
+}
+.background-inicio-page-ing{
+	width: 100%;
+    height: 716px;
+    background: url(./imagen-page-ing.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.circulo-cambio.active4{
+	background-color: #EDA532;
+}
+.contentedor-texto-ingenieria{
+	margin-left: auto;
+    margin-right: 338px;
+}
+/*** Estilos home construccion ***/
+	.background-inicio-page-cons{
+	width: 100%;
+    height: 716px;
+    background: url(./plano-aereo.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.boton-construccion-page{
+	width: 196px;
+	height: 51px;
+	background-color: #50565E;
+	border-radius: 4px;
+	justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.circulo-cambio.active2{
+	background-color: #50565E;
+}
