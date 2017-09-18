@@ -2,7 +2,7 @@
 	width: 100%;
 	height: 241px;
 	background-color: #171717;
-	position: absolute;
+	/*position: absolute;*/
 }
 body{
 	margin: 0px;
@@ -11,10 +11,10 @@ body{
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 46px;
+	padding-top: 46px;
 }
 .logo-footer-volarteck{
-	background: url(./logo-vol-footer.png) no-repeat;
+	background: url(./../img/icos/logo-vol-footer.png) no-repeat;
     width: 47px;
     height: 53px;
     position: relative;
@@ -167,40 +167,40 @@ body{
 	margin-bottom: 8px;
 }
 .logo-mail{
-	background: url(./contact-mail.svg) no-repeat;
+	background: url(./../img/icos/contact-mail.svg) no-repeat;
 	width: 23px;
 	height: 23px;
 	margin-right: 7px;
 }
 .logo-whatsapp{
-	background: url(./contact-whatsapp.svg) no-repeat;
+	background: url(./../img/icos/contact-whatsapp.svg) no-repeat;
 	width: 23px;
 	height: 23px;
 	margin-right: 7px;
 }
 .logo-facebook{
-	background: url(./icon-facebook.svg) no-repeat;
+	background: url(./../img/icos/icon-facebook.svg) no-repeat;
 	width: 23px;
 	height: 23px;
 	margin-right: 9px;
 	cursor: pointer;
 }
 .logo-youtube{
-	background: url(./icon-youtube.svg) no-repeat;
+	background: url(./../img/icos/icon-youtube.svg) no-repeat;
 	width: 23px;
 	height: 23px;
 	margin-right: 9px;
 	cursor: pointer;
 }
 .logo-pinterest{
-	background: url(./icon-pinterest.svg) no-repeat;
+	background: url(./../img/icos/icon-pinterest.svg) no-repeat;
 	width: 23px;
 	height: 23px;
 	margin-right: 9px;
 	cursor: pointer;
 }
 .logo-instagram{
-	background: url(./icon-instagram.svg) no-repeat;
+	background: url(./../img/icos/icon-instagram.svg) no-repeat;
 	width: 23px;
 	height: 23px;
 	cursor: pointer;
