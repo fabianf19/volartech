@@ -263,6 +263,7 @@
 	background-color: #95989A;
 	border-radius: 100%;
 	margin-right: 23px;
+	cursor: pointer;
 }
 .punto-comentario.active{
 	background-color: #0F0F0F;
