@@ -5,7 +5,107 @@ import './QuienesSomos.css';
 import Slider from '../../componentes/Slider';
 
 export default class QuienesSomos extends Component{
+	constructor(props){
+		super(props);
+
+		this.state = {
+			selected : 0,
+			num_slides : 4
+		}
+
+		this.start_timer = this.start_timer.bind(this);
+		this.decrement = this.decrement.bind(this);
+		this.increment = this.increment.bind(this);
+		this.change_selected = this.change_selected.bind(this);
+	}
+
+	componentDidMount(){
+		this.start_timer();
+	}
+
+	change_selected(index){
+		clearInterval(this.interval);
+		this.setState({selected : index});
+		this.start_timer();
+	}
+
+	start_timer(){
+		this.interval = setInterval(() => {
+			this.increment();
+		},5000);
+	}
+
+	decrement(){
+		clearInterval(this.interval);
+
+		let n = this.state.selected;
+		var nuevo = -1;
+
+		if (n - 1 < 0){
+			nuevo = this.state.num_slides - 1;
+		}else{
+			nuevo = n - 1;
+		}
+		this.setState({selected : nuevo});
+		this.start_timer();
+	}
+
+	increment(){
+		clearInterval(this.interval);
+
+		let n = this.state.selected;
+		var nuevo = -1;
+
+		if (n + 1 > this.state.num_slides - 3){
+			nuevo = 0;
+		}else{
+			nuevo = n + 1;
+		}
+		this.setState({selected : nuevo});
+		this.start_timer();
+	}
+
 	render(){
+
+		var slides = [
+			<div className="content-comentario-cliente">
+				<div className="quienes-nosotros-comillas"></div>
+				<div>
+					<p className="texto-clientes-nombre">Carlos Perry 1</p>
+					<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+					<div className="div-clientes"></div>
+					<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+				</div>
+			</div>,
+			<div className="content-comentario-cliente">
+				<div className="quienes-nosotros-comillas"></div>
+				<div>
+					<p className="texto-clientes-nombre">Carlos Perry 2</p>
+					<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+					<div className="div-clientes"></div>
+					<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+				</div>
+			</div>,
+			<div className="content-comentario-cliente">
+				<div className="quienes-nosotros-comillas"></div>
+				<div>
+					<p className="texto-clientes-nombre">Carlos Perry 3</p>
+					<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+					<div className="div-clientes"></div>
+					<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+				</div>
+			</div>,
+			<div className="content-comentario-cliente">
+				<div className="quienes-nosotros-comillas"></div>
+				<div>
+					<p className="texto-clientes-nombre">Carlos Perry 4</p>
+					<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+					<div className="div-clientes"></div>
+					<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+				</div>
+			</div>
+		];
+
 		return (
 			<div className="background-who-we-are">
 	 			<NavbarVolartech />
@@ -65,21 +165,11 @@ export default class QuienesSomos extends Component{
 	 				<div className="content-text-clientes">
 	 					<p className="texto-clientes">Lo que piensan nuestros clientes</p>
 	 				</div>
-	 				<div className="content-comentario-cliente">
-	 					<div className="quienes-nosotros-comillas"></div>
-	 					<div>
-	 						<p className="texto-clientes-nombre">Carlos Perry</p>
-	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
-	 						<div className="div-clientes"></div>
-	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
-	 						<div className="content-puntos-comentarios">
-			 					<div className="punto-comentario active"></div>
-			 					<div className="punto-comentario"></div>
-			 					<div className="punto-comentario"></div>
-			 					<div className="punto-comentario" id="ultimo-punto-coment"></div>
-			 				</div>
-	 					</div>
+
+	 				<div>
+	 					{slides[this.state.selected]}
 	 				</div>
+
 	 				{/*<div className="content-comentario-cliente">
 	 					<div className="quienes-nosotros-comillas"></div>
 	 					<div>
@@ -88,34 +178,15 @@ export default class QuienesSomos extends Component{
 	 						<div className="div-clientes"></div>
 	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
 	 					</div>
-	 				</div>
-	 				<div className="content-comentario-cliente">
-	 					<div className="quienes-nosotros-comillas"></div>
-	 					<div>
-	 						<p className="texto-clientes-nombre">Carlos Perry</p>
-	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
-	 						<div className="div-clientes"></div>
-	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
-	 					</div>
-	 				</div>
-	 				<div className="content-comentario-cliente">
-	 					<div className="quienes-nosotros-comillas"></div>
-	 					<div>
-	 						<p className="texto-clientes-nombre">Carlos Perry</p>
-	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
-	 						<div className="div-clientes"></div>
-	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
-	 					</div>
-	 				</div>
-	 				<div className="content-comentario-cliente">
-	 					<div className="quienes-nosotros-comillas"></div>
-	 					<div>
-	 						<p className="texto-clientes-nombre">Carlos Perry</p>
-	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
-	 						<div className="div-clientes"></div>
-	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
-	 					</div>
 	 				</div>*/}
+
+	 				<div className="content-puntos-comentarios">
+	 					<div className={(this.state.selected == 0) ? "punto-comentario active" : "punto-comentario"} onClick={() => this.change_selected(0)}></div>
+	 					<div className={(this.state.selected == 1) ? "punto-comentario active" : "punto-comentario"} onClick={() => this.change_selected(1)}></div>
+	 					<div className={(this.state.selected == 2) ? "punto-comentario active" : "punto-comentario"} onClick={() => this.change_selected(2)}></div>
+	 					<div className={(this.state.selected == 3) ? "punto-comentario active" : "punto-comentario"} onClick={() => this.change_selected(3)} id="ultimo-punto-coment"></div>
+	 				</div>
+
 	 				<div>
 	 					<p></p>
 	 				</div>
