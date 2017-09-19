@@ -24,9 +24,9 @@ export default class Footer extends Component{
 			 			<div className="content-second-div">
 							<p className="second-div-txt-title">Nuestras líneas</p>
 			 				<div className="first-line-div"></div>
-			 				<p className="second-div-txt">Producción</p>
-			 				<p className="second-div-txt">Construcción</p>
-			 				<p className="second-div-txt">Ingeniería</p>
+			 				<a href="/produccion" target="_blank"><p className="second-div-txt">Producción</p></a>
+			 				<a href="/construccion" target="_blank"><p className="second-div-txt">Construcción</p></a>
+			 				<a href="/ingenieria" target="_blank"><p className="second-div-txt">Ingeniería</p></a>
 			 			</div>
 			 			<div className="content-third-div">
 							<p className="third-div-txt-title">Sobre Volartech</p>
@@ -40,11 +40,11 @@ export default class Footer extends Component{
 			 				<p className="fourth-div-txt" id="no-cursor">Contactanos</p>
 			 				<div className="content-fourth-div-1-image">
 			 					<div className="logo-mail"></div>
-			 					<p className="fourth-div-txt">contacto@volartech.com</p>
+			 					<a href="mailto:contacto@volartech.com"><p className="fourth-div-txt">contacto@volartech.com</p></a>
 			 				</div>
 			 				<div className="content-fourth-div-2-image">
 			 					<div className="logo-whatsapp"></div>
-			 					<p className="fourth-div-txt">+(57) 317 372 1618</p>
+			 					<a href="tel:+573173721618"><p className="fourth-div-txt">+(57) 317 372 1618</p></a>
 			 				</div>
 			 				<p className="fourth-div-txt">Bogotá, Colombia</p>
 			 			</div>

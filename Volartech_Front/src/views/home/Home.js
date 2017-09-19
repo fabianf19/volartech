@@ -17,18 +17,18 @@ export default class HelloWorld extends Component{
 	}
 
 	componentDidMount(){
-		//this.id_interval = setInterval(() => {
-			//let anterior = this.state.selected;
-			//var nuevo = -1;
+		this.id_interval = setInterval(() => {
+			let anterior = this.state.selected;
+			var nuevo = -1;
 
-			//if (anterior + 1 > 3){
-				//nuevo = 0;
-			//}else{
-				//nuevo = anterior + 1;
-			//}
+			if (anterior + 1 > 3){
+				nuevo = 0;
+			}else{
+				nuevo = anterior + 1;
+			}
 
-			//this.setState({selected : nuevo});			
-		//},5000);
+			this.setState({selected : nuevo});			
+		},9000);
 	}
 
 	render(){
@@ -99,30 +99,40 @@ export default class HelloWorld extends Component{
 				 			<div className="navbar-volartech">
 				 				<div></div>
 				 				<div className="logo-navbar-volartech"></div>
-				 				<div className="contenedor-textos-navb">
-				 					<a href="/quienes"><p className="text-navbar-volartech">Quienes Somos</p></a>
-				 				</div>
-				 				<div className="contenedor-textos-navb">
-				 					<p className="text-navbar-volartech">Produccion</p>
-				 				</div>
-				 				<div className="contenedor-textos-navb">
-				 					<p className="text-navbar-volartech">Construccion</p>
-				 				</div>
-				 				<div className="contenedor-textos-navb">
-				 					<p className="text-navbar-volartech">Ingenieria</p>
-				 				</div>
-				 				<div className="boton-contact-v">
-				 					<p className="text-navbar-volartech">Contacto</p>
-				 				</div>
+				 				<a href="/quienes">
+					 				<div className="contenedor-textos-navb">
+					 					<p className="text-navbar-volartech">Quienes Somos</p>
+					 				</div>
+				 				</a>
+				 				<a href="/produccion">
+					 				<div className="contenedor-textos-navb">
+					 					<p className="text-navbar-volartech">Produccion</p>
+					 				</div>
+				 				</a>
+				 				<a href="/construccion">
+					 				<div className="contenedor-textos-navb">
+					 					<p className="text-navbar-volartech">Construccion</p>
+					 				</div>
+				 				</a>
+				 				<a href="/ingenieria">
+					 				<div className="contenedor-textos-navb">
+					 					<p className="text-navbar-volartech">Ingenieria</p>
+					 				</div>
+				 				</a>
+				 				<a href="/contacto">
+					 				<div className="boton-contact-v">
+					 					<p className="text-navbar-volartech">Contacto</p>
+					 				</div>
+				 				</a>
 				 			</div>
 			 			</div>
 			 			<div className="content-textos-play">
 			 				{secciones[this.state.selected]}
 			 				<div className="contenedor-circulos">
 			 					<div className={(this.state.selected == 0) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({selected : 0})}></div>
-			 					<div className={(this.state.selected == 1) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({selected : 1})}></div>
-			 					<div className={(this.state.selected == 2) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({selected : 2})}></div>
-			 					<div className={(this.state.selected == 3) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({selected : 3})}></div>
+			 					<div className={(this.state.selected == 1) ? "circulo-cambio active2" : "circulo-cambio"} onClick={() => this.setState({selected : 1})}></div>
+			 					<div className={(this.state.selected == 2) ? "circulo-cambio active3" : "circulo-cambio"} onClick={() => this.setState({selected : 2})}></div>
+			 					<div className={(this.state.selected == 3) ? "circulo-cambio active4" : "circulo-cambio"} onClick={() => this.setState({selected : 3})}></div>
 			 				</div>
 			 			</div>
 			 		</div>

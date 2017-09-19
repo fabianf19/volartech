@@ -181,7 +181,7 @@ a {
     width: 800px;
     margin: 0 auto;
 }
-.circulo-cambio.active3{
+.circulo-cambio.active2{
 	background-color: #8E0A2D;
 }
 /*** Estilos home ingenieria ***/
@@ -236,6 +236,6 @@ a {
     display: flex;
     align-items: center;
 }
-.circulo-cambio.active2{
+.circulo-cambio.active3{
 	background-color: #50565E;
 }

@@ -199,7 +199,35 @@ export default class QuienesSomos extends Component{
 							require('../../img/fondos/man-chaleco.png')]}
 						/>
 	 				</div>
+	 				<div className="contenedor-interes-boton-contacto">
+	 					<div className="content-info-interes">
+	 						<p className="text-te-interesa">Te interesa?</p>
+	 						<p className="text-text-interes">Si te interesa alguno de nuestros servicios no dudes en ponerte en contacto.</p>
+	 					</div>
+	 					<div>
+	 						<a href="/contacto" target="_blank">
+		 						<div className="boton-contacto">
+		 							<p className="text-boton-contacto">Contacto</p>
+		 						</div>
+	 						</a>
+	 						<div className="content-mail-call">
+	 							<a href="mailto:contacto@volartech.com">
+		 							<div className="boton-mail">
+		 								<p className="text-mail-boton">Mail</p>
+		 								<p className="text-mail-mail">contacto@volartech.com.co</p>
+		 							</div>
+	 							</a>
+	 							<a href="tel:+573173721618">
+		 							<div className="boton-llamar">
+		 								<p className="text-llamar-boton">Llamar</p>
+		 								<p className="text-llamar-llamar">+57 (313) 868 9045</p>
+		 							</div>
+	 							</a>
+	 						</div>
+	 					</div>
+	 				</div>
 	 			</div>
+	 			<div className="linea-larga-quienes-somos"></div>
 	 			<Footer />
 	 		</div>
 		)
