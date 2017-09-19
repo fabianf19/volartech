@@ -117,7 +117,7 @@ export default class QuienesSomos extends Component{
 	 					</div>
 	 				</div>*/}
 	 				<div>
-	 					<p></p>
+	 					<p className="texto-equipo-accion">Nuestro equipo en accion</p>
 	 				</div>
 	 				<div>
 	 					<Slider images={[

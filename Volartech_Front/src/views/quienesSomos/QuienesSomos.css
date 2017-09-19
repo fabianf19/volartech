@@ -248,10 +248,11 @@
 .content-comentario-cliente{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 139px;
 }
 .content-puntos-comentarios{
 	display: flex;
-	width: 108px;
+	width: 165px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -273,4 +274,13 @@
 	display: flex;
 	justify-content: center;
 	margin-bottom: 41px;
+}
+.texto-equipo-accion{
+	font-size: 29px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #0F0F0F;
+	justify-content: center;
+    display: flex;
 }
