@@ -47,9 +47,9 @@
 }
 
 .slider .slide{
-	height: 300px;
+	height: 331px;
 	/*width: 33%;*/
 	display: inline-block;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 }

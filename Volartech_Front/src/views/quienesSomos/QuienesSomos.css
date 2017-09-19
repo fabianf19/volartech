@@ -194,6 +194,83 @@
 }
 .quinto-fondo-w-w-a{
 	width: 100%;
-	height: 584px;
+	height: 1095px;
 	background-color: #FFFFFF;
+}
+.texto-clientes{
+	font-size: 29px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #0F0F0F;
+	margin-top: 64px;
+}
+.quienes-nosotros-comillas{
+	width: 83px;
+	height: 101px;
+	background: url(../../img/icos/comillas.png) no-repeat;
+	background-size: cover;
+	margin-right: 59px;
+}
+.div-clientes{
+	width: 50px;
+	height: 1px;
+	background-color: #0F0F0F;
+	opacity: 0.6;
+	margin-bottom: 23px;
+}
+.texto-clientes-nombre{
+	font-size: 27px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 800;
+	margin: 0px;
+	color: #0F0F0F;
+	margin-top: 24px;
+	margin-bottom: 9px;
+}
+.text-clientes-subtitle{
+	font-size: 18px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	margin: 0px;
+	color: #0F0F0F;
+	margin-bottom: 26px;
+}
+.text-comentario-cliente{
+	font-size: 16px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #0F0F0F;
+	width: 578px;
+	margin-bottom: 68px;
+}
+.content-comentario-cliente{
+	display: flex;
+	justify-content: center;
+}
+.content-puntos-comentarios{
+	display: flex;
+	width: 108px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.punto-comentario{
+	width: 8px;
+	height: 8px;
+	border: 1px solid #95989A;
+	background-color: #95989A;
+	border-radius: 100%;
+	margin-right: 23px;
+}
+.punto-comentario.active{
+	background-color: #0F0F0F;
+}
+#ultimo-punto-coment{
+	margin-right: 0px;
+}
+.content-text-clientes{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 41px;
 }

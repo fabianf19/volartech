@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavbarVolartech from '../../inc/navbarInside';
 import Footer from '../../inc/Footer';
 import './QuienesSomos.css';
+import Slider from '../../componentes/Slider';
 
 export default class QuienesSomos extends Component{
 	render(){
@@ -61,8 +62,71 @@ export default class QuienesSomos extends Component{
 	 				</div>
 	 			</div>
 	 			<div className="quinto-fondo-w-w-a">
+	 				<div className="content-text-clientes">
+	 					<p className="texto-clientes">Lo que piensan nuestros clientes</p>
+	 				</div>
+	 				<div className="content-comentario-cliente">
+	 					<div className="quienes-nosotros-comillas"></div>
+	 					<div>
+	 						<p className="texto-clientes-nombre">Carlos Perry</p>
+	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+	 						<div className="div-clientes"></div>
+	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+	 						<div className="content-puntos-comentarios">
+			 					<div className="punto-comentario active"></div>
+			 					<div className="punto-comentario"></div>
+			 					<div className="punto-comentario"></div>
+			 					<div className="punto-comentario" id="ultimo-punto-coment"></div>
+			 				</div>
+	 					</div>
+	 				</div>
+	 				{/*<div className="content-comentario-cliente">
+	 					<div className="quienes-nosotros-comillas"></div>
+	 					<div>
+	 						<p className="texto-clientes-nombre">Carlos Perry</p>
+	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+	 						<div className="div-clientes"></div>
+	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+	 					</div>
+	 				</div>
+	 				<div className="content-comentario-cliente">
+	 					<div className="quienes-nosotros-comillas"></div>
+	 					<div>
+	 						<p className="texto-clientes-nombre">Carlos Perry</p>
+	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+	 						<div className="div-clientes"></div>
+	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+	 					</div>
+	 				</div>
+	 				<div className="content-comentario-cliente">
+	 					<div className="quienes-nosotros-comillas"></div>
+	 					<div>
+	 						<p className="texto-clientes-nombre">Carlos Perry</p>
+	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+	 						<div className="div-clientes"></div>
+	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+	 					</div>
+	 				</div>
+	 				<div className="content-comentario-cliente">
+	 					<div className="quienes-nosotros-comillas"></div>
+	 					<div>
+	 						<p className="texto-clientes-nombre">Carlos Perry</p>
+	 						<p className="text-clientes-subtitle">Gerente Comercial / Constructora Capital Bogota SAS</p>
+	 						<div className="div-clientes"></div>
+	 						<p className="text-comentario-cliente">Volartech ha sido nuestro proveedor de videos y fotografías aceras para varios proyectos. Siempre cumpliéndonos con calidad y compromiso; reflejando su seriedad y profesionalismo. </p>
+	 					</div>
+	 				</div>*/}
 	 				<div>
-	 					
+	 					<p></p>
+	 				</div>
+	 				<div>
+	 					<Slider images={[
+							require('../../img/fondos/man-dron.png'),
+							require('../../img/fondos/man-chaleco.png'),
+							require('../../img/fondos/grupo.png'),
+							require('../../img/fondos/man-dron.png'),
+							require('../../img/fondos/man-chaleco.png')]}
+						/>
 	 				</div>
 	 			</div>
 	 			<Footer />
