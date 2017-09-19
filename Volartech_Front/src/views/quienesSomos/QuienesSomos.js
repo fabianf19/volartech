@@ -54,7 +54,16 @@ export default class QuienesSomos extends Component{
 	 				</div>
 	 			</div>
 	 			<div className="cuarto-fondo-w-w-a">
-	 				
+	 				<div className="contenedor-info-ideales">
+ 						<p className="text-ideales">Nuestros Ideales</p>
+	 					<div className="div-text-line-fourth"></div>
+	 					<p className="text-descripcion-cuarto">Creemos en una diversa gama de personal para traer habilidades creativas, pensamientos e ideas a nuestros proyectos. Estamos con lo mejor de lo mejor a través de cada paso conforme al flujo de trabajo de producción. Nos asociamos con productores, cineastas, directores de fotografía, operadores de cámaras, ingenieros, editores de vídeo y artistas de efectos visuales para mantener el más alto nivel de valor de producción en todos nuestros proyectos.</p>
+	 				</div>
+	 			</div>
+	 			<div className="quinto-fondo-w-w-a">
+	 				<div>
+	 					
+	 				</div>
 	 			</div>
 	 			<Footer />
 	 		</div>

@@ -17,6 +17,8 @@
 	margin: 0px;
 	color: #FFFFFF;
 	text-transform: uppercase;
+	padding-top: 50px;
+	margin-bottom: 48px;
 }
 .quienes-somos-div-text{
 	width: 50px;
@@ -70,6 +72,7 @@
 .content-div-line{
     width: 922px;
     margin: 0px auto;
+    margin-bottom: 39px;
 }
 .icono-estadistica{
 	width: 65px;
@@ -134,6 +137,7 @@
 	height: 1px;
 	background-color: rgba(255, 255, 255, 0.2);
 	margin-left: auto;
+	margin-bottom: 44px;
 }
 .text-third-fond{
 	font-size: 30px;
@@ -142,6 +146,7 @@
 	margin: 0px;
 	color: #FFFFFF;
 	text-align: right;
+	margin-bottom: 37px;
 }
 .text-descripcion-tercero{
 	font-size: 17px;
@@ -155,4 +160,40 @@
 .contenedor-texto-third{
 	margin-right: auto;
 	margin-top: 99px;
+}
+.div-text-line-fourth{
+	width: 50px;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.2);
+	margin-left: auto;
+	margin-bottom: 44px;
+}
+.text-ideales{
+	font-size: 30px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 800;
+	margin: 0px;
+	color: #FFFFFF;
+	text-align: right;
+	margin-bottom: 37px;
+}
+.text-descripcion-cuarto{
+	font-size: 14.5px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #FFFFFF;
+	text-align: right;
+	/*width: 357px;*/
+}
+.contenedor-info-ideales{
+	width: 611px;
+    margin-left: auto;
+    margin-right: 105px;
+    padding-top: 101px;
+}
+.quinto-fondo-w-w-a{
+	width: 100%;
+	height: 584px;
+	background-color: #FFFFFF;
 }
