@@ -1,0 +1,73 @@
+.background-construccion{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.first-fond-construccion{
+	width: 100%;
+	height: 272px;
+	background-color: #FFFFFF;
+	/*background-size: cover;*/
+}
+.content-text-dron-const{
+	display: flex;
+}
+.text-title-const{
+	font-size: 46px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #50565E;
+	text-transform: uppercase;
+}
+.sub-title-const{
+	font-size: 24px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #000000;
+}
+.imagen-dron-const{
+	width: 600px;
+	height: 500px;
+	background: url(../../img/icos/dji-ronin.png) no-repeat;
+	position: relative;
+	position: relative;
+    background-size: cover;
+}
+.second-fond-construccion{
+	width: 100%;
+	height: 200px;
+	background-color: #50565E;
+}
+.third-fond-construccion{
+	width: 100%;
+	height: 359px;
+	background: url(../../img/fondos/tercer-fondo-construccion.png) no-repeat;
+	background-color: #0F0F0F;
+	background-size: cover;
+}
+.fourth-fond-construccion{
+	width: 100%;
+	height: 373px;
+	background: url(../../img/fondos/cuarto-fondo-construccion.png) no-repeat;
+	background-size: cover;
+	background-color: #0F0F0F;
+}
+.fifth-fond-construccion{
+	width: 100%;
+	height: 373px;
+	background: url(../../img/fondos/quinto-fondo-construccion.png) no-repeat;
+	background-size: cover;
+	background-color: #0F0F0F;
+}
+.text-descripcion-construccion{
+	font-size: 18px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.content-text-descripcion-cons{
+	width: 593px;
+}

@@ -17,18 +17,18 @@ export default class HelloWorld extends Component{
 	}
 
 	componentDidMount(){
-		this.id_interval = setInterval(() => {
-			let anterior = this.state.selected;
-			var nuevo = -1;
+		//this.id_interval = setInterval(() => {
+			//let anterior = this.state.selected;
+			//var nuevo = -1;
 
-			if (anterior + 1 > 3){
-				nuevo = 0;
-			}else{
-				nuevo = anterior + 1;
-			}
+			//if (anterior + 1 > 3){
+				//nuevo = 0;
+			//}else{
+				//nuevo = anterior + 1;
+			//}
 
-			this.setState({selected : nuevo});			
-		},5000);
+			//this.setState({selected : nuevo});			
+		//},5000);
 	}
 
 	render(){
