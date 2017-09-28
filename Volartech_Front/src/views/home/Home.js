@@ -59,9 +59,9 @@ export default class HelloWorld extends Component{
 					
 				</div>
 			</div>,
-			<div className="contentedor-texto-ingenieria">
-				<p className="volartech-title">CONSTRUCCIÓN</p>
-				<p className="volartech-sub-title2-prod">Siga paso a paso sus proyectos.</p>
+			<div className="contentedor-texto-construccion">
+				<p className="volartech-title-construccion">CONSTRUCCIÓN</p>
+				<p className="volartech-sub-title2-const">Siga paso a paso sus proyectos.</p>
 				<p className="volartech-description-ing">Fotografía y vídeo aéreo, time-lapse y realidad virtual enfocada a la construcción, infraestructura y arquitectura a nivel nacional e internacional. Gestione de forma innovadora su empresa.</p>
 				<div className="content-play">
 					<a href="/construccion" target="_blank">
