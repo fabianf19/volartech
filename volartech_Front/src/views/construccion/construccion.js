@@ -30,7 +30,7 @@ export default class ConstruccionVol extends Component{
 	 			<div className="third-fond-construccion">
 	 				<div className="content-info-const-1">
 		 				<div className="content-image-play">
-		 					<a href="#">
+		 					<a href="https://google.com">
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
 		 					<div>
@@ -79,7 +79,7 @@ export default class ConstruccionVol extends Component{
 		 					</div>
 		 				</div>
 		 				<div className="content-image-play">
-		 					<a href="#">
+		 					<a href="https://google.com">
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
 		 					<div>
@@ -91,7 +91,7 @@ export default class ConstruccionVol extends Component{
 	 			<div className="fifth-fond-construccion">
 	 				<div className="content-info-const-3">
 		 				<div className="content-image-play">
-		 					<a href="#">
+		 					<a href="https://google.com">
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
 		 					<div>

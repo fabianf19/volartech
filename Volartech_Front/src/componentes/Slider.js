@@ -60,8 +60,8 @@ export default class Slider extends Component{
 
 	render(){
 
-		let slides = this.props.images.map((elem) => {
-			return <div className="slide" style={{ backgroundImage : 'url(' + elem + ')', width : slide_w }}></div>;
+		let slides = this.props.images.map((elem, index) => {
+			return <div key={index} className="slide" style={{ backgroundImage : 'url(' + elem + ')', width : slide_w }}></div>;
 		});
 
 		return (
