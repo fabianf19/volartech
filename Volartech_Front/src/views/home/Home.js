@@ -17,7 +17,7 @@ export default class HelloWorld extends Component{
 	}
 
 	componentDidMount(){
-		this.id_interval = setInterval(() => {
+		{/*this.id_interval = setInterval(() => {
 			let anterior = this.state.selected;
 			var nuevo = -1;
 
@@ -28,7 +28,7 @@ export default class HelloWorld extends Component{
 			}
 
 			this.setState({selected : nuevo});			
-		},9000);
+		},9000);*/}
 	}
 
 	render(){
@@ -51,7 +51,7 @@ export default class HelloWorld extends Component{
 				<p className="volartech-sub-title2-prod">Hacemos que tus historias sean reales.</p>
 				<p className="volartech-description-prod">Generamos emociones, innovando y haciendo realidad tus ideas para que se conecten con tu marca, introduciendo todo el empeño y corazón a nuestra producción audiovisual.</p>
 				<div className="content-play">
-					<a href="#" target="_blank">
+					<a href="/produccion" target="_blank">
 						<div className="boton-product-page"> 
 							<p className="text-ver-mas">Ver más</p>
 						</div>
@@ -64,7 +64,7 @@ export default class HelloWorld extends Component{
 				<p className="volartech-sub-title2-prod">Siga paso a paso sus proyectos.</p>
 				<p className="volartech-description-ing">Fotografía y vídeo aéreo, time-lapse y realidad virtual enfocada a la construcción, infraestructura y arquitectura a nivel nacional e internacional. Gestione de forma innovadora su empresa.</p>
 				<div className="content-play">
-					<a href="#" target="_blank">
+					<a href="/construccion" target="_blank">
 						<div className="boton-construccion-page"> 
 							<p className="text-ver-mas">Ver más</p>
 						</div>
@@ -78,7 +78,7 @@ export default class HelloWorld extends Component{
 				<p className="volartech-sub-title2-prod">Líderes en adquisición y procesamiento de datos.</p>
 				<p className="volartech-description-ing">A través de nuestros equipos de última tecnología proporcionamos datos de alta calidad y factibles, que ayudan a aumentar la eficiencia y la toma de decisiones de su empresa. </p>
 				<div className="content-play">
-					<a href="#" target="_blank">
+					<a href="/ingenieria" target="_blank">
 						<div className="boton-ingenieria-page"> 
 							<p className="text-ver-mas">Ver más</p>
 						</div>
@@ -127,12 +127,14 @@ export default class HelloWorld extends Component{
 				 			</div>
 			 			</div>
 			 			<div className="content-textos-play">
-			 				{secciones[this.state.selected]}
-			 				<div className="contenedor-circulos">
-			 					<div className={(this.state.selected == 0) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({selected : 0})}></div>
-			 					<div className={(this.state.selected == 1) ? "circulo-cambio active2" : "circulo-cambio"} onClick={() => this.setState({selected : 1})}></div>
-			 					<div className={(this.state.selected == 2) ? "circulo-cambio active3" : "circulo-cambio"} onClick={() => this.setState({selected : 2})}></div>
-			 					<div className={(this.state.selected == 3) ? "circulo-cambio active4" : "circulo-cambio"} onClick={() => this.setState({selected : 3})}></div>
+			 				<div className="contenedor-contenidos-home">
+				 				{secciones[this.state.selected]}
+				 				<div className="contenedor-circulos">
+				 					<div className={(this.state.selected == 0) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({selected : 0})}></div>
+				 					<div className={(this.state.selected == 1) ? "circulo-cambio active2" : "circulo-cambio"} onClick={() => this.setState({selected : 1})}></div>
+				 					<div className={(this.state.selected == 2) ? "circulo-cambio active3" : "circulo-cambio"} onClick={() => this.setState({selected : 2})}></div>
+				 					<div className={(this.state.selected == 3) ? "circulo-cambio active4 otro-margen-puntos" : "circulo-cambio otro-margen-puntos"} onClick={() => this.setState({selected : 3})}></div>
+				 				</div>
 			 				</div>
 			 			</div>
 			 		</div>

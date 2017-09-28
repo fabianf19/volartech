@@ -7,8 +7,9 @@ export default class NavbarVolartech extends Component{
 			<div>
 	 			<div className="contenedor-navbar-inside">
 		 			<div className="navbar-volartech-inside">
-		 				<div></div>
-		 				<div className="logo-navbar-volartech-inside"></div>
+		 				<a href="/">
+		 					<div className="logo-navbar-volartech-inside"></div>
+		 				</a>
 		 				<a href="/quienes">
 			 				<div className="contenedor-textos-navb-inside">
 			 					<p className="text-navbar-volartech-inside">Quienes Somos</p>

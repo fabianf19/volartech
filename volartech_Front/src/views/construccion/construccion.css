@@ -11,8 +11,11 @@
 }
 .content-text-dron-const{
 	display: flex;
+	width: 930px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.text-title-const{
+.text-title-construccion{
 	font-size: 46px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 400;
@@ -28,9 +31,10 @@
 	color: #000000;
 }
 .imagen-dron-const{
-	width: 600px;
+	/*width: 600px;*/
+	width: 480px;
 	height: 500px;
-	background: url(../../img/icos/dji-ronin.png) no-repeat;
+	background: url(../../img/icos/dron-const.png) no-repeat;
 	position: relative;
 	position: relative;
     background-size: cover;
@@ -42,21 +46,21 @@
 }
 .third-fond-construccion{
 	width: 100%;
-	height: 359px;
-	background: url(../../img/fondos/tercer-fondo-construccion.png) no-repeat;
+	height: 558px;
+	background: url(../../img/fondos/cuartofondo-const.png) no-repeat;
 	background-color: #0F0F0F;
-	background-size: cover;
+	/*background-size: cover;*/
 }
 .fourth-fond-construccion{
 	width: 100%;
-	height: 373px;
-	background: url(../../img/fondos/cuarto-fondo-construccion.png) no-repeat;
+	height: 424px;
+	background: url(../../img/fondos/tercer-fondo-construccion.png) no-repeat;
 	background-size: cover;
 	background-color: #0F0F0F;
-}
+} 
 .fifth-fond-construccion{
 	width: 100%;
-	height: 373px;
+	height: 468px;
 	background: url(../../img/fondos/quinto-fondo-construccion.png) no-repeat;
 	background-size: cover;
 	background-color: #0F0F0F;
@@ -67,7 +71,377 @@
 	font-weight: 300;
 	margin: 0px;
 	color: #FFFFFF;
+	position: relative;
+    right: 164px;
 }
 .content-text-descripcion-cons{
 	width: 593px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 58px;
+}
+.icono-play-construccion{
+	background: url(../../img/icos/boton-play-nuevo.png) no-repeat;
+	width: 62px;
+	height: 62px;
+}
+.content-info-const-1{
+	display: flex;
+    width: 935px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 108px;
+    align-items: center;
+}
+.text-play-const{
+	font-size: 28px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #FFFFFF;
+	margin-top: 6px;
+}
+.content-image-play{
+	display: flex;
+	margin-right: auto;
+}
+.text-title-const{
+	font-size: 34px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 800;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.text-desc-construccion{
+	font-size: 17px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.first-content-text-description{
+	width: 581px;
+	text-align: right;
+	margin-bottom: 41px;
+}
+.second-text-const{
+	font-size: 30px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 700;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.content-info-const-2{
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 935px;
+    padding-top: 76px;
+    align-items: center;
+}
+.content-info-const-3{
+	display: flex;
+    width: 935px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 125px;
+    align-items: center;
+}
+.content-text-tour{
+	text-align: right;
+	margin-bottom: 37px;
+}
+.division-primeros-textos{
+	width: 50px;
+	height: 2px;
+	background-color: #50565E;
+	
+}
+.third-fond-construccion .division-primeros-textos{
+	margin-left: auto;
+	margin-bottom: 29px;
+}
+.content-avance-obra-f-text{
+	width: 532px;
+	margin-bottom: 32px;
+}
+.otro-width-cons{
+	width: 432px;
+	text-align: right;
+	margin-right: auto;
+}
+.ico-1-const{
+	width: 51px;
+	height: 57px;
+	background: url(../../img/icos/cubo-construccion.png) no-repeat;
+	margin-bottom: 7px;
+}
+.ico-2-const{
+	width: 72px;
+	height: 56px;
+	background: url(../../img/icos/camara-construccion.png) no-repeat;
+	margin-bottom: 7px;
+}
+.contenedor-iconos{
+	display: flex;
+	/*float: right;*/
+}
+.text-icono-const{
+	font-size: 13px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.ico-3-const{
+	width: 60px;
+	height: 60px;
+	background: url(../../img/icos/aros-unidos.png) no-repeat;
+	margin-right: 39px;
+}
+.ico-4-const{
+	width: 57px;
+	height: 61px;
+	background: url(../../img/icos/temporizador.png) no-repeat;
+}
+.white-fond-const{
+	width: 100%;
+	height: 941px;
+	background-color: #FFFFFF;
+}
+.linea-larga-const{
+	width: 100%;
+	height: 5px;
+	background-color: #50565E;
+}
+.contenedor-titulo-construccion{
+	margin-top: 170px;
+}
+.contenedor-icono-cubo{
+	margin-left: auto;
+	margin-right: 27px;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-icono-time{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-text-avance{
+	margin-right: auto;
+}
+.fourth-fond-construccion .content-image-play{
+	margin-right: 0px;
+}
+.contenido-titulo-const-avance{
+	margin-bottom: 32px;
+}
+.fourth-fond-construccion .division-primeros-textos{
+	margin-bottom: 20px;
+}
+.contenedor-text-area{
+	margin-bottom: 24px;
+}
+.fifth-fond-construccion .contenido-titulo-const-avance{
+	text-align: right;
+}
+.contenedor-genere-confianza{
+	text-align: right;
+	width: 532px;
+	margin-bottom: 33px;
+}
+.fifth-fond-construccion .division-primeros-textos{
+	margin-left: auto;
+	margin-bottom: 21px;
+}
+.contenedor-time-lapse{
+	margin-bottom: 25px;
+	text-align: right;
+}
+.content-text-nuestrotrabajo-const{
+    margin-top: 61px;
+    margin-bottom: 30px;
+}
+.text-nuestro-trabajo-const{
+	font-size: 29px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #0F0F0F;
+	justify-content: center;
+	display: flex;
+}
+.content-text-muestras-trabajo-const{
+	margin-bottom: 54px;
+}
+.text-muestras-trabajo-const{
+	font-size: 17px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #95989A;
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	width: 556px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-img-const{
+	display: flex;
+	margin-bottom: 36px;
+	justify-content: center;
+}
+/*.content-1-img-cons{
+	margin-left: auto;
+}
+.content-2-img-cons{
+	margin-right: auto;
+}*/
+.img-1-cons{
+	width: 363px;
+    height: 300px;
+	background: url(../../img/fondos/edificios-constuccion.png) no-repeat;
+	margin-right: 26px;
+	background-size: contain;
+}
+.img-2-cons{
+	width: 363px;
+    height: 300px;
+	background: url(../../img/fondos/construccion-construccion.png) no-repeat;
+	margin-right: 26px;
+	background-size: contain;
+}
+.img-3-cons{
+	width: 363px;
+    height: 300px;
+	background: url(../../img/fondos/industria-constuccion.png) no-repeat;
+	margin-right: 26px;
+	background-size: contain;
+}
+.text-fecha-img-cons{
+	font-size: 14px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #D1D1D1;
+}
+.contenedor-interes-boton-contacto-const{
+	display: flex;
+	justify-content: center;
+}
+.content-info-interes-const{
+	width: 646px;
+	margin-right: 69px;
+}
+.text-te-interesa-const{
+	font-size: 29px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 400;
+	margin: 0px;
+	color: #0F0F0F;
+}
+.text-text-interes-const{
+	font-size: 17px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #95989A;
+}
+.boton-cotizacion-const{
+	width: 401px;
+	height: 46px;
+	background-color: #50565E;
+	border-radius: 4px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+.text-boton-cotizacion-const{
+	font-size: 16px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #FFFFFF;
+}
+.content-mail-call-const{
+	display: flex;
+}
+.boton-mail-const{
+	background-color: transparent;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 190px;
+	height: 53px;
+	margin-right: 17px;
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.text-mail-boton-const{
+	font-size: 16px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #000000;
+}
+.text-mail-mail-const{
+	font-size: 10px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #B1B1B1;
+}
+.boton-llamar-const{
+	background-color: transparent;
+	border: 1px solid #000000;
+	border-radius: 4px;
+	width: 190px;
+	height: 53px;
+	align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+.text-llamar-boton-const{
+	font-size: 16px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #000000;
+}
+.text-llamar-llamar-const{
+	font-size: 10px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #B1B1B1;
+}
+.text-ver-mas-cons{
+	font-size: 20px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #50565E;
+}
+.contenedor-ver-mas-cons{
+	border-bottom: 1px solid #50565E;
+	width: 72px;
+	margin-left: auto;
+	cursor: pointer;
+}
+.big-content-ver-const{
+	width: 1119px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 119px;
 }

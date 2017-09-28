@@ -209,3 +209,112 @@ body{
 	display: flex;
 	margin-bottom: 11px;
 }
+/** Estilos Responsive footer **/
+@media(min-width: 320px) and (max-width: 450px){
+	.responsive-footer .footer-volartech{
+		height: 700px;
+	}
+	.responsive-footer .content-footer-info{
+		display: block;
+		width: 100%
+	}
+	.responsive-footer{
+		display: block;
+	}
+	.content-first-div{
+		width: 289px;
+		margin-left: auto;
+		margin-right: auto; 
+		margin-bottom: 19px;
+	}
+	.first-div-txt{
+		font-size: 12px;
+	}
+	.logo-footer-volarteck{
+	    width: 40px;
+    	height: 43px;
+	}
+	.linea-div-terms{
+		height: 12px;
+		position: relative;
+		top: 2px;
+	}
+	.content-second-div{
+		width: 289px;
+		margin-left: auto;
+		margin-right: auto; 
+		margin-bottom: 13px;
+	}
+	.content-third-div{
+		width: 289px;
+		margin-left: auto;
+		margin-right: auto; 
+		margin-bottom: 13px;
+	}
+	.content-fourth-div{
+		width: 289px;
+		margin-left: auto;
+		margin-right: auto; 
+		margin-bottom: 13px;
+	}
+	.content-fifth-div{
+		width: 289px;
+		margin-left: auto;
+		margin-right: auto; 
+	}
+	.second-div-txt-title{
+		font-size: 13px;
+	}
+	.third-div-txt-title{
+		font-size: 13px;
+	}
+	.fourth-div-txt-title{
+		font-size: 13px;
+	}
+	.fifth-div-txt-title{
+		font-size: 13px;
+	}
+	.second-div-txt{
+		font-size: 13px;
+	}
+	.third-div-txt{
+		font-size: 13px;
+	}
+	.fourth-div-txt{
+		font-size: 13px;
+	}
+	.fifth-div-txt{
+		font-size: 13px;
+	}
+	.logo-mail{
+	    width: 20px;
+    	height: 20px;
+	}
+	.logo-whatsapp{
+		width: 20px;
+    	height: 20px;
+	}
+	.logo-facebook{
+		width: 20px;
+    	height: 20px;
+	}
+	.logo-youtube{
+		width: 20px;
+    	height: 20px;
+	}
+	.logo-pinterest{
+		width: 20px;
+    	height: 20px;
+	}
+	.logo-instagram{
+		width: 20px;
+    	height: 20px;
+	}
+	.contentedor-texto-produccion{
+		width: 289px;
+    	margin: 0 auto;
+	}
+	.volartech-sub-title2-prod{
+		font-size: 24px;
+	}
+}

@@ -66,19 +66,19 @@ export default class ProduccionVol extends Component{
 	 					<div className="conten-iconos-produccion2">
 	 						<div  className="conten-icono-prod">
 	 							<div className="icono5-prod"></div>
-	 							<p className="text-icon-prod">Briefing</p>
+	 							<p className="text-icon-prod">Documentales</p>
 	 						</div>
 	 						<div  className="conten-icono-prod">
 	 							<div className="icono6-prod"></div>
-	 							<p className="text-icon-prod">Guión</p>
+	 							<p className="text-icon-prod">Institucionales</p>
 	 						</div>
 	 						<div  className="conten-icono-prod other-margin-right">
 	 							<div className="icono7-prod"></div>
-	 							<p className="text-icon-prod">Permisos</p>
+	 							<p className="text-icon-prod">Entrevistas</p>
 	 						</div>
 	 						<div  className="conten-icono-prod other-margin-icon">
 	 							<div className="icono8-prod"></div>
-	 							<p className="text-icon-prod">Cronograma</p>
+	 							<p className="text-icon-prod">Comerciales</p>
 	 						</div>
 	 					</div>
 	 				</div>
@@ -94,19 +94,19 @@ export default class ProduccionVol extends Component{
 	 					<div className="conten-iconos-produccion3">
 	 						<div  className="conten-icono-prod other-margin-icon-left">
 	 							<div className="icono9-prod"></div>
-	 							<p className="text-icon-prod">Briefing</p>
+	 							<p className="text-icon-prod">Montaje</p>
 	 						</div>
 	 						<div  className="conten-icono-prod">
 	 							<div className="icono10-prod"></div>
-	 							<p className="text-icon-prod">Guión</p>
+	 							<p className="text-icon-prod">Corrección de color</p>
 	 						</div>
 	 						<div  className="conten-icono-prod">
 	 							<div className="icono11-prod"></div>
-	 							<p className="text-icon-prod">Permisos</p>
+	 							<p className="text-icon-prod">Edición de sonido</p>
 	 						</div>
 	 						<div  className="conten-icono-prod other-margin-icon">
 	 							<div className="icono12-prod"></div>
-	 							<p className="text-icon-prod">Cronograma</p>
+	 							<p className="text-icon-prod">Musicalización</p>
 	 						</div>
 	 					</div>
 	 				</div>
@@ -122,11 +122,11 @@ export default class ProduccionVol extends Component{
 	 					<div className="conten-iconos-produccion4">
 	 						<div  className="conten-icono-prod">
 	 							<div className="icono13-prod"></div>
-	 							<p className="text-icon-prod">Briefing</p>
+	 							<p className="text-icon-prod">Presentación Interactiva</p>
 	 						</div>
 	 						<div className="conten-icono-prod other-margin-icon">
 	 							<div className="icono14-prod"></div>
-	 							<p className="text-icon-prod">Guión</p>
+	 							<p className="text-icon-prod">Motion graphics (2D y 3D)</p>
 	 						</div>
 	 					</div>
 	 				</div>

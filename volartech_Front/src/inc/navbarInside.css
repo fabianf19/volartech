@@ -15,6 +15,7 @@
     background-size: cover;
     margin-right: 207px;
     margin-left: auto;
+    cursor: pointer;
 }
 .text-navbar-volartech-inside{
 	font-size: 16px;
@@ -53,4 +54,13 @@ a.boton-contact-v-inside{
 .text-navbar-volartech-inside:hover{
 	color: #000000;
 	opacity: 1;
+}
+/*** Estilos Responsive Navbar ***/
+@media(min-width: 320px) and (max-width: 450px){
+	.navbar-volartech{
+		display: none;
+	}
+	.contenedor-navbar{
+	    margin-bottom: 70px;
+	}
 }

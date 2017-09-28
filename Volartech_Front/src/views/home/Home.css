@@ -8,12 +8,14 @@
     /*position: absolute;*/
 }
 .navbar-volartech{
-	width: 100%;
+	/*width: 100%;*/
+	width: 983px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-top: 34px;
     align-items: center;
+    justify-content: center;
 }
 .logo-navbar-volartech{
 	width: 178px;
@@ -21,8 +23,8 @@
     position: relative;
     background: url(../../img/icos/logo-volartech.png) no-repeat;
     background-size: cover;
-    margin-right: 207px;
-    margin-left: auto;
+    margin-right: auto;
+    /*margin-left: auto;*/
 }
 .text-navbar-volartech{
 	font-size: 16px;
@@ -122,11 +124,12 @@
 .contentedor-texto-perspectiva{
 	/*margin-left: auto;*/
     /*margin-right: 491px;*/
-    width: 800px;
-    margin: 0 auto;
+    /*width: 800px;
+    margin: 0 auto;*/
+    margin-right: auto;
 }
 .contenedor-circulos{
-	margin-right: auto;
+	/*margin-right: auto;*/
 }
 .circulo-cambio.active{
 	background-color: rgba(255, 255, 255, 0.9);
@@ -238,4 +241,91 @@ a {
 }
 .circulo-cambio.active3{
 	background-color: #50565E;
+}
+.contenedor-contenidos-home{
+    display: flex;
+    width: 935px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+/** Estilos Responsive home **/
+@media(min-width: 320px) and (max-width: 450px){
+	.content-textos-play{
+		display: block;
+		width: 100%;
+	}
+	.contenedor-circulos{
+		display: flex;
+		justify-content: center;
+	}
+	.circulo-cambio{
+		margin-bottom: 0px;
+		margin-right: 12px;
+	}
+	.contenedor-contenidos-home{
+		display: block;
+	    width: 320px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.contentedor-texto-perspectiva{
+		width: 289px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    line-height: 43px;
+	}
+	.volartech-title{
+		font-size: 43px;
+	}
+	.volartech-sub-title1{
+		font-size: 43px;
+	}
+	.volartech-sub-title2{
+		font-size: 18px;
+		margin-bottom: 65px;
+	}
+	.content-play{
+		display: block;
+	    justify-content: center;
+	    align-items: center;
+	    margin-bottom: 21px;
+	}
+	.icono-play-volartech{
+		width: 41px;
+    	height: 41px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-bottom: 15px;
+	}
+	.text-play{
+		font-size: 19px;
+		justify-content: center;
+    	display: flex;
+	}
+	.circulo-cambio.active4.otro-margen-puntos{
+		margin-right: 0px;
+		display: block;
+	}
+	.circulo-cambio.otro-margen-puntos{
+		margin-right: 0px;
+		display: block;
+	}
+	.contentedor-texto-produccion{
+		width: 289px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 65px;
+	}
+	.volartech-sub-title2-prod{
+		font-size: 24px;
+	}
+	.volartech-description-prod{
+		font-size: 13px;
+		width: 289px;
+	    margin-bottom: 24px;
+	}
+	.boton-product-page{
+		width: 100%;
+	}
 }
