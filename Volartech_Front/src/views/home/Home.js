@@ -58,10 +58,10 @@ export default class Home extends Component{
 				</div>
 			</div>,
 			<div className="contentedor-texto-ingenieria">
-				<p className="volartech-title">{this.getText('construction_title')}</p>
-				<p className="volartech-sub-title2-prod">{this.getText('construction_subtitle')}</p>
+				<p className="volartech-title-construccion">{this.getText('construction_title')}</p>
+				<p className="volartech-sub-title2-const">{this.getText('construction_subtitle')}</p>
 				<p className="volartech-description-ing">{this.getText('construction_text')}</p>
-				<div className="content-play">
+			<div className="content-play">
 					<a href="/construccion" target="_blank">
 						<div className="boton-construccion-page"> 
 							<p className="text-ver-mas">Ver más</p>

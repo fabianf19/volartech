@@ -249,6 +249,28 @@ a {
     margin-right: auto;
     align-items: center;
 }
+.contentedor-texto-construccion{
+	/*margin-left: auto;*/
+    /*margin-right: 338px;*/
+    width: 800px;
+    margin: 0 auto;
+}
+.volartech-title-construccion{
+	font-size: 50px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.volartech-sub-title2-const{
+	font-size: 27px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    margin: 0px;
+    color: #FFFFFF;
+    margin-bottom: 39px;
+}
 /** Estilos Responsive home **/
 @media(min-width: 320px) and (max-width: 450px){
 	.content-textos-play{
@@ -276,10 +298,10 @@ a {
 	    line-height: 43px;
 	}
 	.volartech-title{
-		font-size: 43px;
+		font-size: 40.5px;
 	}
 	.volartech-sub-title1{
-		font-size: 43px;
+		font-size: 40.5px;
 	}
 	.volartech-sub-title2{
 		font-size: 18px;
@@ -326,6 +348,36 @@ a {
 	    margin-bottom: 24px;
 	}
 	.boton-product-page{
+		width: 100%;
+	}
+	/*.background-inicio-imagen{
+		width: 100%;
+	}*/
+	.contentedor-texto-construccion{
+		width: 284px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.volartech-title-construccion{
+		font-size: 40.5px;
+	}
+	.volartech-sub-title2-const{
+		font-size: 21px;
+	}
+	.volartech-description-ing{
+		width: initial;
+		font-size: 13px;
+		margin-bottom: 63px;
+	}
+	.boton-construccion-page{
+		width: 100%;
+	}
+	.contentedor-texto-ingenieria{
+		width: 286px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.boton-ingenieria-page{
 		width: 100%;
 	}
 }
