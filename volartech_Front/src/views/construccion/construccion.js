@@ -36,10 +36,10 @@ export default class ConstruccionVol extends Component{
 		event.preventDefault();
 
 		this.card.show_card();
+	}
 
 	getEmbed(id) {
 		return this.state.data[id] ? this.state.data[id].html : ''
-
 	}
 	render(){
 		return (
