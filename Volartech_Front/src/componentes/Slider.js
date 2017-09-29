@@ -13,6 +13,8 @@ export default class Slider extends Component{
 			num_slides : props.images.length
 		}
 
+		console.log(props.images)
+
 		this.start_timer = this.start_timer.bind(this);
 		this.decrement = this.decrement.bind(this);
 		this.increment = this.increment.bind(this);

@@ -1,15 +1,15 @@
 /** Estilos inicio page **/
 .background-inicio-page{
 	width: 100%;
-    height: 716px;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     transition : background-image 1s;
     /*position: absolute;*/
 }
 .navbar-volartech{
-	/*width: 100%;*/
-	width: 983px;
+	/* width: 100%; */
+	max-width: 1200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;

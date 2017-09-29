@@ -24,7 +24,7 @@ export default class Card extends Component{
 
 	click_event(event){
 		// console.log(event.target.id);
-		if (event.target.id == 'fondo')
+		if (event.target.id === 'fondo')
 			this.hide_card();
 
 	}

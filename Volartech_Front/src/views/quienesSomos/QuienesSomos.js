@@ -86,21 +86,23 @@ export default class QuienesSomos extends Component{
 			<div className="background-who-we-are">
 	 			<NavbarVolartech />
 	 			<div className="fondo-who-we-are">
-	 				<div className="content-quienes-somos-info">
-	 					<div className="contentedor-titulo">
-	 						<p className="text-title-who-we-are">{this.getText('title')}</p>
-	 					</div>
-	 					<div className="content-div-line">
-	 						<div className="quienes-somos-div-text"></div>
-	 					</div>
-	 					<div className="content-descripcion-w-w-a">
-	 						<p className="text-quienes-somos-descrip">{this.getText('text')}</p>
-	 					</div>
-	 				</div>
+					<div className="padding">
+						<div className="content-quienes-somos-info">
+							<div className="contentedor-titulo">
+								<p className="text-title-who-we-are">{this.getText('title')}</p>
+							</div>
+							<div className="content-div-line">
+								<div className="quienes-somos-div-text"></div>
+							</div>
+							<div className="content-descripcion-w-w-a">
+								<p className="text-quienes-somos-descrip">{this.getText('text')}</p>
+							</div>
+						</div>
+					</div>
 	 			</div>
-	 			<div className="segundo-fondo-w-w-a">
-	 				<div className="content-iconos-segundo-fond">
-	 					<div className="centrar-contenido-iconos otro-margen-left">
+	 			<div className="segundo-fondo-w-w-a" layout="row" layout-align="center">
+	 				<div className="content-iconos-segundo-fond padding" layout-gt-sm="row" layout="column">
+	 					<div className="centrar-contenido-iconos">
 	 						<div className="icono-estadistica"></div>
 	 						<p className="texto-icono">{this.getText('benefit_1')}</p>
 	 						<div className="div-line-icons"></div>
@@ -112,7 +114,7 @@ export default class QuienesSomos extends Component{
 	 						<div className="div-line-icons"></div>
 	 						<p className="texto-icono-2">{this.getText('benefit_text_2')}</p>
 	 					</div>
-	 					<div className="centrar-contenido-iconos otro-margen-right">
+	 					<div className="centrar-contenido-iconos">
 	 						<div className="icono-video"></div>
 	 						<p className="texto-icono">{this.getText('benefit_3')}</p>
 	 						<div className="div-line-icons"></div>
@@ -120,18 +122,22 @@ export default class QuienesSomos extends Component{
 	 					</div>
 	 				</div>
 	 			</div>
-	 			<div className="tercer-fondo-w-w-a">
-	 				<div className="contenedor-texto-imagen-tercero">
-	 					<div className="imagen-w-w-a-tercero"></div>
-	 					<div className="contenedor-texto-third">
+	 			<div className="tercer-fondo-w-w-a" layout="row" layout-align="center">
+	 				<div className="contenedor-texto-imagen-tercero" layout-gt-sm="row" layout="column" flex="">
+					 	<div layout="row" layout-align="center" flex="30">
+						 <div flex="70" flex-gt-sm="100">
+							 <div className="imagen-w-w-a-tercero"></div>
+						 </div>
+						</div>
+	 					<div className="contenedor-texto-third padding" flex="">
 	 						<p className="text-third-fond">{this.getText('uav_title')}</p>
 	 						<div className="div-text-line-third"></div>
 	 						<p className="text-descripcion-tercero">{this.getText('uav_text')}</p>
 	 					</div>
 	 				</div>
 	 			</div>
-	 			<div className="cuarto-fondo-w-w-a">
-	 				<div className="contenedor-info-ideales">
+	 			<div className="cuarto-fondo-w-w-a" layout="row" layout-align="center">
+	 				<div flex="" className="contenedor-info-ideales padding margin-v" layout="column" layout-align="start end">
  						<p className="text-ideales">{this.getText('ideals_title')}</p>
 	 					<div className="div-text-line-fourth"></div>
 	 					<p className="text-descripcion-cuarto">{this.getText('ideals_text')}</p>
@@ -156,16 +162,12 @@ export default class QuienesSomos extends Component{
 					 	<p className="texto-equipo-accion">{this.getText('images_title')}</p>
 	 				</div>
 	 				<div>
-	 					<Slider images={_(this.state.data.images || []).map(({image: {url} = {}} = {}) => url)}/>
-					{/* 							 
-							 [
-							require('../../img/fondos/man-dron.png'),
-							require('../../img/fondos/man-chaleco.png'),
-							require('../../img/fondos/grupo.png'),
-							require('../../img/fondos/man-dron.png'),
-							require('../../img/fondos/man-chaleco.png')]}/> */}
+						{
+							this.state.data.images ? <Slider images={_(this.state.data.images || []).map(({image: {url} = {}} = {}) => url)}/> : ''
+						}
+									
 	 				</div>
-	 				<div className="contenedor-interes-boton-contacto">
+	 				<div className="contenedor-interes-boton-contacto margin-v padding-v" layout-xs="column">
 	 					<div className="content-info-interes">
 	 						<p className="text-te-interesa">{this.getText('contact_title')}</p>
 	 						<p className="text-text-interes">{this.getText('contact_text')}</p>
