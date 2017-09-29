@@ -33,7 +33,7 @@ export default class IngenieriaVol extends Component{
 		 					<div>
 		 						<div className="img-droncito"></div>
 		 					</div>
-		 					<div>
+		 					<div className="size-responsive-content">
 		 						<div className="contenedor-title-ingenieria">
 		 							<p className="text-title-ingenieria">Topografía LiDAR</p>
 		 						</div>
@@ -75,7 +75,7 @@ export default class IngenieriaVol extends Component{
 		 					<div>
 		 						<div className="img-droncito-2"></div>
 		 					</div>
-		 					<div>
+		 					<div className="size-responsive-content">
 		 						<div className="contenedor-title-ingenieria">
 		 							<p className="text-title-ingenieria">Topografía Aérea</p>
 		 						</div>
@@ -102,11 +102,11 @@ export default class IngenieriaVol extends Component{
 	 						<div className="img-1"></div>
 	 						<p className="text-fecha-img">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>
-	 					<div>
+	 					<div className="content-2-img">
 	 						<div className="img-2"></div>
 	 						<p className="text-fecha-img">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>
-	 					<div className="content-2-img">
+	 					<div className="content-3-img">
 	 						<div className="img-3"></div>
 	 						<p className="text-fecha-img">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>

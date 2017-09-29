@@ -362,5 +362,226 @@
 	margin-right: auto;
 	margin-bottom: 119px;
 }
-
+/*** Estilos Responsive ingenieria ***/
+@media(min-width: 320px) and (max-width: 450px){
+	.background-ingenieria{
+		overflow-x: hidden;
+	}
+	.first-fond-ingenieria{
+	    height: 446px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.content-text-dron-ing{
+	    width: 320px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    display: block;
+	    /*height: 100%;*/
+	}
+	.content-texto-up{
+	    width: 289px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    height: initial;
+	    margin-top: 0px;
+	    padding-top: 53px;
+	}
+	.imagen-dron-ing{
+		width: 309px;
+    	height: 306px;
+    	left: 0px;
+    	top: 0px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.text-descripcion-produccion{
+		font-size: 16px;
+	    width: 278px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.second-fond-ingenieria{
+		height: 232px;
+	}
+	.content-text-descripcion{
+		width: 100%;
+	}
+	.content-text-dron-ingenieria{
+		width: 100%;
+		display: block;
+	}
+	.img-droncito{
+	    width: 320px;
+    	height: 188px;
+    	left: 0px;
+    	background-position-x: initial;
+    	margin-left: auto;
+    	margin-right: auto; 
+	}
+	.contenedor-title-ingenieria{
+		width: 290px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.text-title-ingenieria{
+		font-size: 26px;
+	}
+	.third-fond-ingenieria .contenedor-title-ingenieria{
+		margin-top: 0px;
+		margin-bottom: 13px;
+	}
+	.size-responsive-content{
+		width: 290px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.division-primeros-textos-ing{
+		width: 40px;
+	}
+	.subtitle-text-ing{
+		font-size: 21px;
+	}
+	.third-fond-ingenieria .division-primeros-textos-ing{
+		margin-bottom: 13px;
+	}
+	.text-info-ing{
+		font-size: 12px;
+	}
+	.conetenedor-subtitulos{
+		margin-bottom: 10px;
+	}
+	.content-info-ing{
+		line-height: 18px;
+	}
+	.third-fond-ingenieria{
+		height: 491px;
+	}
+	.fourth-fond-ingenieria .content-text-dron-ingenieria{
+		padding-top: 149px;
+		width: 290px;
+	}
+	.fourth-fond-ingenieria .contenedor-title-ingenieria{
+		margin-bottom: 15px;
+	}
+	.fourth-fond-ingenieria .division-primeros-textos-ing{
+		margin-bottom: 15px;
+	}
+	.fourth-fond-ingenieria .conetenedor-subtitulos{
+		margin-bottom: 16px;
+	}
+	.fourth-fond-ingenieria .content-info-ing{
+		width: initial;
+	}
+	.img-droncito-2{
+	    width: 330px;
+    	height: 126px;
+	    margin-left: auto;
+    	margin-right: auto;
+	}
+	.fifth-fond-ingenieria .contenedor-title-ingenieria{
+		margin-top: 38px;
+    	margin-bottom: 13px;
+	}
+	.fifth-fond-ingenieria .division-primeros-textos-ing{
+		margin-bottom: 17px;
+	}
+	.fifth-fond-ingenieria{
+		height: 450px;
+	}
+	.content-text-nuestrotrabajo-ing{
+		margin-top: 0px;
+	}
+	.text-nuestro-trabajo-ing{
+		font-size: 23px;
+		margin-top: 50px;
+	}
+	.text-muestras-trabajo-ing{
+		font-size: 14px;
+		width: 290px;
+	}
+	.content-img-ing{
+		display: block;
+	}
+	.img-1{
+		width: 300px;
+		height: 220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-fecha-img{
+		font-size: 11px;
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content-1-img{
+		margin-bottom: 20px;
+	}
+	.img-2{
+		width: 300px;
+		height: 220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.img-3{
+		width: 300px;
+		height: 220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content-2-img{
+		margin-bottom: 20px;
+	}
+	.content-3-img{
+		margin-bottom: 20px;
+	}
+	.big-content-ver-ing{
+		width: 290px;
+	    margin-bottom: 80px;
+	}
+	.contenedor-ver-mas-ing{
+		width: 54px;
+	}
+	.text-ver-mas-ing{
+		font-size: 15px;
+	}
+	.contenedor-interes-boton-contacto-ing{
+		width: 290px;
+		display: block;
+	    margin-left: auto;
+    	margin-right: auto;
+	}
+	.content-info-interes-ing{
+		width: 290px;
+		margin-bottom: 20px;
+	}
+	.text-te-interesa-ing{
+		font-size: 23px;
+	}
+	.text-text-interes-ing{
+		font-size: 13px;
+	}
+	.boton-cotizacion-ing{
+		width: 100%;
+	}
+	.content-mail-call-ing{
+		display: block;
+	}
+	.boton-mail-ing{
+		width: 100%;
+		height: 40px;
+		margin-bottom: 15px;
+	}
+	.boton-llamar-ing{
+		width: 100%;
+		height: 40px;
+	}
+	.background-ing-white{
+		height: 1345px;
+	}
+	.text-title-ing{
+		font-size: 40px;
+	}
+}
 

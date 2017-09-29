@@ -110,7 +110,7 @@ export default class QuienesSomos extends Component{
 			<div className="background-who-we-are">
 	 			<NavbarVolartech />
 	 			<div className="fondo-who-we-are">
-	 				<div>
+	 				<div className="content-quienes-somos-info">
 	 					<div className="contentedor-titulo">
 	 						<p className="text-title-who-we-are">Quienes Somos</p>
 	 					</div>
@@ -187,7 +187,7 @@ export default class QuienesSomos extends Component{
 	 					<div className={(this.state.selected === 3) ? "punto-comentario active" : "punto-comentario"} onClick={() => this.change_selected(3)} id="ultimo-punto-coment"></div>
 	 				</div>
 
-	 				<div>
+	 				<div className="content-nuestro-equipo">
 	 					<p className="texto-equipo-accion">Nuestro equipo en accion</p>
 	 				</div>
 	 				<div>

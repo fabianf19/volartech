@@ -445,3 +445,250 @@
 	margin-right: auto;
 	margin-bottom: 119px;
 }
+/*** Estilos Responsive Construccion ***/
+@media(min-width: 320px) and (max-width: 450px){
+	.content-text-dron-const{
+		display: block;
+	    width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-top: 53px;
+	}
+	.contenedor-titulo-construccion{
+		margin-top: 0px;
+	}
+	.text-title-construccion{
+		font-size: 40px;
+	}
+	.sub-title-const{
+		font-size: 16px;
+	}
+	.imagen-dron-const{
+		width: 280px;
+    	height: 184px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.first-fond-construccion{
+		height: 353px;
+	}
+	.content-text-descripcion-cons{
+	    width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-top: 53px;
+	}
+	.text-descripcion-construccion{
+		font-size: 16px;
+		right: 0px;
+	}
+	.second-fond-construccion{
+		height: 292px;
+	}
+	.content-info-const-1{
+		display: block;
+	    width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-top: 53px;
+	}
+	.text-title-const{
+	    font-size: 23px;
+	}
+	.content-image-play{
+		display: block;
+		margin-right: 0px;
+		margin-bottom: 78px;
+	}
+	.icono-play-construccion{
+	    width: 34px;
+	    height: 34px;
+	    background-size: cover;
+	}
+	.text-play-const{
+		font-size: 25px;
+	}
+	.content-text-tour{
+		margin-bottom: 4px;
+	}
+	.first-content-text-description{
+		width: 280px;
+	}
+	.text-desc-construccion{
+	    font-size: 15px;
+	}
+	.ico-1-const{
+    	width: 42px;
+    	height: 43px;
+    	background-size: contain;
+	}
+	.ico-2-const{
+		width: 54px;
+    	height: 45px;
+	    background-size: contain;
+	}
+	.content-info-const-2{
+	    width: 280px;
+    	padding-top: 53px;
+    	display: block;
+	}
+	.content-avance-obra-f-text{
+		width: 280px;
+	}
+	.second-text-const{
+	    font-size: 21px;
+	}
+	.contenedor-text-area{
+		margin-bottom: 20px;
+	}
+	.contenedor-iconos{
+	    /*display: block;*/
+	}
+	.ico-3-const{
+		width: 51px;
+    	height: 51px;
+    	background-size: contain;
+	   	margin-left: auto;
+	   	margin-right: 0px;
+	   	margin-bottom: 5px;
+	}
+	.otro-width-cons{
+		width: 280px;
+	}
+	.fourth-fond-construccion .content-image-play{
+		margin-bottom: 0px;
+		margin-right: 0px;
+	}
+	.fourth-fond-construccion .icono-play-construccion{
+		margin-left: auto;
+	}
+	.fourth-fond-construccion .text-play-const{
+		text-align: right;
+	}
+	.fourth-fond-construccion .contenedor-iconos{
+	    display: block;
+	    margin-bottom: 10px;
+	}
+	.fourth-fond-construccion{
+		height: 525px;
+	}
+	.content-info-const-3{
+		display: block;
+	    width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-top: 53px;
+	}
+	.fifth-fond-construccion .content-image-play{
+		margin-bottom: 40px;
+	}
+	.contenedor-genere-confianza{
+		width: 280px;
+		margin-bottom: 20px;
+	}
+	.fifth-fond-construccion .division-primeros-textos{
+		margin-bottom: 19px;
+	}
+	.contenedor-time-lapse{
+		margin-bottom: 18px;
+	}
+	.fifth-fond-construccion .contenedor-iconos{
+		align-items: center;
+	}
+	.ico-4-const{
+		width: 51px;
+    	height: 57px;
+    	background-size: contain;
+	}
+	.fifth-fond-construccion{
+		height: 493px;
+	}
+	.content-text-nuestrotrabajo-const{
+		margin-top: 53px;
+	}
+	.text-nuestro-trabajo-const{
+		font-size: 23px;
+	}
+	.text-muestras-trabajo-const{
+		font-size: 14px;
+		width: 280px;
+	}
+	.content-text-muestras-trabajo-const{
+		margin-bottom: 45px;
+	}
+	.content-img-const{
+		display: block;
+	    width: 290px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.img-1-cons{
+		width: 290px;
+    	height: 220px;
+	    margin-left: auto;
+    	margin-right: auto;
+	}
+	.img-2-cons{
+		width: 290px;
+    	height: 220px;
+	    margin-left: auto;
+    	margin-right: auto;
+	}
+	.img-3-cons{
+		width: 290px;
+    	height: 220px;
+	    margin-left: auto;
+    	margin-right: auto;
+	}
+	.content-1-img-cons{
+		margin-bottom: 20px;
+	}
+	.content-2-img-cons{
+		margin-bottom: 20px;
+	}
+	.text-fecha-img-cons{
+		font-size: 11px;
+	}
+	.big-content-ver-const{
+		width: 290px;
+		margin-bottom: 50px;
+	}
+	.text-ver-mas-cons{
+		font-size: 15px;
+	}
+	.contenedor-ver-mas-cons{
+		width: 54px;
+	}
+	.contenedor-interes-boton-contacto-const{
+		display: block;
+		width: 290px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.content-info-interes-const{
+		width: 290px;
+		margin-bottom: 20px;
+	}
+	.boton-cotizacion-const{
+		width: 100%;
+	}
+	.content-mail-call-const{
+		display: block;
+	}
+	.boton-mail-const{
+		width: 100%;
+		height:40px;
+		margin-bottom: 15px;
+	}
+	.boton-llamar-const{
+		width: 100%;
+		height:40px;
+	}
+	.white-fond-const{
+		height: 1315px;
+	}
+	.text-text-interes-const{
+		font-size: 13px;
+	}
+
+}

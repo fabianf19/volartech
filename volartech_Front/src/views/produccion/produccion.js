@@ -143,11 +143,11 @@ export default class ProduccionVol extends Component{
 	 						<div className="video-1"></div>
 	 						<p className="text-fecha-video">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>
-	 					<div>
+	 					<div className="content-2-video">
 	 						<div className="video-2"></div>
 	 						<p className="text-fecha-video">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>
-	 					<div className="content-2-video">
+	 					<div className="content-3-video">
 	 						<div className="video-3"></div>
 	 						<p className="text-fecha-video">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>

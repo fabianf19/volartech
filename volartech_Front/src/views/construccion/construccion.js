@@ -128,11 +128,11 @@ export default class ConstruccionVol extends Component{
 	 						<div className="img-1-cons"></div>
 	 						<p className="text-fecha-img-cons">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>
-	 					<div>
+	 					<div className="content-2-img-cons">
 	 						<div className="img-2-cons"></div>
 	 						<p className="text-fecha-img-cons">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>
-	 					<div className="content-2-img-cons">
+	 					<div className="content-3-img-cons">
 	 						<div className="img-3-cons"></div>
 	 						<p className="text-fecha-img-cons">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
 	 					</div>
