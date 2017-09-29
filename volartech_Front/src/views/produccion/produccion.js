@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import NavbarVolartech from '../../inc/navbarInside';
 import Footer from '../../inc/Footer';
+import Card from '../../inc/Card';
 import './produccion.css'
+
 import PrismicDOM from 'prismic-dom';
 import _ from 'underscore';
+
 export default class ProduccionVol extends Component{
 	constructor(props) {
 		super(props)
@@ -16,6 +19,8 @@ export default class ProduccionVol extends Component{
 				console.log(data);
 				this.setState({...this.state, data})
 			});
+
+		this.show_card = this.show_card.bind(this);
 	}
 	getText(id) {
 		return this.state.data[id] ? PrismicDOM.RichText.asText(this.state.data[id]) : ''
@@ -26,6 +31,13 @@ export default class ProduccionVol extends Component{
 	getUrl(id) {
 		return this.state.data[id] ? this.state.data[id].url : ''
 	}
+
+	show_card(event){
+		event.preventDefault();
+
+		this.card.show_card();
+	}
+
 	render(){
 		return (
 			<div className="background-produccion">
@@ -174,7 +186,7 @@ export default class ProduccionVol extends Component{
 	 						<p className="text-text-interes-prod">{this.getText('contacto_text')}</p>
 	 					</div>
 	 					<div>
-	 						<a href="/contacto" target="_blank">
+	 						<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
 		 						<div className="boton-cotizacion">
 		 							<p className="text-boton-cotizacion">Cotizar servicio</p>
 		 						</div>
@@ -198,6 +210,7 @@ export default class ProduccionVol extends Component{
 	 			</div>
 	 			<div className="linea-larga-product"></div>
 	 			<Footer />
+	 			<Card ref={(card) => this.card = card} seccion={"Produccion Fabi"}/>
 	 		</div>
 		)
 	}

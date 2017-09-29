@@ -115,31 +115,33 @@ export default class Home extends Component{
 				 			<div className="navbar-volartech">
 				 				<div></div>
 				 				<div className="logo-navbar-volartech"></div>
-				 				<a href="/quienes">
-					 				<div className="contenedor-textos-navb">
-					 					<p className="text-navbar-volartech">Quienes Somos</p>
-					 				</div>
-				 				</a>
-				 				<a href="/produccion">
-					 				<div className="contenedor-textos-navb">
-					 					<p className="text-navbar-volartech">Produccion</p>
-					 				</div>
-				 				</a>
-				 				<a href="/construccion">
-					 				<div className="contenedor-textos-navb">
-					 					<p className="text-navbar-volartech">Construccion</p>
-					 				</div>
-				 				</a>
-				 				<a href="/ingenieria">
-					 				<div className="contenedor-textos-navb">
-					 					<p className="text-navbar-volartech">Ingenieria</p>
-					 				</div>
-				 				</a>
-				 				<a href="/contacto">
-					 				<div className="boton-contact-v">
-					 					<p className="text-navbar-volartech">Contacto</p>
-					 				</div>
-				 				</a>
+				 				<div className="content-selector-sections-home">
+					 				<a href="/quienes">
+						 				<div className="contenedor-textos-navb">
+						 					<p className="text-navbar-volartech">Quienes Somos</p>
+						 				</div>
+					 				</a>
+					 				<a href="/produccion">
+						 				<div className="contenedor-textos-navb">
+						 					<p className="text-navbar-volartech">Produccion</p>
+						 				</div>
+					 				</a>
+					 				<a href="/construccion">
+						 				<div className="contenedor-textos-navb">
+						 					<p className="text-navbar-volartech">Construccion</p>
+						 				</div>
+					 				</a>
+					 				<a href="/ingenieria">
+						 				<div className="contenedor-textos-navb">
+						 					<p className="text-navbar-volartech">Ingenieria</p>
+						 				</div>
+					 				</a>
+					 				<a href="/contacto">
+						 				<div className="boton-contact-v">
+						 					<p className="text-navbar-volartech">Contacto</p>
+						 				</div>
+					 				</a>
+				 				</div>
 				 			</div>
 			 			</div>
 			 			<div className="content-textos-play">
