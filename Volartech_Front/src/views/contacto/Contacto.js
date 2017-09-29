@@ -10,19 +10,25 @@ export default class Contacto extends Component{
 			<div>
 				<NavbarVolartech />
 				<div className="fondo-contacto">
-					<div className="content-contactanos">
-						<p className="text-contactanos">Contáctanos</p>
-					</div>
-					<div className="div-line-contacto"></div>
-					<div className="content-respuesta">
-						<p className="text-te-responderemos">Te responderemos lo más pronto posible.</p>
-					</div>
-					<div className="content-servicio-interes">
-						<p className="servicio-interes">Por cuál servicio estas interesado:</p>
-					</div>
-					<div className="pickup-servicios">
-						<p className="servicios-pickup">Producción de video</p>
-						<div className="icono-pickup"></div>
+					<div>
+						<div className="content-contactanos">
+							<p className="text-contactanos">Contáctanos</p>
+						</div>
+						<div className="div-line-contacto"></div>
+						<div className="content-respuesta">
+							<p className="text-te-responderemos">Te responderemos lo más pronto posible.</p>
+						</div>
+						<div className="content-servicio-interes">
+							<p className="servicio-interes">Por cuál servicio estas interesado:</p>
+						</div>
+						<div className="contenedor-boton-servicios">
+							<div className="pickup-servicios">
+								<p className="servicios-pickup">Producción de video</p>
+								{/*<p className="servicios-pickup">Ingenieria</p>
+								<p className="servicios-pickup">Construccion</p>*/}
+								<div className="icono-pickup"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div className="fondo-blanco-contacto">
