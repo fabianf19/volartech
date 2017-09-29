@@ -1,12 +1,12 @@
 .background-who-we-are{
 	width: 100%;
-    height: 100%;
-    position: absolute;
+	height: 100%;
+	position: absolute;
 }
 
 .fondo-who-we-are{
 	width: 100%;
-	height: 384px;
+	/* height: 384px; */
 	background: url(../../img/fondos/img-first-quienes-somos.png) no-repeat;
 	background-size: cover;
 }
@@ -31,46 +31,49 @@
 	font-weight: 300;
 	margin: 0px;
 	color: #FFFFFF;
-	width: 780px;
+	/* width: 780px; */
 }
 .segundo-fondo-w-w-a{
 	width: 100%;
-	height: 375px;
+	/* height: 375px; */
 	background-color: #0F0F0F;
+	padding-bottom: 5rem;
 }
 .tercer-fondo-w-w-a{
 	width: 100%;
-	height: 378px;
+	/* height: 378px; */
 	background-color: #0F0F0F;
 	background-size: cover;
 }
-.imagen-w-w-a-tercero{
-    width: 688px;
-    height: 419px;
+.imagen-w-w-a-tercero{	
+	max-width: 688px;
+		width: 100%;
+    padding-bottom: 60%;
 	background: url(../../img/icos/imagen-dron.png) no-repeat;
 	background-size: cover;
-	margin-left: auto;
+	/* margin-left: auto; */
 	/*margin-right: auto;*/
 }
 .contenedor-texto-imagen-tercero{
 	display: flex;
+	max-width: 1200px;
 }
 .cuarto-fondo-w-w-a{
 	width: 100%;
-	height: 373px;
+	/* height: 373px; */
 	background: url(../../img/fondos/cuarto-fondo-w-w-a.png) no-repeat;
 	background-size: cover;
 }
 .content-descripcion-w-w-a{
-	width: 926px;
+	max-width: 1200px;
     margin: 0px auto;
 }
 .contentedor-titulo{
-    width: 936px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 .content-div-line{
-    width: 922px;
+    max-width: 1200px;
     margin: 0px auto;
     margin-bottom: 39px;
 }
@@ -155,10 +158,8 @@
 	margin: 0px;
 	color: #FFFFFF;
 	text-align: right;
-	width: 357px;
 }
 .contenedor-texto-third{
-	margin-right: auto;
 	margin-top: 99px;
 }
 .div-text-line-fourth{
@@ -185,16 +186,14 @@
 	color: #FFFFFF;
 	text-align: right;
 	/*width: 357px;*/
+	max-width: 357px;
 }
 .contenedor-info-ideales{
-	width: 611px;
-    margin-left: auto;
-    margin-right: 105px;
-    padding-top: 101px;
+	max-width: 1200px;
+    padding: 80px 0;
 }
 .quinto-fondo-w-w-a{
 	width: 100%;
-	height: 1260px;
 	background-color: #FFFFFF;
 }
 .texto-clientes{
@@ -380,7 +379,7 @@
 	color: #B1B1B1;
 }
 .content-info-interes{
-	width: 646px;
+	/* width: 646px; */
 }
 .linea-larga-quienes-somos{
 	width: 100%;
@@ -434,7 +433,7 @@
 		width: 290px;
 	}
 	.fondo-who-we-are{
-		height: 403px;
+		/* height: 403px; */
 	}
 	.icono-estadistica{
 	    width: 45px;
@@ -472,18 +471,18 @@
 		display: block;
 	}
 	.imagen-w-w-a-tercero{
-		width: 297px;
+		/* width: 297px;
     	height: 128px;
     	margin-left: auto;
-    	margin-right: auto;
+    	margin-right: auto; */
 	}
 	.contenedor-texto-third{
 		margin-top: 0px;
 	}
 	.contenedor-texto-third{
-		width: 280px;
+		/* width: 280px;
     	margin-left: auto;
-    	margin-right: auto;
+    	margin-right: auto; */
 	}
 	.text-third-fond{
 		font-size: 20px;
@@ -495,15 +494,15 @@
 	}
 	.text-descripcion-tercero{
 	    font-size: 13px;
-	    width: 284px;
+	    /* width: 284px; */
 	}
 	.tercer-fondo-w-w-a{
-		height: 290px;
+		/* height: 290px; */
 	}
 	.contenedor-info-ideales{
-		width: 280px;
+		/* width: 280px;
 		margin-left: auto;
-		margin-right: auto;
+		margin-right: auto; */
 		padding-top: 53px;
 	}
 	.text-ideales{
@@ -518,7 +517,7 @@
 		font-size: 16px;
 	}
 	.cuarto-fondo-w-w-a{
-		height: 420px;
+		/* height: 420px; */
 	}
 	.content-text-clientes{
 		display: block;
@@ -604,6 +603,6 @@
 		height: 40px;
 	}
 	.quinto-fondo-w-w-a{
-		height: 1070px;
+		/* height: 1070px; */
 	}
 }

@@ -31,13 +31,12 @@
 	color: #000000;
 }
 .imagen-dron-const{
-	/*width: 600px;*/
+	width: 600px;
 	width: 480px;
 	height: 500px;
 	background: url(../../img/icos/dron-const.png) no-repeat;
 	position: relative;
-	position: relative;
-    background-size: cover;
+    background-size: contain;
 }
 .second-fond-construccion{
 	width: 100%;

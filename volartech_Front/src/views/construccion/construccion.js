@@ -119,7 +119,7 @@ export default class ConstruccionVol extends Component{
 		 					</div>
 		 				</div>
 		 				<div className="content-image-play pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
-		 					<a href="https://google.com">
+		 					<a>
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
 		 					<div>
@@ -131,7 +131,7 @@ export default class ConstruccionVol extends Component{
 	 			<div className="fifth-fond-construccion">
 	 				<div className="content-info-const-3">
 		 				<div className="content-image-play pointer"  onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_timelapse_video')})}>
-		 					<a href="https://google.com">
+		 					<a>
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
 		 					<div>

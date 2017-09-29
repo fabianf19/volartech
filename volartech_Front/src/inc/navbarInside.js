@@ -5,11 +5,12 @@ export default class NavbarVolartech extends Component{
 	render(){
 		return (
 			<div>
-	 			<div className="contenedor-navbar-inside">
-		 			<div className="navbar-volartech-inside">
+	 			<div className="contenedor-navbar-inside" layout="row" layout-align="center">
+		 			<div className="navbar-volartech-inside" layout-gt-sm="row" layout="column" layout-align-gt-sm="center">
 		 				<a href="/">
 		 					<div className="logo-navbar-volartech-inside"></div>
 		 				</a>
+						<div flex=""></div>
 		 				<div className="content-select-service">
 			 				<a href="/quienes">
 				 				<div className="contenedor-textos-navb-inside">
