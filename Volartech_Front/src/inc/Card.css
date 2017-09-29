@@ -11,13 +11,12 @@
 }
 
 .card_container{
-	width: 50%;
-    height: 80vh;
+	width: 616px;
+    height: 686px;
     background-color: white;
     border-radius: 5px;
     position: relative;
     top: 0px;
-
     animation-name: animation;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -29,18 +28,23 @@
 }
 
 .dropbtn {
-    background-color: #4CAF50;
+    background-color: transparent;
     color: white;
     padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    width: 100%;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -71,5 +75,33 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: transparent;
+}
+.dropbtn:focus{
+    outline: none;
+}
+.card_back .contenedor-boton-servicios{
+    width: 421px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card_back .input-2{
+    height: 70px;
+}
+.card_back .input-1{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.card_back .text-tu-informacion{
+    margin-top: 30px;
+    margin-bottom: 14px;
+}
+.card_back .content-input-1{
+    margin-bottom: 12px;
+}
+.card_back #otro-margen-mail{
+    margin-bottom: 27px;
+}
+.card_back .content-texarea{
+    margin-bottom: 20px;
 }

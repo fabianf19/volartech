@@ -5,6 +5,8 @@ import './construccion.css'
 import PrismicDOM from 'prismic-dom';
 import Modal from 'react-responsive-modal';
 import _ from 'underscore';
+import Card from '../../inc/Card';
+
 export default class ConstruccionVol extends Component{
 	constructor(props) {
 		super(props)
@@ -18,6 +20,7 @@ export default class ConstruccionVol extends Component{
 				console.log(data);
 				this.setState({...this.state, data})
 			});
+		this.show_card = this.show_card.bind(this);
 	}
 	getText(id) {
 		return this.state.data[id] ? PrismicDOM.RichText.asText(this.state.data[id]) : ''
@@ -28,8 +31,15 @@ export default class ConstruccionVol extends Component{
 	getUrl(id) {
 		return this.state.data[id] ? this.state.data[id].url : ''
 	}
+
+	show_card(event){
+		event.preventDefault();
+
+		this.card.show_card();
+
 	getEmbed(id) {
 		return this.state.data[id] ? this.state.data[id].html : ''
+
 	}
 	render(){
 		return (
@@ -173,7 +183,7 @@ export default class ConstruccionVol extends Component{
 	 						<p className="text-text-interes-const">{this.getText('contacto_text')}</p>
 	 					</div>
 	 					<div>
-	 						<a href="/contacto" target="_blank">
+	 						<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
 		 						<div className="boton-cotizacion-const">
 		 							<p className="text-boton-cotizacion-const">Cotizar servicio</p>
 		 						</div>
@@ -197,6 +207,7 @@ export default class ConstruccionVol extends Component{
 	 			</div>
 	 			<div className="linea-larga-const"></div>
 	 			<Footer />
+	 			<Card ref={(card) => this.card = card} seccion={"Construccion"}/>
 	 		</div>
 		)
 	}
