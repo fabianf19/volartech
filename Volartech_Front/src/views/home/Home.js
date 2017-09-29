@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from '../../inc/Footer';
 import PrismicDOM from 'prismic-dom';
+import Modal from 'react-responsive-modal';
 import './Home.css';
 
 let bg1 = require('../../img/fondos/imagen-inicio-volartech.png');
@@ -9,12 +10,14 @@ let bg3 = require('../../img/fondos/plano-aereo.png');
 let bg4 = require('../../img/fondos/imagen-page-ing.png');
 
 export default class Home extends Component{
+	
 	constructor(props){
 		super(props);
 
 		this.state = {
 			selected: 0,
-			data: {}
+			data: {},
+			videoEmbed: null
 		}
 		window.PrismicApi
 			.getSingle('home')
@@ -22,6 +25,7 @@ export default class Home extends Component{
 				console.log(data);
 				this.setState({...this.state, data})
 			});
+		this.onCloseModal = this.onCloseModal.bind(this)
 	}
 
 	getText(id) {
@@ -30,6 +34,13 @@ export default class Home extends Component{
 	getUrl(id) {
 		return this.state.data[id] ? this.state.data[id].url : ''
 	}
+	getEmbed(id) {
+		return this.state.data[id] ? this.state.data[id].html : ''
+	}
+
+	onCloseModal() {
+		this.setState({...this.state, videoEmbed: null})
+	}
 
 	render(){
 
@@ -37,11 +48,14 @@ export default class Home extends Component{
 			<div className="contentedor-texto-perspectiva">
 				<p className="volartech-title">{this.getText('main_title')}</p>
 				<p className="volartech-sub-title2">{this.getText('main_subtitle')}</p>
-				<div className="content-play">
-					<a href={this.getUrl('main_url')} target="_blank" rel="noopener noreferrer">
+				<div className="content-play pointer">
+					<a onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('video_url')})}>
 						<div className="icono-play-volartech"> </div>
 					</a>
-					<p className="text-play">Play Video</p>
+					<p className="text-play pointer">
+						<a onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('video_url')})}>Play Video
+						</a>
+						</p>
 				</div>
 			</div>,
 			<div className="contentedor-texto-produccion">
@@ -91,6 +105,10 @@ export default class Home extends Component{
 		return (
 			<div>
 				
+				<Modal open={!!this.state.videoEmbed} onClose={this.onCloseModal}>
+					<div style={{minWidth: '80vw'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
+				</Modal>
+
 			 	<div className="background-inicio-page" style={{backgroundImage : 'url(' + bg +')'}}>
 			 		<div className="background-inicio-imagen">
 			 			<div className="contenedor-navbar">
