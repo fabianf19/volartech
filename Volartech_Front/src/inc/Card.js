@@ -34,11 +34,13 @@ export default class Card extends Component{
 		if (!this.state.show)
 			return null;
 
+		var seccion = (this.props.seccion) ? this.props.seccion : "Elegir";
+
 		return (
 			<div className="card_back" onClick={(event) => this.click_event(event)} id="fondo">
 				<div className="card_container">
 					<div className="dropdown">
-						<button className="dropbtn">Dropdown</button>
+						<button className="dropbtn">{seccion}</button>
 						<div className="dropdown-content">
 							<a href="#">Link 1</a>
 							<a href="#">Link 2</a>

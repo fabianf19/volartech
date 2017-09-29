@@ -210,7 +210,7 @@ export default class ProduccionVol extends Component{
 	 			</div>
 	 			<div className="linea-larga-product"></div>
 	 			<Footer />
-	 			<Card ref={(card) => this.card = card} />
+	 			<Card ref={(card) => this.card = card} seccion={"Produccion Fabi"}/>
 	 		</div>
 		)
 	}
