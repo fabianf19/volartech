@@ -146,7 +146,6 @@ export default class ConstruccionVol extends Component{
 	 					<p className="text-muestras-trabajo-const">{this.getText('portafolio_text')}</p>
 	 				</div>
 	 				<div className="content-img-const">
-<<<<<<< HEAD
 						{
 							_(this.state.data.portafolio_videos || {}).map(({title}, index) =>
 							<div key={index} className="content-1-img-cons">
@@ -154,20 +153,6 @@ export default class ConstruccionVol extends Component{
 								<p className="text-fecha-img-cons">{PrismicDOM.RichText.asText(title)}</p>
 							</div>)
 						}
-=======
-	 					<div className="content-1-img-cons">
-	 						<div className="img-1-cons"></div>
-	 						<p className="text-fecha-img-cons">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
-	 					</div>
-	 					<div className="content-2-img-cons">
-	 						<div className="img-2-cons"></div>
-	 						<p className="text-fecha-img-cons">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
-	 					</div>
-	 					<div className="content-3-img-cons">
-	 						<div className="img-3-cons"></div>
-	 						<p className="text-fecha-img-cons">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
-	 					</div>
->>>>>>> f8089026a5169c6bbef879b8b5886ce3cd121ddb
 	 				</div>
 	 				<div className="big-content-ver-const">
 		 				<div className="contenedor-ver-mas-cons">
