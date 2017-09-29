@@ -5,6 +5,7 @@ import Footer from '../../inc/Footer';
 import './QuienesSomos.css';
 import Slider from '../../componentes/Slider';
 import PrismicDOM from 'prismic-dom';
+import Card from '../../inc/Card';
 
 export default class QuienesSomos extends Component{
 	constructor(props){
@@ -22,7 +23,7 @@ export default class QuienesSomos extends Component{
 				this.setState({...this.state, data, num_slides: (data.quotes || []).length})
 				this.start_timer()
 			});
-
+		this.show_card = this.show_card.bind(this);
 		this.start_timer = this.start_timer.bind(this);
 		this.increment = this.increment.bind(this);
 		this.change_selected = this.change_selected.bind(this);
@@ -67,6 +68,11 @@ export default class QuienesSomos extends Component{
 		}
 		this.setState({...this.state, selected: nuevo});
 		this.start_timer();
+	}
+	show_card(event){
+		event.preventDefault();
+
+		this.card.show_card();
 	}
 
 	render(){
@@ -171,7 +177,7 @@ export default class QuienesSomos extends Component{
 	 						<p className="text-text-interes">{this.getText('contact_text')}</p>
 	 					</div>
 	 					<div>
-	 						<a href="/contacto" target="_blank">
+	 						<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
 		 						<div className="boton-contacto">
 		 							<p className="text-boton-contacto">Contacto</p>
 		 						</div>
@@ -195,6 +201,7 @@ export default class QuienesSomos extends Component{
 	 			</div>
 	 			<div className="linea-larga-quienes-somos"></div>
 	 			<Footer />
+	 			<Card ref={(card) => this.card = card} seccion={"Construccion"}/>
 	 		</div>
 		)
 	}
