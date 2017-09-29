@@ -387,3 +387,223 @@
 	height: 5px;
 	background-color: #EDEDED;
 }
+/*** Estilos Responsive quienes somos ***/
+@media(min-width: 320px) and (max-width: 450px){
+	.text-title-who-we-are{
+		font-size: 26px;
+		margin-bottom: 0px;
+	}
+	.content-quienes-somos-info{
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.text-quienes-somos-descrip{
+		font-size: 16px;
+		width: initial;
+	}
+	.quienes-somos-div-text{
+		width: 40px;
+	}
+	.centrar-contenido-iconos{
+		width: 290px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 0px;
+	    margin-bottom: 20px;
+	}
+	.otro-margen-left{
+		/*margin-left: 0px;*/
+		padding-top: 53px;
+	}
+	.background-who-we-are{
+		height: initial;
+	}
+	.content-iconos-segundo-fond{
+		display: block;
+	}
+	.contentedor-titulo{
+		width: 290px;
+		margin-bottom: 20px;
+	}
+	.content-div-line{
+		width: 290px;
+		margin-bottom: 20px;
+	}
+	.content-descripcion-w-w-a{
+		width: 290px;
+	}
+	.fondo-who-we-are{
+		height: 403px;
+	}
+	.icono-estadistica{
+	    width: 45px;
+    	height: 45px;
+	    margin-bottom: 8px;
+    	background-size: contain;
+	}
+	.texto-icono{
+		font-size: 18px;
+		margin-bottom: 13px;
+	}
+	.div-line-icons{
+		width: 40px;
+	}
+	.texto-icono-2{
+		font-size: 13px;
+		width: 290px;
+	}
+	.icono-sonido{
+		width: 45px;
+    	height: 45px;
+    	margin-bottom: 8px;
+    	background-size: contain;
+	}
+	.icono-video{
+		width: 45px;
+    	height: 45px;
+    	margin-bottom: 8px;
+    	background-size: contain;
+	}
+	.segundo-fondo-w-w-a{
+		height: 565px;
+	}
+	.contenedor-texto-imagen-tercero{
+		display: block;
+	}
+	.imagen-w-w-a-tercero{
+		width: 297px;
+    	height: 128px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.contenedor-texto-third{
+		margin-top: 0px;
+	}
+	.contenedor-texto-third{
+		width: 280px;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	.text-third-fond{
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	.div-text-line-third{
+		width: 40px;
+		margin-bottom: 17px;
+	}
+	.text-descripcion-tercero{
+	    font-size: 13px;
+	    width: 284px;
+	}
+	.tercer-fondo-w-w-a{
+		height: 290px;
+	}
+	.contenedor-info-ideales{
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 53px;
+	}
+	.text-ideales{
+		font-size: 26px;
+		margin-bottom: 17px;
+	}
+	.div-text-line-fourth{
+		width: 40px;
+		margin-bottom: 17px;
+	}
+	.text-descripcion-cuarto{
+		font-size: 16px;
+	}
+	.cuarto-fondo-w-w-a{
+		height: 420px;
+	}
+	.content-text-clientes{
+		display: block;
+		margin-bottom: 35px;
+	    width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    padding-top: 53px;
+	    justify-content: normal;
+	    margin-bottom: 15px;
+	}
+	.texto-clientes{
+		margin-top: 0px;
+		font-size: 23px;
+	}
+	.quienes-nosotros-comillas{
+		display: none;
+	}
+	.content-comentario-cliente{
+		display: block;
+	    justify-content: center;
+	    margin-bottom: 20px;
+	    width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.texto-clientes-nombre{
+		font-size: 21px;
+	}
+	.text-clientes-subtitle{
+		font-size: 14px;
+	    margin-bottom: 14px;
+	}
+	.div-clientes{
+		width: 40px;
+		margin-bottom: 16px;
+	}
+	.text-comentario-cliente{
+		width: initial;
+		font-size: 12px;
+		margin-bottom: 0px;
+	}
+	.content-puntos-comentarios{
+		width: 111px;
+		margin-bottom: 30px;
+	}
+	.content-nuestro-equipo{
+		margin-bottom: 30px;
+	}
+	.texto-equipo-accion{
+		font-size: 24px !important;
+		margin-bottom: 0px !important;
+	}
+	.contenedor-interes-boton-contacto{
+	    display: block;
+	    width: 280px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+	.quinto-fondo-w-w-a .content-info-interes{
+		width: 280px;
+		margin-bottom: 20px;
+	}
+	.quinto-fondo-w-w-a .text-te-interesa{
+		font-size: 23px;
+	}
+	.quinto-fondo-w-w-a .text-text-interes{
+		font-size: 13px;
+	}
+	.quinto-fondo-w-w-a .boton-contacto{
+		width: 100%;
+	}
+	.quinto-fondo-w-w-a .content-mail-call{
+		display: block;
+	}
+	.quinto-fondo-w-w-a .boton-mail{
+		width: 100%;
+		height: 40px;
+		margin-bottom: 15px;
+	}
+	.quinto-fondo-w-w-a .boton-llamar{
+		width: 100%;
+		height: 40px;
+	}
+	.quinto-fondo-w-w-a{
+		height: 1070px;
+	}
+}

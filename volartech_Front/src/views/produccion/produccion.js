@@ -159,7 +159,25 @@ export default class ProduccionVol extends Component{
 	 					<p className="text-nuestro-trabajo">{this.getText('portafolio_title')}</p>
 	 				</div>
 	 				<div className="content-text-muestras-trabajo">
+<<<<<<< HEAD
 	 					<p className="text-muestras-trabajo">{this.getText('portafolio_text')}</p>
+=======
+	 					<p className="text-muestras-trabajo">Te mostramos a continuación algunos de nuestros trabajos más recientes correspondiente a PRODUCCIÓN DE VIDEO. </p>
+	 				</div>
+	 				<div className="content-videos-product">
+	 					<div className="content-1-video">
+	 						<div className="video-1"></div>
+	 						<p className="text-fecha-video">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
+	 					</div>
+	 					<div className="content-2-video">
+	 						<div className="video-2"></div>
+	 						<p className="text-fecha-video">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
+	 					</div>
+	 					<div className="content-3-video">
+	 						<div className="video-3"></div>
+	 						<p className="text-fecha-video">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
+	 					</div>
+>>>>>>> f8089026a5169c6bbef879b8b5886ce3cd121ddb
 	 				</div>
 	 				<div className="content-videos-product">{
 						_(this.state.data.portafolio_videos || []).map(({title}, index) =>

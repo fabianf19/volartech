@@ -58,7 +58,7 @@ export default class IngenieriaVol extends Component{
 		 					<div>
 		 						<div className="img-droncito"></div>
 		 					</div>
-		 					<div>
+		 					<div className="size-responsive-content">
 		 						<div className="contenedor-title-ingenieria">
 		 							<p className="text-title-ingenieria">{this.getText('lidar_title1')}</p>
 		 						</div>
@@ -101,7 +101,7 @@ export default class IngenieriaVol extends Component{
 		 					<div>
 		 						<div className="img-droncito-2"></div>
 		 					</div>
-		 					<div>
+		 					<div className="size-responsive-content">
 		 						<div className="contenedor-title-ingenieria">
 		 							<p className="text-title-ingenieria">{this.getText('topografia_title')}</p>
 		 						</div>
@@ -121,6 +121,7 @@ export default class IngenieriaVol extends Component{
 	 					<p className="text-muestras-trabajo-ing">{this.getText('portafolio_text')}</p>
 	 				</div>
 	 				<div className="content-img-ing">
+<<<<<<< HEAD
 						{
 							_(this.state.data.portafolio_videos || []).map(({title}, index) => 
 							<div key={index} className={`content-${index}-img`}>
@@ -128,6 +129,20 @@ export default class IngenieriaVol extends Component{
 								<p className="text-fecha-img">{PrismicDOM.RichText.asText(title)}</p>
 							</div>)
 						}
+=======
+	 					<div className="content-1-img">
+	 						<div className="img-1"></div>
+	 						<p className="text-fecha-img">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
+	 					</div>
+	 					<div className="content-2-img">
+	 						<div className="img-2"></div>
+	 						<p className="text-fecha-img">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
+	 					</div>
+	 					<div className="content-3-img">
+	 						<div className="img-3"></div>
+	 						<p className="text-fecha-img">Lorem ipsum / 00-00-2017 Cliente: Empresas del Tal y Cual</p>
+	 					</div>
+>>>>>>> f8089026a5169c6bbef879b8b5886ce3cd121ddb
 	 				</div>
 	 				<div className="big-content-ver-ing">
 		 				<div className="contenedor-ver-mas-ing">

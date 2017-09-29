@@ -57,10 +57,30 @@ a.boton-contact-v-inside{
 }
 /*** Estilos Responsive Navbar ***/
 @media(min-width: 320px) and (max-width: 450px){
-	.navbar-volartech{
-		display: none;
+	.navbar-volartech-inside{
+	    width: 289px;
+	    display: block;
 	}
-	.contenedor-navbar{
-	    margin-bottom: 70px;
+	.logo-navbar-volartech-inside{
+		width: 140px;
+	    height: 28px;
+	    position: relative;
+        margin-right: auto;
+        margin-left: 0px;
+        margin-bottom: 3px;
+	}
+	.content-select-service{
+    	display: flex;
+    	align-items: center;
+	}
+	.contenedor-textos-navb-inside{
+		margin-right: 6px;
+	}
+	.text-navbar-volartech-inside{
+		font-size: 9.5px;
+	}
+	.boton-contact-v-inside{
+		width: 48px;
+    	height: 18px;
 	}
 }

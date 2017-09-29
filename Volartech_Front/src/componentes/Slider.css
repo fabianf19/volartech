@@ -54,3 +54,19 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 }
+/***Estilos slider responsive***/
+@media(min-width: 320px) and (max-width: 450px){
+	.slider{
+		width: 280px;
+	}
+	.slider .slider_container{
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	.slider .slider_btn_left{
+   		background-size: 20px 20px;
+	}
+	.slider .slider_btn_right{
+		background-size: 20px 20px;
+	}
+}

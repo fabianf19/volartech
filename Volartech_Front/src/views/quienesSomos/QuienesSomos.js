@@ -86,7 +86,7 @@ export default class QuienesSomos extends Component{
 			<div className="background-who-we-are">
 	 			<NavbarVolartech />
 	 			<div className="fondo-who-we-are">
-	 				<div>
+	 				<div className="content-quienes-somos-info">
 	 					<div className="contentedor-titulo">
 	 						<p className="text-title-who-we-are">{this.getText('title')}</p>
 	 					</div>
@@ -152,8 +152,8 @@ export default class QuienesSomos extends Component{
 							)}
 	 				</div>
 
-	 				<div>
-	 					<p className="texto-equipo-accion">{this.getText('images_title')}</p>
+					<div className="content-nuestro-equipo">
+					 	<p className="texto-equipo-accion">{this.getText('images_title')}</p>
 	 				</div>
 	 				<div>
 	 					<Slider images={_(this.state.data.images || []).map(({image: {url} = {}} = {}) => url)}/>
