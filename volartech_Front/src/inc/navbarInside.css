@@ -55,6 +55,10 @@ a.boton-contact-v-inside{
 	color: #000000;
 	opacity: 1;
 }
+.content-select-service{
+	display: flex;
+	align-items: center;
+}
 /*** Estilos Responsive Navbar ***/
 @media(min-width: 320px) and (max-width: 450px){
 	.navbar-volartech-inside{
