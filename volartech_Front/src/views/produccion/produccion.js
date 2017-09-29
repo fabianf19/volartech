@@ -82,7 +82,7 @@ export default class ProduccionVol extends Component{
 	 				<div>
 	 					<div className="content-produccion">
 	 						<p className="p-p-p-aproduccion">{this.getText('produccion_title')}</p>
-	 						<p className="text-p-p-p-aproduccion">{this.getText('produccion_text')}</p>
+	 						<p className="text-p-p-p-aproduccion">{this.getText('producction_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					

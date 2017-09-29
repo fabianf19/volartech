@@ -3,12 +3,14 @@ import NavbarVolartech from '../../inc/navbarInside';
 import Footer from '../../inc/Footer';
 import './construccion.css'
 import PrismicDOM from 'prismic-dom';
+import Modal from 'react-responsive-modal';
 import _ from 'underscore';
 export default class ConstruccionVol extends Component{
 	constructor(props) {
 		super(props)
 		this.state = {
-			data: {}
+			data: {},
+			videoEmbed: null
 		}
 		window.PrismicApi
 			.getSingle('produccion')
@@ -26,10 +28,16 @@ export default class ConstruccionVol extends Component{
 	getUrl(id) {
 		return this.state.data[id] ? this.state.data[id].url : ''
 	}
+	getEmbed(id) {
+		return this.state.data[id] ? this.state.data[id].html : ''
+	}
 	render(){
 		return (
 			<div className="background-construccion">
-		 		<NavbarVolartech />
+		 		<Modal open={!!this.state.videoEmbed} onClose={() => this.setState({...this.state, videoEmbed: null})}>
+					<div style={{minWidth: '80vw'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
+				</Modal>
+				<NavbarVolartech />
 	 			<div className="first-fond-construccion">
 	 				<div className="content-text-dron-const">
 		 				<div>
@@ -52,10 +60,10 @@ export default class ConstruccionVol extends Component{
 	 			<div className="third-fond-construccion">
 	 				<div className="content-info-const-1">
 		 				<div className="content-image-play">
-		 					<a href="https://google.com">
+		 					<a className="pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('tour-360_video')})}>
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
-		 					<div>
+		 					<div className="pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('tour-360_video')})}>
 		 						<p className="text-play-const">Play Video</p>
 		 					</div>
 		 				</div>
@@ -100,7 +108,7 @@ export default class ConstruccionVol extends Component{
 		 						</div>
 		 					</div>
 		 				</div>
-		 				<div className="content-image-play">
+		 				<div className="content-image-play pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
 		 					<a href="https://google.com">
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
@@ -112,7 +120,7 @@ export default class ConstruccionVol extends Component{
 	 			</div>
 	 			<div className="fifth-fond-construccion">
 	 				<div className="content-info-const-3">
-		 				<div className="content-image-play">
+		 				<div className="content-image-play pointer"  onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_timelapse_video')})}>
 		 					<a href="https://google.com">
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
