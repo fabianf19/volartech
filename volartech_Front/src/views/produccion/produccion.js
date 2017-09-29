@@ -160,6 +160,7 @@ export default class ProduccionVol extends Component{
 	 				</div>
 	 				<div className="content-text-muestras-trabajo">
 	 					<p className="text-muestras-trabajo">{this.getText('portafolio_text')}</p>
+					</div>
 	 				<div className="content-videos-product">{
 						_(this.state.data.portafolio_videos || []).map(({title}, index) =>
 						<div key={index} className={`content-${index}-video`}>
