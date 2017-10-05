@@ -11,7 +11,7 @@
 }
 .content-text-dron-ing{
 	display: flex;
-	width: 928px;
+	max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,13 +31,12 @@
 	color: #000000;
 }
 .imagen-dron-ing{
-	width: 620px;
-	height: 500px;
-	background: url(../../img/icos/dron-ing.png) no-repeat;
+	/* width: 620px; */
+	width: 100%;
+	padding-bottom: 80%;
+	background: url(../../img/icos/dron-ing.png) no-repeat center;
 	position: relative;
-    background-size: cover;
-    left: 110px;
-    top: -35px;
+	background-size: cover;
 }
 .second-fond-ingenieria{
 	width: 100%;
@@ -66,16 +65,17 @@
 }
 .img-droncito{
     width: 569px;
-    height: 348px;
-	background: url(../../img/icos/imagen-dron.png) no-repeat;
+		height: 348px;
+	/* width: 100%;
+	padding-bottom: 60%;
+	margin-top: 25%; */
+	background: url(../../img/icos/imagen-dron.png) no-repeat center;
 	position: relative;
     background-size: cover;
-    left: 58px;
-    background-position-x: -2px; 
 }
 .content-text-dron-ingenieria{
 	display: flex;
-	width: 1037px;
+	max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 62px;
@@ -146,14 +146,14 @@
 	margin-bottom: 34px;
 }
 .fourth-fond-ingenieria .content-info-ing{
-	width: 428px;
+	/* width: 428px; */
 	text-align: left;
 }
 .fourth-fond-ingenieria .text-info-ing{
 	font-size: 17px;
 }
 .fourth-fond-ingenieria .content-text-dron-ingenieria{
-	width: 915px;
+	max-width: 1200px;
 	padding-top: 159px;
 }
 .fifth-fond-ingenieria .division-primeros-textos-ing{
@@ -176,7 +176,7 @@
 }
 .background-ing-white{
 	width: 100%;
-	height: 950px;
+	/* height: 950px; */
 	background-color: #FFFFFF;
 }
 .content-text-nuestrotrabajo-ing{
@@ -204,9 +204,9 @@
 	justify-content: center;
 	display: flex;
 	text-align: center;
-	width: 556px;
-    margin-left: auto;
-    margin-right: auto;
+	/* width: 556px; */
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .content-img-ing{
 	display: flex;
@@ -252,7 +252,7 @@
 	justify-content: center;
 }
 .content-info-interes-ing{
-	width: 646px;
+	/* width: 646px; */
 	margin-right: 69px;
 }
 .text-te-interesa-ing{
@@ -270,7 +270,7 @@
 	color: #95989A;
 }
 .boton-cotizacion-ing{
-	width: 401px;
+	/* width: 401px; */
 	height: 46px;
 	background-color: #EDA532;
 	border-radius: 4px;
@@ -388,12 +388,9 @@
 	    padding-top: 53px;
 	}
 	.imagen-dron-ing{
-		width: 309px;
-    	height: 306px;
-    	left: 0px;
-    	top: 0px;
-    	margin-left: auto;
-    	margin-right: auto;
+		width: 100%;
+		padding-bottom: 60%;
+		margin-top: 25%;
 	}
 	.text-descripcion-produccion{
 		font-size: 16px;

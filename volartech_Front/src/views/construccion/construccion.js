@@ -3,7 +3,7 @@ import NavbarVolartech from '../../inc/navbarInside';
 import Footer from '../../inc/Footer';
 import './construccion.css'
 import PrismicDOM from 'prismic-dom';
-import Modal from 'react-responsive-modal';
+import {Dialog} from 'react-mdl';
 import _ from 'underscore';
 import Card from '../../inc/Card';
 
@@ -36,7 +36,7 @@ export default class ConstruccionVol extends Component{
 		event.preventDefault();
 
 		this.card.show_card();
-
+	}
 	getEmbed(id) {
 		return this.state.data[id] ? this.state.data[id].html : ''
 
@@ -44,27 +44,41 @@ export default class ConstruccionVol extends Component{
 	render(){
 		return (
 			<div className="background-construccion">
-		 		<Modal open={!!this.state.videoEmbed} onClose={() => this.setState({...this.state, videoEmbed: null})}>
-					<div style={{minWidth: '80vw'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
-				</Modal>
+		 		<Dialog style={{top: '2rem', width: '80vw'}} open={!!this.state.videoEmbed} onCancel={() => this.setState({...this.state, videoEmbed: null})}>
+					
+						<div layout="row" layout-align="end" className="padding pointer" style={{marginTop: '-1rem'}}>
+							<div onClick={() => this.setState({...this.state, videoEmbed: null})}>Cerrar</div>
+						</div>
+						<div style={{minWidth: 'calc(80vw -68px)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
+					
+				</Dialog>
 				<NavbarVolartech />
-	 			<div className="first-fond-construccion">
-	 				<div className="content-text-dron-const">
-		 				<div>
-		 					<div className="contenedor-titulo-construccion">
+				<div className="first-fond-construccion" layout="row" layout-align="center">
+	 				<div className="content-text-dron-const" layout="column" layout-align="start stretch" layout-gt-sm="row" flex="">
+					 <div flex-gt-sm="50" flex-order-gt-sm="2" layout="row" layout-align="center">
+							<div flex-sm="70" flex="100">
+								<div className="imagen-dron-const"></div>
+							</div>
+						</div>
+						<div className="contenedor-titulo-construccion padding" flex-gt-sm="" layout="column" layout-align="end">
+		 					<div>
 		 						<p className="text-title-construccion">{this.getText('main_title')}</p>
 		 					</div>
 		 					<div>
 		 						<p className="sub-title-const">{this.getText('main_subtitle')}</p>
 		 					</div>
-		 					{/*<div className="quienes-somos-div-text"></div>*/}
-		 				</div>
-		 				<div className="imagen-dron-const"></div>
+							<div show-gt-md="" className="padding"></div>
+						</div>
 	 				</div>
 	 			</div>
-	 			<div className="second-fond-construccion">
-	 				<div className="content-text-descripcion-cons">
- 						<p className="text-descripcion-construccion">{this.getText('main_text')}</p>
+				 {/* <div className="second-fond" layout="row" layout-align="center">
+	 				<div className="content-text-descripcion padding-v" layout="row">
+ 						<p className="text-descripcion-produccion padding" flex-gt-sm="50" flex="100">{this.getText('main_text')}</p>
+ 					</div>
+	 			</div> */}
+	 			<div className="second-fond-construccion" layout="row" layout-align="center">
+	 				<div className="content-text-descripcion-cons padding-v container" layout="row">
+ 						<p className="text-descripcion-construccion container-half padding-h margin-v">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
 	 			<div className="third-fond-construccion">
@@ -97,6 +111,7 @@ export default class ConstruccionVol extends Component{
 		 					</div>
 		 				</div>
 	 				</div>
+					<div className="padding"></div>
 	 			</div>
 	 			<div className="fourth-fond-construccion">
 	 				<div className="content-info-const-2">
@@ -104,11 +119,11 @@ export default class ConstruccionVol extends Component{
 		 					<div className="contenido-titulo-const-avance">
 		 						<p className="text-title-const">{this.getText('obra_aerea_title1')}</p>
 		 					</div>
-		 					<div className="content-avance-obra-f-text">
+		 					<div className="content-avance-obra-f-text container-half">
 		 						<p className="text-desc-construccion">{this.getText('obra_aerea_text1')}</p>
 		 					</div>
 		 					<div className="division-primeros-textos"></div>
-		 					<div>
+		 					<div className="container-half">
 		 						<div className="contenedor-text-area">
 		 							<p className="second-text-const">{this.getText('obra_aerea_title2')}</p>
 		 						</div>
@@ -127,6 +142,7 @@ export default class ConstruccionVol extends Component{
 		 					</div>
 		 				</div>
 	 				</div>
+					<div className="padding"></div>
 	 			</div>
 	 			<div className="fifth-fond-construccion">
 	 				<div className="content-info-const-3">
@@ -138,7 +154,7 @@ export default class ConstruccionVol extends Component{
 		 						<p className="text-play-const">Play Video</p>
 		 					</div>
 		 				</div>
-		 				<div>
+		 				<div className="container-half">
 		 					<div className="contenido-titulo-const-avance">
 		 						<p className="text-title-const">{this.getText('obra_timelapse_title1')}</p>
 		 					</div>
@@ -149,12 +165,13 @@ export default class ConstruccionVol extends Component{
 		 					<div className="contenedor-time-lapse">
 		 						<p className="second-text-const">{this.getText('obra_timelapse_title2')}</p>
 		 					</div>
-		 					<div className="contenedor-iconos">
+		 					<div className="contenedor-iconos" layout="row">
 		 						<p className="text-desc-construccion otro-width-cons">{this.getText('obra_timelapse_text2')}</p>
 		 						<div className="ico-4-const"></div>
 		 					</div>
 		 				</div>
 	 				</div>
+					<div className="padding"></div>
 	 			</div>
 	 			<div className="white-fond-const">
 	 				<div className="content-text-nuestrotrabajo-const">
@@ -177,31 +194,33 @@ export default class ConstruccionVol extends Component{
 	 						<p className="text-ver-mas-cons">Ver mas</p>
 	 					</div>
  					</div>
-	 				<div className="contenedor-interes-boton-contacto-const">
-	 					<div className="content-info-interes-const">
-	 						<p className="text-te-interesa-const">{this.getText('contacto_title')}</p>
-	 						<p className="text-text-interes-const">{this.getText('contacto_text')}</p>
-	 					</div>
-	 					<div>
-	 						<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
-		 						<div className="boton-cotizacion-const">
-		 							<p className="text-boton-cotizacion-const">Cotizar servicio</p>
-		 						</div>
-	 						</a>
-	 						<div className="content-mail-call-const">
-	 							<a href={'mailto: ' + this.getItem('contacto_email')}>
-		 							<div className="boton-mail-const">
-		 								<p className="text-mail-boton-const">Mail</p>
-		 								<p className="text-mail-mail-const">{this.getItem('contacto_email')}</p>
-		 							</div>
-	 							</a>
-	 							<a href="tel:+573173721618">
-		 							<div className="boton-llamar-const">
-		 								<p className="text-llamar-boton-const">Llamar</p>
-		 								<p className="text-llamar-llamar-const">+57 (313) 868 9045</p>
-		 							</div>
-	 							</a>
-	 						</div>
+	 				<div className="contenedor-interes-boton-contacto-const" layout="row" layout-align="center">
+	 					<div className="container padding"  layout-gt-sm="row" layout="column">
+							<div className="content-info-interes-const" flex-gt-sm="">
+								<p className="text-te-interesa-const">{this.getText('contacto_title')}</p>
+								<p className="text-text-interes-const">{this.getText('contacto_text')}</p>
+							</div>
+							<div>
+								<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
+									<div className="boton-cotizacion-const">
+										<p className="text-boton-cotizacion-const">Cotizar servicio</p>
+									</div>
+								</a>
+								<div className="content-mail-call-const">
+									<a href={'mailto: ' + this.getItem('contacto_email')}>
+										<div className="boton-mail-const">
+											<p className="text-mail-boton-const">Mail</p>
+											<p className="text-mail-mail-const">{this.getItem('contacto_email')}</p>
+										</div>
+									</a>
+									<a href="tel:+573173721618">
+										<div className="boton-llamar-const">
+											<p className="text-llamar-boton-const">Llamar</p>
+											<p className="text-llamar-llamar-const">+57 (313) 868 9045</p>
+										</div>
+									</a>
+								</div>
+							</div>
 	 					</div>
 	 				</div>
 	 			</div>

@@ -5,13 +5,13 @@
 }
 .first-fond-construccion{
 	width: 100%;
-	height: 272px;
+	/* height: 272px; */
 	background-color: #FFFFFF;
 	/*background-size: cover;*/
 }
 .content-text-dron-const{
 	display: flex;
-	width: 930px;
+	max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -31,35 +31,38 @@
 	color: #000000;
 }
 .imagen-dron-const{
-	width: 600px;
-	width: 480px;
-	height: 500px;
-	background: url(../../img/icos/dron-const.png) no-repeat;
+	/* width: 600px;
+	width: 480px; */
+	/* height: 500px; */
+	width: 100%;
+	padding-bottom: 75%;
+	margin-bottom: -30%;
+	background: url(../../img/icos/dron-const.png) no-repeat center;
 	position: relative;
-    background-size: contain;
+    background-size: cover;
 }
 .second-fond-construccion{
 	width: 100%;
-	height: 200px;
+	/* height: 200px; */
 	background-color: #50565E;
 }
 .third-fond-construccion{
 	width: 100%;
-	height: 558px;
+	/* height: 558px; */
 	background: url(../../img/fondos/cuartofondo-const.png) no-repeat;
 	background-color: #0F0F0F;
 	/*background-size: cover;*/
 }
 .fourth-fond-construccion{
 	width: 100%;
-	height: 424px;
+	/* height: 424px; */
 	background: url(../../img/fondos/tercer-fondo-construccion.png) no-repeat;
 	background-size: cover;
 	background-color: #0F0F0F;
 } 
 .fifth-fond-construccion{
 	width: 100%;
-	height: 468px;
+	/* height: 468px; */
 	background: url(../../img/fondos/quinto-fondo-construccion.png) no-repeat;
 	background-size: cover;
 	background-color: #0F0F0F;
@@ -71,13 +74,10 @@
 	margin: 0px;
 	color: #FFFFFF;
 	position: relative;
-    right: 164px;
 }
 .content-text-descripcion-cons{
-	width: 593px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 58px;
+	/* width: 593px; */
+    /* padding-top: 58px; */
 }
 .icono-play-construccion{
 	background: url(../../img/icos/boton-play-nuevo.png) no-repeat;
@@ -86,7 +86,7 @@
 }
 .content-info-const-1{
 	display: flex;
-    width: 935px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 108px;
@@ -134,13 +134,13 @@
 	display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 935px;
+    max-width: 1200px;
     padding-top: 76px;
     align-items: center;
 }
 .content-info-const-3{
 	display: flex;
-    width: 935px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 125px;
@@ -161,11 +161,9 @@
 	margin-bottom: 29px;
 }
 .content-avance-obra-f-text{
-	width: 532px;
 	margin-bottom: 32px;
 }
 .otro-width-cons{
-	width: 432px;
 	text-align: right;
 	margin-right: auto;
 }
@@ -196,6 +194,7 @@
 	width: 60px;
 	height: 60px;
 	background: url(../../img/icos/aros-unidos.png) no-repeat;
+	background-size: contain;
 	margin-right: 39px;
 }
 .ico-4-const{
@@ -205,7 +204,7 @@
 }
 .white-fond-const{
 	width: 100%;
-	height: 941px;
+	/* height: 941px; */
 	background-color: #FFFFFF;
 }
 .linea-larga-const{
@@ -214,7 +213,7 @@
 	background-color: #50565E;
 }
 .contenedor-titulo-construccion{
-	margin-top: 170px;
+	/* margin-top: 170px; */
 }
 .contenedor-icono-cubo{
 	margin-left: auto;
@@ -250,7 +249,6 @@
 }
 .contenedor-genere-confianza{
 	text-align: right;
-	width: 532px;
 	margin-bottom: 33px;
 }
 .fifth-fond-construccion .division-primeros-textos{
@@ -445,6 +443,14 @@
 	margin-bottom: 119px;
 }
 /*** Estilos Responsive Construccion ***/
+@media (max-width: 960px) {
+	.imagen-dron-const{
+		margin-bottom: 0;
+    	/* height: 184px;
+    	margin-left: auto;
+    	margin-right: auto; */
+	}
+}
 @media(min-width: 320px) and (max-width: 450px){
 	.content-text-dron-const{
 		display: block;
@@ -463,26 +469,25 @@
 		font-size: 16px;
 	}
 	.imagen-dron-const{
-		width: 280px;
-    	height: 184px;
+		margin-bottom: 0;
+    	/* height: 184px;
     	margin-left: auto;
-    	margin-right: auto;
+    	margin-right: auto; */
 	}
 	.first-fond-construccion{
-		height: 353px;
+		/* height: 353px; */
 	}
 	.content-text-descripcion-cons{
-	    width: 280px;
+	    /* width: 280px;
 	    margin-left: auto;
-	    margin-right: auto;
-	    padding-top: 53px;
+	    margin-right: auto; */
+	    /* padding-top: 53px; */
 	}
 	.text-descripcion-construccion{
 		font-size: 16px;
-		right: 0px;
 	}
 	.second-fond-construccion{
-		height: 292px;
+		/* height: 292px; */
 	}
 	.content-info-const-1{
 		display: block;
@@ -569,7 +574,7 @@
 	    margin-bottom: 10px;
 	}
 	.fourth-fond-construccion{
-		height: 525px;
+		/* height: 525px; */
 	}
 	.content-info-const-3{
 		display: block;
@@ -600,7 +605,7 @@
     	background-size: contain;
 	}
 	.fifth-fond-construccion{
-		height: 493px;
+		/* height: 493px; */
 	}
 	.content-text-nuestrotrabajo-const{
 		margin-top: 53px;
@@ -684,7 +689,7 @@
 		height:40px;
 	}
 	.white-fond-const{
-		height: 1315px;
+		/* height: 1315px; */
 	}
 	.text-text-interes-const{
 		font-size: 13px;

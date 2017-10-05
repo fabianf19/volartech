@@ -48,17 +48,17 @@ export default class Card extends Component{
 							<div className="content-respuesta">
 								<p className="text-te-responderemos">Te responderemos lo más pronto posible.</p>
 							</div>
-							<div className="content-servicio-interes">
+							{/* <div className="content-servicio-interes">
 								<p className="servicio-interes">Por cuál servicio estas interesado:</p>
-							</div>
+							</div> */}
 							<div className="contenedor-boton-servicios">
 								<div className="dropdown">
 									<button className="dropbtn">{seccion}</button>
-									<div className="dropdown-content">
+									{/* <div className="dropdown-content">
 										<a href="#">Produccion de video</a>
 										<a href="#">Ingenieria</a>
 										<a href="#">Construccion</a>
-									</div>
+									</div> */}
 								</div>
 							</div>
 						</div>

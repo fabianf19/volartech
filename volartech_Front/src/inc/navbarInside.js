@@ -32,11 +32,11 @@ export default class NavbarVolartech extends Component{
 				 					<p className="text-navbar-volartech-inside">Ingenieria</p>
 				 				</div>
 			 				</a>
-			 				<a href="/contacto">
+			 				{/* <a href="/contacto" hide-xs="" hide-sm="">
 				 				<div className="boton-contact-v-inside">
 				 					<p className="text-navbar-volartech-inside">Contacto</p>
 				 				</div>
-			 				</a>
+			 				</a> */}
 		 				</div>
 		 			</div>
 		 		</div>

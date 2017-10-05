@@ -173,33 +173,35 @@ export default class QuienesSomos extends Component{
 						}
 									
 	 				</div>
-	 				<div className="contenedor-interes-boton-contacto margin-v padding-v" layout-xs="column">
-	 					<div className="content-info-interes">
-	 						<p className="text-te-interesa">{this.getText('contact_title')}</p>
-	 						<p className="text-text-interes">{this.getText('contact_text')}</p>
-	 					</div>
-	 					<div>
-	 						<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
-		 						<div className="boton-contacto">
-		 							<p className="text-boton-contacto">Contacto</p>
-		 						</div>
-	 						</a>
-	 						<div className="content-mail-call">
-	 							<a href={'mailto: ' + this.getItem('contact_email')}>
-		 							<div className="boton-mail">
-		 								<p className="text-mail-boton">Mail</p>
-		 								<p className="text-mail-mail">{this.getItem('contact_email')}</p>
-		 							</div>
-	 							</a>
-	 							<a href="tel:+573173721618">
-		 							<div className="boton-llamar">
-		 								<p className="text-llamar-boton">Llamar</p>
-		 								<p className="text-llamar-llamar">+57 (313) 868 9045</p>
-		 							</div>
-	 							</a>
-	 						</div>
-	 					</div>
-	 				</div>
+					 <div layout="row" layout-align="center">
+						<div className="contenedor-interes-boton-contacto margin padding container" layout="column" layout-gt-sm="row">
+							<div className="content-info-interes" flex="">
+								<p className="text-te-interesa">{this.getText('contact_title')}</p>
+								<p className="text-text-interes">{this.getText('contact_text')}</p>
+							</div>
+							<div layout="column" layout-align="start stretch">
+								<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
+									<div className="boton-contacto">
+										<p className="text-boton-contacto">Contacto</p>
+									</div>
+								</a>
+								<div layout="row" className="content-mail-call">
+									<a flex="" href={'mailto: ' + this.getItem('contact_email')}>
+										<div className="boton-mail">
+											<p className="text-mail-boton">Mail</p>
+											<p className="text-mail-mail">{this.getItem('contact_email')}</p>
+										</div>
+									</a>
+									<a flex="" href="tel:+573173721618">
+										<div className="boton-llamar">
+											<p className="text-llamar-boton">Llamar</p>
+											<p className="text-llamar-llamar">+57 (313) 868 9045</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 	 			</div>
 	 			<div className="linea-larga-quienes-somos"></div>
 	 			<Footer />

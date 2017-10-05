@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Footer from '../../inc/Footer';
 import PrismicDOM from 'prismic-dom';
-import Modal from 'react-responsive-modal';
+import {Dialog} from 'react-mdl';
 import './Home.css';
 
-let bg1 = require('../../img/fondos/imagen-inicio-volartech.png');
-let bg2 = require('../../img/fondos/imagen-page-prod.png');
-let bg3 = require('../../img/fondos/plano-aereo.png');
-let bg4 = require('../../img/fondos/imagen-page-ing.png');
+let bg1 = require('../../img/fondos/imagen-inicio-volartech.jpg');
+let bg2 = require('../../img/fondos/imagen-page-prod.jpg');
+let bg3 = require('../../img/fondos/plano-aereo.jpg');
+let bg4 = require('../../img/fondos/imagen-page-ing.jpg');
 
 export default class Home extends Component{
 	
@@ -46,8 +46,12 @@ export default class Home extends Component{
 
 		let secciones = [
 			<div className="contentedor-texto-perspectiva">
-				<p className="volartech-title">{this.getText('main_title')}</p>
-				<p className="volartech-sub-title2">{this.getText('main_subtitle')}</p>
+				<div className="container-half">
+					<p className="volartech-title">
+						{this.getText('main_title')}
+					</p>
+					<p className="volartech-sub-title2">{this.getText('main_subtitle')}</p>
+				</div>
 				<div className="content-play pointer">
 					<a onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('video_url')})}>
 						<div className="icono-play-volartech"> </div>
@@ -58,7 +62,7 @@ export default class Home extends Component{
 						</p>
 				</div>
 			</div>,
-			<div className="contentedor-texto-produccion">
+			<div className="container">
 				<p className="volartech-title">{this.getText('video_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('video_subtitle')}</p>
 				<p className="volartech-description-prod">{this.getText('video_text')}</p>
@@ -71,7 +75,7 @@ export default class Home extends Component{
 					
 				</div>
 			</div>,
-			<div className="contentedor-texto-ingenieria">
+			<div className="container">
 				<p className="volartech-title-construccion">{this.getText('construction_title')}</p>
 				<p className="volartech-sub-title2-const">{this.getText('construction_subtitle')}</p>
 				<p className="volartech-description-ing">{this.getText('construction_text')}</p>
@@ -85,7 +89,7 @@ export default class Home extends Component{
 				</div>
 			</div>,
 
-			<div className="contentedor-texto-ingenieria">
+			<div className="container">
 				<p className="volartech-title">{this.getText('engineering_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('engineering_subtitle')}</p>
 				<p className="volartech-description-ing">{this.getText('engineering_text')}</p>
@@ -104,10 +108,15 @@ export default class Home extends Component{
 
 		return (
 			<div>
-				
-				<Modal open={!!this.state.videoEmbed} onClose={this.onCloseModal}>
-					<div style={{minWidth: '80vw'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
-				</Modal>
+
+				<Dialog style={{top: '2rem', width: '80vw'}} open={!!this.state.videoEmbed} onCancel={() => this.setState({...this.state, videoEmbed: null})}>
+					
+						<div layout="row" layout-align="end" className="padding pointer" style={{marginTop: '-1rem'}}>
+							<div onClick={() => this.setState({...this.state, videoEmbed: null})}>Cerrar</div>
+						</div>
+						<div style={{minWidth: 'calc(80vw -68px)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
+					
+				</Dialog>
 
 			 	<div className="background-inicio-page" style={{backgroundImage : 'url(' + bg +')'}}>
 			 		<div className="background-inicio-imagen">
@@ -137,16 +146,16 @@ export default class Home extends Component{
 												<p className="text-navbar-volartech">Ingenieria</p>
 											</div>
 										</a>
-										<a href="/contacto">
+										{/* <a href="/contacto">
 											<div className="boton-contact-v">
 												<p className="text-navbar-volartech">Contacto</p>
 											</div>
-										</a>
+										</a> */}
 									</div>
 				 			</div>
 			 			</div>
-			 			<div className="content-textos-play">
-			 				<div className="contenedor-contenidos-home">
+			 			<div className="content-textos-play padding" layout="row" layout-align="center">
+			 				<div className="contenedor-contenidos-home container padding">
 				 				{secciones[this.state.selected]}
 				 				<div className="contenedor-circulos">
 				 					<div className={(this.state.selected === 0) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 0})}></div>

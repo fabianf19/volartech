@@ -41,23 +41,28 @@ export default class IngenieriaVol extends Component{
 		return (
 			<div className="background-ingenieria">
 		 		<NavbarVolartech />
-	 			<div className="first-fond-ingenieria">
-	 				<div className="content-text-dron-ing">
-		 				<div className="content-texto-up">
+				 <div className="first-fond-ingenieria" layout="row" layout-align="center">
+	 				<div className="content-text-dron-ing container" layout="column" layout-align="start stretch" layout-gt-sm="row" flex="">
+					 <div flex-gt-sm="50" flex-order-gt-sm="2" layout="row" layout-align="center">
+							<div flex-sm="70" flex="100">
+								<div className="imagen-dron-ing"></div>
+							</div>
+						</div>
+						<div className="conten-texto-up padding" flex-gt-sm="" layout="column" layout-align="end">
 		 					<div>
 		 						<p className="text-title-ing">{this.getText('main_title')}</p>
 		 					</div>
 		 					<div>
 		 						<p className="sub-title-ing">{this.getText('main_subtitle')}</p>
 		 					</div>
-		 					{/*<div className="quienes-somos-div-text"></div>*/}
-		 				</div>
-		 				<div className="imagen-dron-ing"></div>
+							<div show-gt-md="" className="padding"></div>
+						</div>
 	 				</div>
 	 			</div>
-	 			<div className="second-fond-ingenieria">
-	 				<div className="content-text-descripcion">
- 						<p className="text-descripcion-produccion">{this.getText('main_text')}</p>
+	 			
+	 			<div className="second-fond-ingenieria" layout="row" layout-align="center">
+	 				<div className="content-text-descripcion container padding">
+ 						<p className="text-descripcion-produccion container-half padding">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
 	 			<div className="third-fond-ingenieria">
@@ -142,31 +147,33 @@ export default class IngenieriaVol extends Component{
 	 						<p className="text-ver-mas-ing">Ver mas</p>
 	 					</div>
  					</div>
-	 				<div className="contenedor-interes-boton-contacto-ing">
-	 					<div className="content-info-interes-ing">
-	 						<p className="text-te-interesa-ing">{this.getText('contacto_title')}</p>
-	 						<p className="text-text-interes-ing">{this.getText('contacto_subtitle')}</p>
-	 					</div>
-	 					<div>
-	 						<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
-		 						<div className="boton-cotizacion-ing">
-		 							<p className="text-boton-cotizacion-ing">Cotizar servicio</p>
-		 						</div>
-	 						</a>
-	 						<div className="content-mail-call-ing">
-	 							<a href={`mailto:${this.getItem('contacto_email')}`}>
-		 							<div className="boton-mail-ing">
-		 								<p className="text-mail-boton-ing">Mail</p>
-		 								<p className="text-mail-mail-ing">{this.getItem('contacto_email')}</p>
-		 							</div>
-	 							</a>
-	 							<a href="tel:+573173721618">
-		 							<div className="boton-llamar-ing">
-		 								<p className="text-llamar-boton-ing">Llamar</p>
-		 								<p className="text-llamar-llamar-ing">+57 (313) 868 9045</p>
-		 							</div>
-	 							</a>
-	 						</div>
+	 				<div className="contenedor-interes-boton-contacto-ing" layout="row" layout-align="center">
+					 	<div className="container padding" layout-gt-sm="row" layout="column">
+							<div className="content-info-interes-ing padding" flex-gt-sm="">
+								<p className="text-te-interesa-ing">{this.getText('contacto_title')}</p>
+								<p className="text-text-interes-ing">{this.getText('contacto_subtitle')}</p>
+							</div>
+							<div className="padding">
+								<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>
+									<div className="boton-cotizacion-ing">
+										<p className="text-boton-cotizacion-ing">Cotizar servicio</p>
+									</div>
+								</a>
+								<div className="content-mail-call-ing">
+									<a href={`mailto:${this.getItem('contacto_email')}`}>
+										<div className="boton-mail-ing">
+											<p className="text-mail-boton-ing">Mail</p>
+											<p className="text-mail-mail-ing">{this.getItem('contacto_email')}</p>
+										</div>
+									</a>
+									<a href="tel:+573173721618">
+										<div className="boton-llamar-ing">
+											<p className="text-llamar-boton-ing">Llamar</p>
+											<p className="text-llamar-llamar-ing">+57 (313) 868 9045</p>
+										</div>
+									</a>
+								</div>
+							</div>
 	 					</div>
 	 				</div>
 	 			</div>

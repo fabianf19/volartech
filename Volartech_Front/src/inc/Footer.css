@@ -38,7 +38,7 @@ body{
 }
 .content-first-div{
 	line-height: 16px;
-	margin-right: 81px;
+	/* margin-right: 81px; */
 }
 #first-div-txt-margin{
 	margin-right: 4px;
@@ -59,11 +59,9 @@ body{
 }
 .content-second-div{
 	line-height: 16px;
-	margin-right: 81px;
 }
 .content-third-div{
 	line-height: 16px;
-	margin-right: 81px;
 }
 .third-div-txt{
 	font-size: 14px;
@@ -81,7 +79,7 @@ body{
 }
 .content-fourth-div{
 	line-height: 16px;
-	margin-right: 81px;
+	/* margin-right: 81px; */
 }
 .fourth-div-txt{
 	font-size: 14px;
@@ -208,9 +206,6 @@ body{
 }
 /** Estilos Responsive footer **/
 @media(min-width: 320px) and (max-width: 450px){
-	.responsive-footer .footer-volartech{
-		height: 700px;
-	}
 	.responsive-footer .content-footer-info{
 		display: block;
 		width: 100%
@@ -237,27 +232,27 @@ body{
 		top: 2px;
 	}
 	.content-second-div{
-		width: 289px;
+		/* width: 289px;
 		margin-left: auto;
-		margin-right: auto; 
+		margin-right: auto;  */
 		margin-bottom: 13px;
 	}
 	.content-third-div{
-		width: 289px;
+		/* width: 289px;
 		margin-left: auto;
-		margin-right: auto; 
+		margin-right: auto;  */
 		margin-bottom: 13px;
 	}
 	.content-fourth-div{
-		width: 289px;
+		/* width: 289px;
 		margin-left: auto;
-		margin-right: auto; 
+		margin-right: auto;  */
 		margin-bottom: 13px;
 	}
 	.content-fifth-div{
-		width: 289px;
+		/* width: 289px;
 		margin-left: auto;
-		margin-right: auto; 
+		margin-right: auto;  */
 	}
 	.second-div-txt-title{
 		font-size: 13px;

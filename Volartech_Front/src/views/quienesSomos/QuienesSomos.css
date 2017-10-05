@@ -46,7 +46,7 @@
 	background-size: cover;
 }
 .imagen-w-w-a-tercero{	
-	max-width: 688px;
+	/* max-width: 688px; */
 		width: 100%;
     padding-bottom: 60%;
 	background: url(../../img/icos/imagen-dron.png) no-repeat;
@@ -206,7 +206,7 @@
 }
 .quienes-nosotros-comillas{
 	width: 83px;
-	height: 101px;
+	/* height: 101px; */
 	background: url(../../img/icos/comillas.png) no-repeat;
 	background-size: cover;
 	margin-right: 59px;
@@ -522,7 +522,7 @@
 	.content-text-clientes{
 		display: block;
 		margin-bottom: 35px;
-	    width: 280px;
+	    /* width: 280px; */
 	    margin-left: auto;
 	    margin-right: auto;
 	    padding-top: 53px;
@@ -540,7 +540,7 @@
 		display: block;
 	    justify-content: center;
 	    margin-bottom: 20px;
-	    width: 280px;
+	    /* width: 280px; */
 	    margin-left: auto;
 	    margin-right: auto;
 	}
@@ -561,7 +561,7 @@
 		margin-bottom: 0px;
 	}
 	.content-puntos-comentarios{
-		width: 111px;
+		/* width: 111px; */
 		margin-bottom: 30px;
 	}
 	.content-nuestro-equipo{
@@ -573,12 +573,12 @@
 	}
 	.contenedor-interes-boton-contacto{
 	    display: block;
-	    width: 280px;
+	    /* width: 280px; */
 	    margin-left: auto;
 	    margin-right: auto;
 	}
 	.quinto-fondo-w-w-a .content-info-interes{
-		width: 280px;
+		/* width: 280px; */
 		margin-bottom: 20px;
 	}
 	.quinto-fondo-w-w-a .text-te-interesa{
