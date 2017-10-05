@@ -39,7 +39,6 @@ export default class ConstruccionVol extends Component{
 	}
 	getEmbed(id) {
 		return this.state.data[id] ? this.state.data[id].html : ''
-
 	}
 	render(){
 		return (
