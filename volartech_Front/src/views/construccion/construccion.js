@@ -126,13 +126,16 @@ export default class ConstruccionVol extends Component{
 		 						<div className="contenedor-text-area">
 		 							<p className="second-text-const">{this.getText('obra_aerea_title2')}</p>
 		 						</div>
-		 						<div className="contenedor-iconos">
-		 							<div className="ico-3-const"></div>
-		 							<p className="text-desc-construccion otro-width-cons" >{this.getText('obra_aerea_text2')}</p>
+		 						<div layout="row">
+									<div flex="30">
+										<div className="ico-3-const"></div>
+									</div>
+									{/* <div className="padding-quarter"></div> */}
+		 							<p className="text-desc-construccion otro-width-cons left" >{this.getText('obra_aerea_text2')}</p>
 		 						</div>
 		 					</div>
 		 				</div>
-		 				<div className="content-image-play pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
+		 				<div layout-xs="column" layout-align-xs="start end" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
 		 					<a>
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
@@ -165,8 +168,10 @@ export default class ConstruccionVol extends Component{
 		 						<p className="second-text-const">{this.getText('obra_timelapse_title2')}</p>
 		 					</div>
 		 					<div className="contenedor-iconos" layout="row">
-		 						<p className="text-desc-construccion otro-width-cons">{this.getText('obra_timelapse_text2')}</p>
-		 						<div className="ico-4-const"></div>
+		 						<p className="text-desc-construccion right">{this.getText('obra_timelapse_text2')}</p>
+		 						<div flex="50" layout-align="end" layout="row">
+									<div className="ico-4-const"></div>
+								</div>
 		 					</div>
 		 				</div>
 	 				</div>
@@ -179,15 +184,17 @@ export default class ConstruccionVol extends Component{
 	 				<div className="content-text-muestras-trabajo-const">
 	 					<p className="text-muestras-trabajo-const">{this.getText('portafolio_text')}</p>
 	 				</div>
-	 				<div className="content-img-const">
-						{
-							_(this.state.data.portafolio_videos || {}).map(({title}, index) =>
-							<div key={index} className="content-1-img-cons">
-								<div className="img-1-cons"></div>
-								<p className="text-fecha-img-cons">{PrismicDOM.RichText.asText(title)}</p>
-							</div>)
-						}
-	 				</div>
+					<div layout="row" layout-align="center">
+						<div className="content-img-const container" layout="row" layout-wrap="true" layout-align="center">
+							{
+								_(this.state.data.portafolio_videos || {}).map(({title}, index) =>
+								<div key={index} className="content-1-img-cons padding-half" flex-gt-sm="33" flex-sm="50" flex-xs="100">
+									<div className="img-1-cons ratio-4-3"></div>
+									<p className="text-fecha-img-cons">{PrismicDOM.RichText.asText(title)}</p>
+								</div>)
+							}
+						</div>
+					</div>
 	 				<div className="big-content-ver-const">
 		 				<div className="contenedor-ver-mas-cons">
 	 						<p className="text-ver-mas-cons">Ver mas</p>

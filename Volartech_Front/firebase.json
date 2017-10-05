@@ -3,13 +3,17 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "build",
+    "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
     ],
     "rewrites": [
+      {
+        "source": "/contactForm",
+        "function": "contactForm"
+      },
       {
         "source": "**",
         "destination": "/index.html"

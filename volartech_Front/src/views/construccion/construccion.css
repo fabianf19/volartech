@@ -89,7 +89,7 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 108px;
+    padding-top: 3rem;
     align-items: center;
 }
 .text-play-const{
@@ -135,7 +135,8 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    padding-top: 76px;
+		padding-top: 3rem;
+		padding-bottom: 1.5rem;
     align-items: center;
 }
 .content-info-const-3{
@@ -143,7 +144,8 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 125px;
+		padding-top: 3rem;
+		padding-bottom: 1rem;
     align-items: center;
 }
 .content-text-tour{
@@ -300,10 +302,10 @@
 	margin-right: auto;
 }*/
 .img-1-cons{
-	width: 363px;
-    height: 300px;
+	/* width: 363px;
+    height: 300px; */
 	background: url(../../img/fondos/edificios-constuccion.png) no-repeat;
-	margin-right: 26px;
+	/* margin-right: 26px; */
 	background-size: contain;
 }
 .img-2-cons{
@@ -552,9 +554,6 @@
 		width: 51px;
     	height: 51px;
     	background-size: contain;
-	   	margin-left: auto;
-	   	margin-right: 0px;
-	   	margin-bottom: 5px;
 	}
 	.otro-width-cons{
 		width: 280px;
@@ -627,10 +626,10 @@
 	    margin-right: auto;
 	}
 	.img-1-cons{
-		width: 290px;
-    	height: 220px;
-	    margin-left: auto;
-    	margin-right: auto;
+		/* width: 290px; */
+    	/* height: 220px; */
+	    /* margin-left: auto; */
+    	/* margin-right: auto; */
 	}
 	.img-2-cons{
 		width: 290px;

@@ -2,9 +2,25 @@ import React, { Component } from 'react';
 import './Contacto.css';
 import NavbarVolartech from '../../inc/navbarInside';
 import Footer from '../../inc/Footer';
+import axios from 'axios';
 
 
 export default class Contacto extends Component{
+	constructor() {
+		super();
+		this.state = {
+			displayName: '',
+			email: '',
+			service: '',
+			comments: ''
+		}
+		this.updateProp = this.updateProp.bind(this);
+	}
+	updateProp(e, prop) {
+		let newState = {...this.state};
+		newState[prop] = e.target.value;
+		this.setState(newState);
+	}
 	render(){
 		return (
 			<div>
@@ -37,16 +53,25 @@ export default class Contacto extends Component{
 							<p className="text-tu-informacion">Tu información:</p>
 						</div>
 						<div className="content-input-1">
-							<input type="text" placeholder="Nombre" className="input-1" />
+							<input onChange={(e) => this.updateProp(e, 'displayName')} value={this.state.displayName} type="text" placeholder="Nombre" className="input-1" />
 						</div>
 						<div className="content-input-1" id="otro-margen-mail">
-							<input type="text" placeholder="Mail" className="input-1"/>
+							<input onChange={(e) => this.updateProp(e, 'email')} value={this.state.email} type="text" placeholder="Mail" className="input-1"/>
 						</div>
 						<div className="content-texarea">
-							<textarea type="text" placeholder="Escribe tus inquietudes aqui.."  max-length="350" className="input-2"/>
+							<textarea onChange={(e) => this.updateProp(e, 'comments')} value={this.state.comments} type="text" placeholder="Escribe tus inquietudes aqui.."  max-length="350" className="input-2"/>
 						</div>
 						<div className="content-boton">
-	 						<a href="/contacto" target="_blank">
+	 						<a onClick={() => axios({
+								 method: 'get',
+								 url: 'https://volartech.co/contactForm',
+								 params: {
+									displayName: this.state.displayName,
+									email: this.state.email,
+									comments: this.state.comments || '',
+									service: this.state.service || ''
+								 }
+							}).then(() => alert('Mensaje enviado')).catch(() => alert('Error enviando mensaje'))} target="_blank">
 		 						<div className="boton-enviar">
 		 							<p className="text-boton-enviar">Enviar</p>
 		 						</div>

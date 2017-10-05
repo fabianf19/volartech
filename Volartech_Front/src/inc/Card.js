@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import './Card.css';
+import axios from 'axios';
 
 export default class Card extends Component{
 	constructor(props){
 		super(props);
 
 		this.state = {
-			'show' : false
+			'show' : false,
+			displayName: '',
+			email: '',
+			comments: ''
 		}
 
 		this.show_card = this.show_card.bind(this);
 		this.hide_card = this.hide_card.bind(this);
 		this.click_event = this.click_event.bind(this);
+		this.updateProp = this.updateProp.bind(this);
 	}
 
 	show_card(){
@@ -28,7 +33,11 @@ export default class Card extends Component{
 			this.hide_card();
 
 	}
-
+	updateProp(e, prop) {
+		let newState = {...this.state};
+		newState[prop] = e.target.value;
+		this.setState(newState);
+	}
 	render(){
 
 		if (!this.state.show)
@@ -69,16 +78,38 @@ export default class Card extends Component{
 								<p className="text-tu-informacion">Tu información:</p>
 							</div>
 							<div className="content-input-1">
-								<input type="text" placeholder="Nombre" className="input-1" />
+								<input onChange={(e) => this.updateProp(e, 'displayName')} value={this.state.displayName} type="text" placeholder="Nombre" className="input-1" />
 							</div>
 							<div className="content-input-1" id="otro-margen-mail">
-								<input type="text" placeholder="Mail" className="input-1"/>
+								<input onChange={(e) => this.updateProp(e, 'email')} value={this.state.email} type="text" placeholder="Mail" className="input-1"/>
 							</div>
 							<div className="content-texarea">
-								<textarea type="text" placeholder="Escribe tus inquietudes aqui.."  max-length="350" className="input-2"/>
+								<textarea onChange={(e) => this.updateProp(e, 'comments')} value={this.state.comments} type="text" placeholder="Escribe tus inquietudes aqui.."  max-length="350" className="input-2"/>
 							</div>
 							<div className="content-boton">
-		 						<a href="/contacto" target="_blank">
+		 						<a 	onClick={() =>
+									 		axios({
+												method: 'get',
+												url: 'https://volartech.co/contactForm',
+												params: {
+													displayName: this.state.displayName,
+													email: this.state.email,
+													comments: this.state.comments || '',
+													service: this.props.seccion || ''
+												}
+											})
+											.then(() => {
+												alert('Mensaje enviado');
+												this.setState({
+													'show' : false,
+													displayName: '',
+													email: '',
+													service: '',
+													comments: ''
+												});
+											})
+											.catch(() => alert('Error enviando mensaje'))}
+										target="_blank">
 			 						<div className="boton-enviar">
 			 							<p className="text-boton-enviar">Enviar</p>
 			 						</div>
