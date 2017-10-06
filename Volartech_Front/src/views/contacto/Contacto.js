@@ -11,8 +11,9 @@ export default class Contacto extends Component{
 		this.state = {
 			displayName: '',
 			email: '',
-			service: '',
-			comments: ''
+			service: 'Seleccionar...',
+			comments: '',
+			selectorOpen: true
 		}
 		this.updateProp = this.updateProp.bind(this);
 	}
@@ -21,6 +22,14 @@ export default class Contacto extends Component{
 		newState[prop] = e.target.value;
 		this.setState(newState);
 	}
+	openSelector() {
+		if (!this.state.selectorOpen) {
+			this.setState({...this.state, selectorOpen: true});
+		}
+	}
+	select(service) {
+		this.setState({...this.state, selectorOpen: false, service});
+	}
 	render(){
 		return (
 			<div>
@@ -28,21 +37,42 @@ export default class Contacto extends Component{
 				<div className="fondo-contacto">
 					<div>
 						<div className="content-contactanos">
-							<p className="text-contactanos">Contáctanos</p>
+							<p className="text-contactanos aller">Contáctanos</p>
 						</div>
 						<div className="div-line-contacto"></div>
 						<div className="content-respuesta">
-							<p className="text-te-responderemos">Te responderemos lo más pronto posible.</p>
+							<p className="text-te-responderemos opacity5">Te responderemos lo más pronto posible.</p>
 						</div>
 						<div className="content-servicio-interes">
 							<p className="servicio-interes">Por cuál servicio estas interesado:</p>
 						</div>
-						<div className="contenedor-boton-servicios">
-							<div className="pickup-servicios">
-								<p className="servicios-pickup">Producción de video</p>
-								{/*<p className="servicios-pickup">Ingenieria</p>
-								<p className="servicios-pickup">Construccion</p>*/}
-								<div className="icono-pickup"></div>
+						<div layout="row" layout-align="center">
+							<div className="contenedor-boton-servicios">
+								<div onClick={() => this.openSelector()} className="pointer pickup-servicios padding margin" layout="row" layout-align="start stretch"
+										style={{
+											height: this.state.selectorOpen
+												? 180 + 'px'
+												: 60 + 'px'}}>
+									{
+										!this.state.selectorOpen
+											? <div flex="" layout="column" layout-align="space-around center">
+													<p className="servicios-pickup">{this.state.service}</p>
+												</div>
+											: <div flex="" layout="column" layout-align="space-around center">
+													<p className="servicios-pickup selector" onClick={() => this.select('Producción de video')}>Producción de video</p>
+													<p className="servicios-pickup selector" onClick={() => this.select('Ingenieria')}>Ingenieria</p>
+													<p className="servicios-pickup selector" onClick={() => this.select('Construccion')}>Construccion</p>
+												</div>
+									}
+									<div layout="column" layout-align="center">
+										{(this.state.selectorOpen
+											? ''
+											: <div className="icono-pickup" style={{
+													transform: this.state.selectorOpen
+														? 'rotate(180deg)'
+														: ''}}></div>)}
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -54,7 +54,7 @@ export default class ProduccionVol extends Component{
 		 						<p className="text-title-produccion aller-display">{this.getText('main_title')}</p>
 		 					</div>
 		 					<div>
-		 						<p className="sub-title-produccion">{this.getText('main_subtitle')}</p>
+		 						<p className="sub-title-produccion aller">{this.getText('main_subtitle')}</p>
 		 					</div>
 							<div show-gt-md="" className="padding"></div>
 						</div>
@@ -62,12 +62,11 @@ export default class ProduccionVol extends Component{
 	 			</div>
 	 			<div className="second-fond" layout="row" layout-align="center">
 	 				<div className="content-text-descripcion padding-v" layout="row">
- 						<p className="text-descripcion-produccion padding" flex-gt-sm="50" flex="100">{this.getText('main_text')}</p>
+ 						<p className="text-descripcion-produccion padding opacity75" flex-gt-sm="50" flex="100">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
 	 			<div className="third-fond min-height-fond" layout="row" layout-align="center center">
 	 				<div className="container" layout="column" layout-align="start end">
-						<div className="padding"></div>
 	 					<div className="content-pre-produccion padding" layout="column" layout-align="start end">
 	 						<p className="p-p-p-aproduccion">{this.getText('pre_title')}</p>
 	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('pre_text')}</p>
@@ -83,7 +82,6 @@ export default class ProduccionVol extends Component{
 								</div>)
 						 }
 	 					</div>
-						<div className="padding"></div>
 	 				</div>
 	 			</div>
 	 			<div className="fourth-fond min-height-fond" layout="row" layout-align="center center">

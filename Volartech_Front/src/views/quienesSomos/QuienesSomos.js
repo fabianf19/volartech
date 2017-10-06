@@ -109,19 +109,19 @@ export default class QuienesSomos extends Component{
 	 			<div className="segundo-fondo-w-w-a" layout="row" layout-align="center">
 	 				<div className="content-iconos-segundo-fond padding" layout-gt-sm="row" layout="column">
 	 					<div className="centrar-contenido-iconos">
-	 						<div className="icono-estadistica"></div>
+	 						<div className="icono-tecnologia"></div>
 	 						<p className="texto-icono">{this.getText('benefit_1')}</p>
 	 						<div className="div-line-icons"></div>
 	 						<p className="texto-icono-2 opacity5">{this.getText('benefit_text_1')}</p>
 	 					</div>
 	 					<div className="centrar-contenido-iconos">
-	 						<div className="icono-sonido"></div>
+	 						<div className="icono-creatividad"></div>
 	 						<p className="texto-icono">{this.getText('benefit_2')}</p>
 	 						<div className="div-line-icons"></div>
 	 						<p className="texto-icono-2 opacity5">{this.getText('benefit_text_2')}</p>
 	 					</div>
 	 					<div className="centrar-contenido-iconos">
-	 						<div className="icono-video"></div>
+	 						<div className="icono-personalizamos"></div>
 	 						<p className="texto-icono">{this.getText('benefit_3')}</p>
 	 						<div className="div-line-icons"></div>
 	 						<p className="texto-icono-2 opacity5">{this.getText('benefit_text_3')}</p>
@@ -154,7 +154,7 @@ export default class QuienesSomos extends Component{
  						<p className="quote-text aller bold center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum odio eleifend viverra placerat. </p>
 	 				</div>
 	 			</div>
-	 			<div className="quinto-fondo-w-w-a" layout="column" layout-align="start center">
+	 			<div className="quinto-fondo-w-w-a padding-h" layout="column" layout-align="start center">
 	 				<div className="content-text-clientes">
 	 					<p className="texto-clientes">{this.getText('quotes_title')}</p>
 	 				</div>

@@ -1,7 +1,8 @@
 .fondo-contacto{
 	width: 100%;
-	height: 266px;
-	background: url(../../img/fondos/mask-group-77.jpg) no-repeat;
+	/* height: 266px; */
+	background: url(../../img/fondos/mask-group-77.jpg) no-repeat center;
+	background-size: cover;
 }
 .text-contactanos{
 	font-size: 29px;
@@ -40,29 +41,28 @@
 }
 .pickup-servicios{
 	width: 522px;
-	height: 60px;
 	border: 1px solid #FFFFFF;
 	border-radius: 3px;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-
+	transition: all .3s;
 }
 .servicios-pickup{
 	font-size: 19px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
 	margin: 0px;
-	color: #FFFFFF;
+	color: rgba(255, 255, 255, 0.5);
+	transition: all .3s;
+}
+.servicios-pickup.selector{
+	color: rgba(255, 255, 255, 0.5);
+}
+.servicios-pickup:hover{
+	color: rgba(255, 255, 255, 1);
 }
 .icono-pickup{
 	background: url(../../img/icos/path-13527.png) no-repeat;
 	width: 16px;
 	height: 8px;
-	left: 148px;
-    position: relative;
 }
 .content-contactanos{
 	padding-top: 37px;
@@ -303,6 +303,7 @@
 	.pickup-servicios{
 		width: 100%;
 		height: 50px;
+		transition: all .3s;
 	}
 	.icono-pickup{
 		left: 40px;

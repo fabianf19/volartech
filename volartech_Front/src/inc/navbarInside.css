@@ -63,8 +63,8 @@ a.boton-contact-v-inside{
 /*** Estilos Responsive Navbar ***/
 @media(min-width: 320px) and (max-width: 450px){
 	.navbar-volartech-inside{
-	    width: 289px;
-	    display: block;
+	    /* width: 289px; */
+	    /* display: block; */
 	}
 	.logo-navbar-volartech-inside{
 		width: 140px;
@@ -83,7 +83,7 @@ a.boton-contact-v-inside{
 		margin-right: 3px;
 	}
 	.text-navbar-volartech-inside{
-		font-size: 9px;
+		font-size: 12px;
 	}
 	.boton-contact-v-inside{
 		width: 48px;

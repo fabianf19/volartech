@@ -48,8 +48,8 @@ export default class Card extends Component{
 		return (
 			<div className="card_back" onClick={(event) => this.click_event(event)} id="fondo">
 				<div className="card_container">
-					<div className="fondo-contacto">
-						<div>
+					<div className="fondo-contacto padding-v">
+						<div className="relative">
 							<div className="content-contactanos">
 								<p className="text-contactanos">Contáctanos</p>
 							</div>
@@ -57,17 +57,9 @@ export default class Card extends Component{
 							<div className="content-respuesta">
 								<p className="text-te-responderemos">Te responderemos lo más pronto posible.</p>
 							</div>
-							{/* <div className="content-servicio-interes">
-								<p className="servicio-interes">Por cuál servicio estas interesado:</p>
-							</div> */}
-							<div className="contenedor-boton-servicios">
+							<div className="contenedor-boton-servicios margin-v">
 								<div className="dropdown">
 									<button className="dropbtn">{seccion}</button>
-									{/* <div className="dropdown-content">
-										<a href="#">Produccion de video</a>
-										<a href="#">Ingenieria</a>
-										<a href="#">Construccion</a>
-									</div> */}
 								</div>
 							</div>
 						</div>
