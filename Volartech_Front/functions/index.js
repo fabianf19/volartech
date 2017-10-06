@@ -1,7 +1,7 @@
 const functions = require('firebase-functions');
 const cors = require('cors')({origin: true});
 const sgHelper = require('sendgrid').mail;
-const sg = require('sendgrid')('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')
+const sg = require('sendgrid')(functions.config().sendgrid.key)
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions
