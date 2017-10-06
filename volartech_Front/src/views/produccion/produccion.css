@@ -10,7 +10,11 @@
 	width: 100%;
 	/*background-color: #FFFFFF;*/
 	/*background-size: cover;*/
-	background: url(../../img/fondos/rectangle-135.jpg) no-repeat;
+	/* background: url(../../img/fondos/rectangle-135.jpg) no-repeat; */
+	background-image: url(../../img/fondos/dot-background-production.png);
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
 }
 .second-fond{
 	width: 100%;
@@ -34,7 +38,7 @@
 .imagen-dron{
 		width: 100%;
 		padding-bottom: 85%;
-    margin-bottom: -33%;
+    margin-bottom: -30%;
 		/* margin-bottom: -30%; */
     /* width: 743px;
     height: 504px; */
@@ -136,6 +140,12 @@
 	font-weight: 300;
 	margin: 0px;
 	color: #FFFFFF;
+	max-width: 100px;
+	text-align: center;
+	opacity: .5;
+}
+.icon-prod {
+	max-height: 3rem;
 }
 .icono1-prod{
 	 width: 40px;
@@ -666,4 +676,7 @@
 }
 .text-p-p-p-aproduccion {
 	font-size: 15px;
+}
+.min-height-fond {
+	min-height: 550px;
 }

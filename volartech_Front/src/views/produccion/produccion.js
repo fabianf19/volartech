@@ -51,7 +51,7 @@ export default class ProduccionVol extends Component{
 						</div>
 						<div className="conten-textos-dron padding" flex-gt-sm="" layout="column" layout-align="end">
 		 					<div>
-		 						<p className="text-title-produccion">{this.getText('main_title')}</p>
+		 						<p className="text-title-produccion aller-display">{this.getText('main_title')}</p>
 		 					</div>
 		 					<div>
 		 						<p className="sub-title-produccion">{this.getText('main_subtitle')}</p>
@@ -65,42 +65,33 @@ export default class ProduccionVol extends Component{
  						<p className="text-descripcion-produccion padding" flex-gt-sm="50" flex="100">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
-	 			<div className="third-fond" layout="row" layout-align="center">
+	 			<div className="third-fond min-height-fond" layout="row" layout-align="center center">
 	 				<div className="container" layout="column" layout-align="start end">
 						<div className="padding"></div>
 	 					<div className="content-pre-produccion padding" layout="column" layout-align="start end">
 	 						<p className="p-p-p-aproduccion">{this.getText('pre_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-half">{this.getText('pre_text')}</p>
+	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('pre_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
-	 					<div className="conten-iconos-produccion1 padding-half" layout-align="end" layout="row">
-	 						<div className="conten-icono-prod margin-half">
-	 							<div className="icono1-prod"></div>
-	 							<p className="text-icon-prod">Briefing</p>
-	 						</div>
-	 						<div  className="conten-icono-prod margin-half">
-	 							<div className="icono2-prod"></div>
-	 							<p className="text-icon-prod">Guión</p>
-	 						</div>
-	 						<div  className="conten-icono-prod margin-half">
-	 							<div className="icono3-prod"></div>
-	 							<p className="text-icon-prod">Permisos</p>
-	 						</div>
-	 						<div  className="conten-icono-prod margin-half">
-	 							<div className="icono4-prod"></div>
-	 							<p className="text-icon-prod">Cronograma</p>
-	 						</div>
+	 					<div className="conten-iconos-produccion1" layout-align="end" layout="row" layout-wrap="">
+						 {
+							 _(this.state.data.pre_icons).map((icon, index) =>
+							 	<div key={index} className="conten-icono-prod margin-v-half margin-h">
+									<img className="icon-prod margin-v-half" src={this.state.data.pre_icons[index].icon.url} alt="" />
+									<p className="text-icon-prod">{PrismicDOM.RichText.asText(this.state.data.pre_icons[index].text)}</p>
+								</div>)
+						 }
 	 					</div>
 						<div className="padding"></div>
 	 				</div>
 	 			</div>
-	 			<div className="fourth-fond" layout="row" layout-align="center">
+	 			<div className="fourth-fond min-height-fond" layout="row" layout-align="center center">
 	 				<div className="container padding-v" layout="column" layout-align="start start">
 					 	<div className="padding"></div>
 						<div className="content-produccion padding">
 	 						<p className="p-p-p-aproduccion">{this.getText('produccion_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-half">{this.getText('producction_text')}</p>
+	 						<p className="text-p-p-p-aproduccion container-half opacity5">{this.getText('producction_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -125,12 +116,12 @@ export default class ProduccionVol extends Component{
 						 <div className="padding"></div>
 	 				</div>
 	 			</div>
-	 			<div className="fifth-fond" layout="row" layout-align="center">
+	 			<div className="fifth-fond min-height-fond" layout="row" layout-align="center center">
 					<div className="container" layout="column" layout-align="start end">
 						<div className="padding"></div>
 	 					<div className="content-post-produccion padding " layout="column" layout-align="start end">
 	 						<p className="p-p-p-aproduccion">{this.getText('post_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-half">{this.getText('post_text')}</p>
+	 						<p className="text-p-p-p-aproduccion container-half opacity5">{this.getText('post_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -155,16 +146,16 @@ export default class ProduccionVol extends Component{
 						 <div className="padding"></div>
 	 				</div>
 	 			</div>
-	 			<div className="sixth-fond" layout="row" layout-align="center">
+	 			<div className="sixth-fond min-height-fond" layout="row" layout-align="center center">
 				 	<div className="container" layout="column" layout-align="start start">
 					 	<div className="padding"></div>
 	 					<div className="content-animacion padding">
 	 						<p className="p-p-p-aproduccion">{this.getText('animacion_title')}</p>
-	 						<p className="text-p-p-p-aproduccion">{this.getText('animacion_text')}</p>
+	 						<p className="text-p-p-p-aproduccion opacity5">{this.getText('animacion_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
-	 					<div className="conten-iconos-produccion4 padding-half" layout="row" layout-wrap="">
+	 					<div className="conten-iconos-produccion4" layout="row" layout-wrap="">
 	 						<div  className="conten-icono-prod">
 	 							<div className="icono13-prod padding-half"></div>
 	 							<p className="text-icon-prod">Presentación Interactiva</p>
@@ -177,12 +168,12 @@ export default class ProduccionVol extends Component{
 						 <div className="padding"></div>
 	 				</div>
 	 			</div>
-	 			<div className="ultimo-fondo-produccion" layout="column" layout-align="start stretch">
+	 			<div className="ultimo-fondo-produccion min-height-fond" layout="column" layout-align="start stretch">
 	 				<div className="content-text-nuestrotrabajo" layout="row" layout-align="center">
 	 					<p className="text-nuestro-trabajo">{this.getText('portafolio_title')}</p>
 	 				</div>
 	 				<div className="content-text-muestras-trabajo" layout="row" layout-align="center">
-	 					<p className="text-muestras-trabajo">{this.getText('portafolio_text')}</p>
+	 					<p className="text-muestras-trabajo opacity5">{this.getText('portafolio_text')}</p>
 					</div>
 	 				<div className="content-videos-product" layout="row" layout-align="center">
 						 <div className="container padding-quarter" layout="row" layout-align="center" layout-wrap="">{
@@ -197,7 +188,7 @@ export default class ProduccionVol extends Component{
 						<div className="container margin-v padding-v" layout-gt-sm="row">
 							<div className="content-info-interes-prod padding" flex-gt-sm="">
 								<p className="text-te-interesa-prod">{this.getText('contacto_title')}</p>
-								<p className="text-text-interes-prod">{this.getText('contacto_text')}</p>
+								<p className="text-text-interes-prod opacity5">{this.getText('contacto_text')}</p>
 							</div>
 							<div className="padding">
 								<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>

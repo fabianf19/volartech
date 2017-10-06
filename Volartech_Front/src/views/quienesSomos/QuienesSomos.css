@@ -9,6 +9,7 @@
 	/* height: 384px; */
 	background: url(../../img/fondos/img-first-quienes-somos.png) no-repeat;
 	background-size: cover;
+	min-height: 30rem;
 }
 .text-title-who-we-are{
 	font-size: 46px;
@@ -17,8 +18,6 @@
 	margin: 0px;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	padding-top: 50px;
-	margin-bottom: 48px;
 }
 .quienes-somos-div-text{
 	width: 50px;
@@ -60,6 +59,7 @@
 }
 .cuarto-fondo-w-w-a{
 	width: 100%;
+	min-height: 30rem;
 	/* height: 373px; */
 	background: url(../../img/fondos/cuarto-fondo-w-w-a.png) no-repeat;
 	background-size: cover;
@@ -75,7 +75,6 @@
 .content-div-line{
     max-width: 1200px;
     margin: 0px auto;
-    margin-bottom: 39px;
 }
 .icono-estadistica{
 	width: 65px;
@@ -208,7 +207,7 @@
 	width: 83px;
 	/* height: 101px; */
 	background: url(../../img/icos/comillas.png) no-repeat;
-	background-size: cover;
+	background-size: contain;
 	margin-right: 59px;
 }
 .div-clientes{
@@ -247,14 +246,10 @@
 .content-comentario-cliente{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 139px;
 }
 .content-puntos-comentarios{
 	display: flex;
-	width: 165px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 138px;
+    margin-bottom: 7rem;
 }
 .punto-comentario{
 	width: 8px;
@@ -427,7 +422,6 @@
 	}
 	.content-div-line{
 		width: 290px;
-		margin-bottom: 20px;
 	}
 	.content-descripcion-w-w-a{
 		width: 290px;
@@ -605,4 +599,12 @@
 	.quinto-fondo-w-w-a{
 		/* height: 1070px; */
 	}
+}
+.black-background {
+	background: #000;
+}
+.quote-text {
+	color: #fff;
+	font-size: 46px;
+	margin: 2rem 0;
 }
