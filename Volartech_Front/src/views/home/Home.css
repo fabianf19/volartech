@@ -23,8 +23,14 @@
     position: relative;
     background: url(../../img/icos/logo-volartech.png) no-repeat;
     background-size: cover;
-    margin-right: auto;
+	margin-right: auto;
+	transform: scale(1.5);
     /*margin-left: auto;*/
+}
+@media(max-width: 600px) {
+	.logo-navbar-volartech{
+		transform: scale(1.125);
+	}
 }
 .text-navbar-volartech{
 	font-size: 16px;
@@ -99,7 +105,7 @@
 }
 .content-textos-play{
 	width: 100%;
-	margin-top: -2rem;
+	/* margin-top: -2rem; */
 }
 .background-inicio-imagen{
 	/*width: 100%;
@@ -145,7 +151,7 @@
 	margin: 0px;
 	color: #FFFFFF;
 	margin-bottom: 42px;
-	width: 557px;
+	/* width: 557px; */
 }
 .volartech-sub-title2-prod{
 	font-size: 27px;
@@ -200,7 +206,7 @@ a {
 	margin: 0px;
 	color: #FFFFFF;
 	margin-bottom: 42px;
-	width: 580px;
+	/* width: 580px; */
 }
 .background-inicio-page-ing{
 	width: 100%;
@@ -293,14 +299,14 @@ a {
 	    line-height: 43px;
 	}
 	.volartech-title{
-		font-size: 40.5px;
+		font-size: 30px;
 	}
 	.volartech-sub-title1{
-		font-size: 40.5px;
+		font-size: 30px;
 	}
 	.volartech-sub-title2{
 		font-size: 18px;
-		margin-bottom: 65px;
+		/* margin-bottom: 65px; */
 	}
 	.content-play{
 		display: block;
@@ -339,7 +345,7 @@ a {
 	}
 	.volartech-description-prod{
 		font-size: 13px;
-		width: 289px;
+		/* width: 289px; */
 	    margin-bottom: 24px;
 	}
 	.boton-product-page{
@@ -354,7 +360,7 @@ a {
 	    margin-right: auto;
 	}
 	.volartech-title-construccion{
-		font-size: 40.5px;
+		font-size: 30px;
 	}
 	.volartech-sub-title2-const{
 		font-size: 21px;
@@ -396,6 +402,18 @@ a {
 }
 .pointer {
   cursor: pointer;
+}
+@media(max-width: 600px) {
+	.contenedor-textos-navb {
+		opacity: .75;
+		margin-right: 8px;
+	}
+	.contenedor-textos-navb * {
+		font-size: 12px;
+	}
+	.navbar-volartech{
+		padding-top: 20px;
+	}
 }
 /*** Estilos responsive ipad ***/
 @media(min-width: 700px) and (max-width: 1200px){

@@ -45,12 +45,12 @@ export default class Home extends Component{
 	render(){
 
 		let secciones = [
-			<div className="contentedor-texto-perspectiva">
+			<div className="contentedor-texto-perspectiva" layout-xs="column" layout-align-xs="center centetr">
 				<div className="container-half">
 					<p className="volartech-title aller-display">
 						{this.getText('main_title')}
 					</p>
-					<p className="volartech-sub-title2">{this.getText('main_subtitle')}</p>
+					<p className="volartech-sub-title2 container-half">{this.getText('main_subtitle')}</p>
 				</div>
 				<div className="content-play pointer">
 					<a onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('video_url')})}>
@@ -65,9 +65,9 @@ export default class Home extends Component{
 			<div className="container">
 				<p className="volartech-title aller-display">{this.getText('video_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('video_subtitle')}</p>
-				<p className="volartech-description-prod opacity75">{this.getText('video_text')}</p>
+				<p className="volartech-description-prod container-half opacity75">{this.getText('video_text')}</p>
 				<div className="content-play">
-					<a href="/produccion" target="_blank">
+					<a href="/produccion" >
 						<div className="boton-product-page"> 
 							<p className="text-ver-mas">Ver más</p>
 						</div>
@@ -78,9 +78,9 @@ export default class Home extends Component{
 			<div className="container">
 				<p className="volartech-title-construccion aller-display">{this.getText('construction_title')}</p>
 				<p className="volartech-sub-title2-const">{this.getText('construction_subtitle')}</p>
-				<p className="volartech-description-ing opacity75">{this.getText('construction_text')}</p>
+				<p className="volartech-description-ing container-half opacity75">{this.getText('construction_text')}</p>
 			<div className="content-play">
-					<a href="/construccion" target="_blank">
+					<a href="/construccion" >
 						<div className="boton-construccion-page"> 
 							<p className="text-ver-mas">Ver más</p>
 						</div>
@@ -92,9 +92,9 @@ export default class Home extends Component{
 			<div className="container">
 				<p className="volartech-title aller-display">{this.getText('engineering_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('engineering_subtitle')}</p>
-				<p className="volartech-description-ing opacity75">{this.getText('engineering_text')}</p>
+				<p className="volartech-description-ing container-half opacity75">{this.getText('engineering_text')}</p>
 				<div className="content-play">
-					<a href="/ingenieria" target="_blank">
+					<a href="/ingenieria" >
 						<div className="boton-ingenieria-page"> 
 							<p className="text-ver-mas">Ver más</p>
 						</div>
@@ -112,7 +112,7 @@ export default class Home extends Component{
 				<Dialog style={{top: '2rem', width: '80vw'}} open={!!this.state.videoEmbed} onCancel={() => this.setState({...this.state, videoEmbed: null})}>
 					
 						<div layout="row" layout-align="end" className="padding pointer" style={{marginTop: '-1rem'}}>
-							<div onClick={() => this.setState({...this.state, videoEmbed: null})}>Cerrar</div>
+							<div onClick={() => this.setState({...this.state, videoEmbed: null})}><img className="icon" src={require('../../img/icos/close.png')} alt="" /></div>
 						</div>
 						<div style={{minWidth: 'calc(80vw -68px)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
 					
@@ -122,8 +122,10 @@ export default class Home extends Component{
 			 		<div className="background-inicio-imagen absolute-fill" layout="column">
 			 			<div className="contenedor-navbar">
 				 			<div className="navbar-volartech padding-h" layout="row" layout-xs="column" layout-align-xs="start stretch">
-								<div className="logo-navbar-volartech"></div>
-								<div flex=""></div>
+								<div layout="row" layout-align="center">
+									<div className="logo-navbar-volartech"></div>
+								</div>
+								<div flex="" className="padding-half"></div>
 								<div className="md-content" layout="row"></div>
 									<div className="content-selector-sections-home">
 										<a href="/quienes">
@@ -146,20 +148,21 @@ export default class Home extends Component{
 												<p className="text-navbar-volartech">Ingenieria</p>
 											</div>
 										</a>
-										{/* <a href="/contacto">
-											<div className="boton-contact-v">
+										<a href="/contacto" hide-xs="">
+											<div className="boton-contact-v padding-v-quarter padding-h">
 												<p className="text-navbar-volartech">Contacto</p>
 											</div>
-										</a> */}
+										</a>
 									</div>
 				 			</div>
 			 			</div>
-			 			<div className="content-textos-play padding" flex="" layout="row" layout-align="center">
-			 				<div className="contenedor-contenidos-home container" layout="row">
-								<div className="padding" flex="">
+						<div className="padding" hide-gt-xs=""></div>
+			 			<div className="content-textos-play padding-v" flex="" layout="row" layout-align="center">
+			 				<div className="contenedor-contenidos-home container" layout="row" layout-xs="column">
+								<div className="padding" flex-gt-xs="">
 									{secciones[this.state.selected]}
 								</div>
-				 				<div className="contenedor-circulos">
+				 				<div className="contenedor-circulos padding-half">
 				 					<div className={(this.state.selected === 0) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 0})}></div>
 				 					<div className={(this.state.selected === 1) ? "circulo-cambio active2" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 1})}></div>
 				 					<div className={(this.state.selected === 2) ? "circulo-cambio active3" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 2})}></div>

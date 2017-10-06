@@ -7,8 +7,9 @@
 .fondo-who-we-are{
 	width: 100%;
 	/* height: 384px; */
-	background: url(../../img/fondos/img-first-quienes-somos.png) no-repeat;
+	background: url(../../img/fondos/quienes-main.png) no-repeat;
 	background-size: cover;
+	min-height: 30rem;
 }
 .text-title-who-we-are{
 	font-size: 46px;
@@ -17,8 +18,6 @@
 	margin: 0px;
 	color: #FFFFFF;
 	text-transform: uppercase;
-	padding-top: 50px;
-	margin-bottom: 48px;
 }
 .quienes-somos-div-text{
 	width: 50px;
@@ -54,14 +53,25 @@
 	/* margin-left: auto; */
 	/*margin-right: auto;*/
 }
+.ideals-text {
+	width: 100%;
+	max-width: 620px !important;
+}
+.quienes-contact {
+	background: url(../../img/fondos/about-contact-texture.png) no-repeat;
+	background-size: cover;
+	border-top: 1px solid rgba(149, 152, 154, 0.15);
+	min-height: 14rem;
+}
 .contenedor-texto-imagen-tercero{
 	display: flex;
 	max-width: 1200px;
 }
 .cuarto-fondo-w-w-a{
 	width: 100%;
+	min-height: 30rem;
 	/* height: 373px; */
-	background: url(../../img/fondos/cuarto-fondo-w-w-a.png) no-repeat;
+	background: url(../../img/fondos/quienes-ideales.png) no-repeat;
 	background-size: cover;
 }
 .content-descripcion-w-w-a{
@@ -75,24 +85,26 @@
 .content-div-line{
     max-width: 1200px;
     margin: 0px auto;
-    margin-bottom: 39px;
 }
-.icono-estadistica{
+.icono-creatividad{
 	width: 65px;
 	height: 65px;
-	background: url(../../img/icos/estadistica.png) no-repeat;
+	background: url(../../img/icos/quienes_creatividad.png) no-repeat center;
+	background-size: contain;
 	margin-bottom: 19px;
 }
-.icono-sonido{
+.icono-tecnologia{
 	width: 65px;
 	height: 65px;
-	background: url(../../img/icos/sonido.png) no-repeat;
+	background: url(../../img/icos/quienes_tecnologia.png) no-repeat center;
+	background-size: contain;
 	margin-bottom: 19px;
 }
-.icono-video{
+.icono-personalizamos{
 	width: 65px;
 	height: 65px;
-	background: url(../../img/icos/video.png) no-repeat;
+	background: url(../../img/icos/quienes_personalizamos.png) no-repeat center;
+	background-size: contain;
 	margin-bottom: 19px;
 }
 .content-iconos-segundo-fond{
@@ -162,6 +174,12 @@
 .contenedor-texto-third{
 	margin-top: 99px;
 }
+.icon-wrapper {
+	margin-top: -15px;
+}
+.icon-wrapper img {
+	height: 15px;
+}
 .div-text-line-fourth{
 	width: 50px;
 	height: 1px;
@@ -179,7 +197,7 @@
 	margin-bottom: 37px;
 }
 .text-descripcion-cuarto{
-	font-size: 14.5px;
+	font-size: 17px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
 	margin: 0px;
@@ -205,11 +223,11 @@
 	margin-top: 64px;
 }
 .quienes-nosotros-comillas{
-	width: 83px;
+	width: 100px;
 	/* height: 101px; */
 	background: url(../../img/icos/comillas.png) no-repeat;
-	background-size: cover;
-	margin-right: 59px;
+	background-size: contain;
+	margin-right: 20px;
 }
 .div-clientes{
 	width: 50px;
@@ -247,14 +265,10 @@
 .content-comentario-cliente{
 	display: flex;
 	justify-content: center;
-	margin-bottom: 139px;
 }
 .content-puntos-comentarios{
 	display: flex;
-	width: 165px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 138px;
+    /* margin-bottom: 7rem; */
 }
 .punto-comentario{
 	width: 8px;
@@ -311,6 +325,11 @@
     margin-bottom: 18px;
     cursor: pointer;
 }
+@media(max-width: 600px) {
+	.boton-contacto{
+		width: 100%;
+	}
+}
 .text-boton-contacto{
 	font-size: 16px;
 	font-family: 'Fira Sans', sans-serif;
@@ -326,10 +345,10 @@
 	display: flex;
 }
 .boton-mail{
-	background-color: transparent;
+	background-color: #fff;;
 	border: 1px solid #000000;
 	border-radius: 4px;
-	width: 190px;
+	/* width: 190px; */
 	height: 53px;
 	margin-right: 17px;
 	align-items: center;
@@ -353,10 +372,10 @@
 	color: #B1B1B1;
 }
 .boton-llamar{
-	background-color: transparent;
+	background-color: #fff;
 	border: 1px solid #000000;
 	border-radius: 4px;
-	width: 190px;
+	/* width: 190px; */
 	height: 53px;
 	align-items: center;
     display: flex;
@@ -408,8 +427,8 @@
 		width: 290px;
 	    margin-left: auto;
 	    margin-right: auto;
-	    margin-top: 0px;
-	    margin-bottom: 20px;
+	    margin-top: 15px;
+	    margin-bottom: 15px;
 	}
 	.otro-margen-left{
 		/*margin-left: 0px;*/
@@ -427,7 +446,6 @@
 	}
 	.content-div-line{
 		width: 290px;
-		margin-bottom: 20px;
 	}
 	.content-descripcion-w-w-a{
 		width: 290px;
@@ -465,7 +483,7 @@
     	background-size: contain;
 	}
 	.segundo-fondo-w-w-a{
-		height: 565px;
+		/* height: 565px; */
 	}
 	.contenedor-texto-imagen-tercero{
 		display: block;
@@ -605,5 +623,21 @@
 	}
 	.quinto-fondo-w-w-a{
 		/* height: 1070px; */
+	}
+}
+.black-background {
+	background: #000;
+	background: url(../../img/fondos/quienes-frase.png) no-repeat center;
+	background-size: cover;
+	min-height: 18rem;
+}
+.quote-text {
+	color: #fff;
+	font-size: 46px;
+	margin: 2rem 0;
+}
+@media (max-width: 600px) {
+	.quote-text {
+		font-size: 16px;
 	}
 }

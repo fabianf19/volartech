@@ -5,8 +5,12 @@
 }
 .first-fond-ingenieria{
 	width: 100%;
-	height: 272px;
+	/* height: 272px; */
 	background-color: #FFFFFF;
+	background-image: url(../../img/fondos/dot-background-production.png);
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
 	/*background-size: cover;*/
 }
 .content-text-dron-ing{
@@ -32,21 +36,27 @@
 }
 .imagen-dron-ing{
 	/* width: 620px; */
-	width: 100%;
-	padding-bottom: 80%;
+	/* width: 100%;
+	padding-bottom: 80%; */
 	background: url(../../img/icos/dron-ing.png) no-repeat center;
 	position: relative;
 	background-size: cover;
+	margin-bottom: -10rem;
+}
+@media (max-width: 600px) {
+	.imagen-dron-ing{
+		margin-bottom: 0rem;
+	}
 }
 .second-fond-ingenieria{
 	width: 100%;
-	height: 200px;
+	/* height: 200px; */
 	background-color: #EDA532;
 }
 .third-fond-ingenieria{
 	width: 100%;
-	height: 474px;
-	background: url(../../img/fondos/tercer-fondo-ing.png) no-repeat;
+	/* height: 474px; */
+	/* background: url(../../img/fondos/tercer-fondo-ing.png) no-repeat; */
 	background-color: #0F0F0F;
 	background-size: cover;
 }
@@ -58,27 +68,24 @@
 }
 .fifth-fond-ingenieria{
 	width: 100%;
-	height: 430px;
-	background: url(../../img/fondos/quinto-fondo-ing.png) no-repeat;
+	/* height: 430px; */
+	/* background: url(../../img/fondos/quinto-fondo-ing.png) no-repeat; */
 	background-size: cover;
 	background-color: #0F0F0F;
 }
 .img-droncito{
-    width: 569px;
-		height: 348px;
 	/* width: 100%;
 	padding-bottom: 60%;
 	margin-top: 25%; */
-	background: url(../../img/icos/imagen-dron.png) no-repeat center;
-	position: relative;
-    background-size: cover;
+	background: url(../../img/fondos/lidar-img.png) no-repeat center;
+	background-size: cover;
 }
 .content-text-dron-ingenieria{
 	display: flex;
 	max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 62px;
+    /* padding-top: 62px; */
 }
 .division-primeros-textos-ing{
 	width: 50px;
@@ -112,8 +119,6 @@
 	color: #FFFFFF;
 }
 .img-droncito-2{
-	width: 679px;
-    height: 356px;
 	background: url(../../img/icos/droncito-dos.png) no-repeat;
 	position: relative;
     background-size: contain;
@@ -154,25 +159,24 @@
 }
 .fourth-fond-ingenieria .content-text-dron-ingenieria{
 	max-width: 1200px;
-	padding-top: 159px;
+	/* padding-top: 159px; */
 }
 .fifth-fond-ingenieria .division-primeros-textos-ing{
 	margin-left: auto;
 	margin-bottom: 35px;
 }
 .third-fond-ingenieria .contenedor-title-ingenieria{
-	margin-top: 76px;
-	margin-bottom: 33px;
+	/* margin-top: 76px;
+	margin-bottom: 33px; */
 }
 .fourth-fond-ingenieria .division-primeros-textos-ing{
 	margin-bottom: 25px;
 }
 .fifth-fond-ingenieria .content-text-dron-ingenieria{
-	padding-top: 74px;
+	/* padding-top: 74px; */
 }
 .fifth-fond-ingenieria .contenedor-title-ingenieria{
-	margin-top: 99px;
-	margin-bottom: 32px;
+	margin: 2rem 0;
 }
 .background-ing-white{
 	width: 100%;
@@ -220,10 +224,8 @@
 	margin-right: auto;
 }*/
 .img-1{
-	width: 363px;
-    height: 300px;
 	background: url(../../img/fondos/fondo-carro.png) no-repeat;
-	margin-right: 26px;
+	/* margin-right: 26px; */
 	background-size: contain;
 }
 .img-2{
@@ -248,8 +250,10 @@
 	color: #D1D1D1;
 }
 .contenedor-interes-boton-contacto-ing{
-	display: flex;
-	justify-content: center;
+	background: url(../../img/fondos/ingenieria_contact.png) no-repeat;
+	background-size: cover;
+	border-top: 1px solid rgba(149, 152, 154, 0.15);
+	min-height: 14rem;
 }
 .content-info-interes-ing{
 	/* width: 646px; */
@@ -270,7 +274,7 @@
 	color: #95989A;
 }
 .boton-cotizacion-ing{
-	/* width: 401px; */
+	width: 401px;
 	height: 46px;
 	background-color: #EDA532;
 	border-radius: 4px;
@@ -291,10 +295,10 @@
 	display: flex;
 }
 .boton-mail-ing{
-	background-color: transparent;
+	background-color: #fff;
 	border: 1px solid #000000;
 	border-radius: 4px;
-	width: 190px;
+	/* width: 190px; */
 	height: 53px;
 	margin-right: 17px;
 	align-items: center;
@@ -318,10 +322,10 @@
 	color: #B1B1B1;
 }
 .boton-llamar-ing{
-	background-color: transparent;
+	background-color: #fff;
 	border: 1px solid #000000;
 	border-radius: 4px;
-	width: 190px;
+	/* width: 190px; */
 	height: 53px;
 	align-items: center;
     display: flex;
@@ -362,22 +366,28 @@
 	margin-right: auto;
 	margin-bottom: 119px;
 }
+@media(max-width: 600px) {
+	.size-responsive-content.container-third {
+		max-width: none;
+		width: auto;
+	}
+}
 /*** Estilos Responsive ingenieria ***/
-@media(min-width: 320px) and (max-width: 450px){
+@media(min-width: 20px) and (max-width: 100px){
 	.background-ingenieria{
 		overflow-x: hidden;
 	}
 	.first-fond-ingenieria{
-	    height: 446px;
+	    /* height: 446px; */
     	margin-left: auto;
     	margin-right: auto;
 	}
 	.content-text-dron-ing{
-	    width: 320px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    display: block;
-	    /*height: 100%;*/
+	    /* width: 320px; */
+	    /* display: block; */
+			/*height: 100%;*/
+			display: flex;
+			max-width: 1200px;
 	}
 	.content-texto-up{
 	    width: 289px;
@@ -399,7 +409,7 @@
 	    margin-right: auto;
 	}
 	.second-fond-ingenieria{
-		height: 232px;
+		/* height: 232px; */
 	}
 	.content-text-descripcion{
 		width: 100%;
@@ -409,17 +419,17 @@
 		display: block;
 	}
 	.img-droncito{
-	    width: 320px;
-    	height: 188px;
-    	left: 0px;
+	    /* width: 320px;
+    	height: 188px; */
+    	/* left: 0px;
     	background-position-x: initial;
     	margin-left: auto;
-    	margin-right: auto; 
+    	margin-right: auto;  */
 	}
 	.contenedor-title-ingenieria{
-		width: 290px;
-	    margin-left: auto;
-	    margin-right: auto;
+		/* width: 290px; */
+	    /* margin-left: auto;
+	    margin-right: auto; */
 	}
 	.text-title-ingenieria{
 		font-size: 26px;
@@ -429,9 +439,9 @@
 		margin-bottom: 13px;
 	}
 	.size-responsive-content{
-		width: 290px;
-	    margin-left: auto;
-	    margin-right: auto;
+		/* width: 290px; */
+	    /* margin-left: auto;
+	    margin-right: auto; */
 	}
 	.division-primeros-textos-ing{
 		width: 40px;
@@ -471,20 +481,20 @@
 		width: initial;
 	}
 	.img-droncito-2{
-	    width: 330px;
+	    /* width: 330px;
     	height: 126px;
 	    margin-left: auto;
-    	margin-right: auto;
+    	margin-right: auto; */
 	}
 	.fifth-fond-ingenieria .contenedor-title-ingenieria{
-		margin-top: 38px;
-    	margin-bottom: 13px;
+		/* margin-top: 38px;
+    	margin-bottom: 13px; */
 	}
 	.fifth-fond-ingenieria .division-primeros-textos-ing{
 		margin-bottom: 17px;
 	}
 	.fifth-fond-ingenieria{
-		height: 450px;
+		/* height: 450px; */
 	}
 	.content-text-nuestrotrabajo-ing{
 		margin-top: 0px;
@@ -544,10 +554,11 @@
 		font-size: 15px;
 	}
 	.contenedor-interes-boton-contacto-ing{
-		width: 290px;
-		display: block;
-	    margin-left: auto;
-    	margin-right: auto;
+		background: url(../../img/fondos/ingenieria_contact.png) no-repeat;
+		background-size: cover;
+		border-top: 1px solid rgba(149, 152, 154, 0.15);
+		min-height: 14rem;
+		
 	}
 	.content-info-interes-ing{
 		width: 290px;
@@ -575,7 +586,7 @@
 		height: 40px;
 	}
 	.background-ing-white{
-		height: 1345px;
+		/* height: 1345px; */
 	}
 	.text-title-ing{
 		font-size: 40px;

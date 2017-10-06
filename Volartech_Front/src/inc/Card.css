@@ -33,7 +33,6 @@
     padding: 16px;
     font-size: 16px;
     border: none;
-    cursor: pointer;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
     width: 100%;
@@ -86,7 +85,7 @@
     margin-right: auto;
 }
 .card_back .input-2{
-    height: 70px;
+    height: 40px;
 }
 .card_back .input-1{
     padding-top: 7px;
@@ -107,5 +106,5 @@
 }
 .card_back .fondo-blanco-contacto{
     overflow-y: scroll;
-    height: 400px;
+    height: 420px;
 }
