@@ -85,7 +85,7 @@
     margin-right: auto;
 }
 .card_back .input-2{
-    height: 70px;
+    height: 40px;
 }
 .card_back .input-1{
     padding-top: 7px;
@@ -106,5 +106,5 @@
 }
 .card_back .fondo-blanco-contacto{
     overflow-y: scroll;
-    height: 400px;
+    height: 420px;
 }

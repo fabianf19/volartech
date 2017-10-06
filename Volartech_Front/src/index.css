@@ -18901,7 +18901,7 @@
   padding-bottom: 56.25%;
 }
 
-.ratio-16-9 {
+.ratio-9-16 {
   padding-bottom: 177.778%;
 }
 
@@ -18983,4 +18983,9 @@
 
 .opacity85 {
   opacity: .85;
+}
+.md-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(149, 152, 154, 0.15);
 }

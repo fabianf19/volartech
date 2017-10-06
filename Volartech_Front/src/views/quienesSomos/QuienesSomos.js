@@ -90,7 +90,7 @@ export default class QuienesSomos extends Component{
 
 		return (
 			<div className="background-who-we-are">
-	 			<NavbarVolartech />
+	 			<NavbarVolartech current={0} />
 	 			<div className="fondo-who-we-are" layout="row" layout-align="center center">
 					<div className="container padding" layout="column" layout-align="start start">
 						<div className="content-quienes-somos-info">
@@ -106,21 +106,24 @@ export default class QuienesSomos extends Component{
 						</div>
 					</div>
 	 			</div>
+				<div className="icon-wrapper" layout="row" layout-align="center">
+					<img src={require('../../img/icos/triangle_up_black.png')} alt="" />
+				</div>
 	 			<div className="segundo-fondo-w-w-a" layout="row" layout-align="center">
 	 				<div className="content-iconos-segundo-fond padding" layout-gt-sm="row" layout="column">
-	 					<div className="centrar-contenido-iconos">
+	 					<div className="centrar-contenido-iconos" layout="column">
 	 						<div className="icono-tecnologia"></div>
 	 						<p className="texto-icono">{this.getText('benefit_1')}</p>
 	 						<div className="div-line-icons"></div>
 	 						<p className="texto-icono-2 opacity5">{this.getText('benefit_text_1')}</p>
 	 					</div>
-	 					<div className="centrar-contenido-iconos">
+	 					<div className="centrar-contenido-iconos" layout="column">
 	 						<div className="icono-creatividad"></div>
 	 						<p className="texto-icono">{this.getText('benefit_2')}</p>
 	 						<div className="div-line-icons"></div>
 	 						<p className="texto-icono-2 opacity5">{this.getText('benefit_text_2')}</p>
 	 					</div>
-	 					<div className="centrar-contenido-iconos">
+	 					<div className="centrar-contenido-iconos" layout="column">
 	 						<div className="icono-personalizamos"></div>
 	 						<p className="texto-icono">{this.getText('benefit_3')}</p>
 	 						<div className="div-line-icons"></div>
@@ -146,7 +149,7 @@ export default class QuienesSomos extends Component{
 	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start end">
  						<p className="text-ideales aller bold">{this.getText('ideals_title')}</p>
 	 					<div className="div-text-line-fourth"></div>
-	 					<p className="text-descripcion-cuarto container-half opacity5">{this.getText('ideals_text')}</p>
+	 					<p className="text-descripcion-cuarto ideals-text opacity5">{this.getText('ideals_text')}</p>
 	 				</div>
 	 			</div>
 				<div className="black-background" layout="row" layout-align="center center">
@@ -154,6 +157,9 @@ export default class QuienesSomos extends Component{
  						<p className="quote-text aller bold center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum odio eleifend viverra placerat. </p>
 	 				</div>
 	 			</div>
+				<div className="icon-wrapper" layout="row" layout-align="center">
+					<img src={require('../../img/icos/triangle_up_white.png')} alt="" />
+				</div>
 	 			<div className="quinto-fondo-w-w-a padding-h" layout="column" layout-align="start center">
 	 				<div className="content-text-clientes">
 	 					<p className="texto-clientes">{this.getText('quotes_title')}</p>
@@ -168,7 +174,7 @@ export default class QuienesSomos extends Component{
 							<div key={index} className={(this.state.selected === index) ? "punto-comentario active" : "punto-comentario"} onClick={() => this.change_selected(index)}></div>
 							)}
 	 				</div>
-
+					<div className="md-divider margin-v-double"></div>
 					<div className="content-nuestro-equipo">
 					 	<p className="texto-equipo-accion">{this.getText('images_title')}</p>
 	 				</div>
@@ -179,9 +185,9 @@ export default class QuienesSomos extends Component{
 									
 	 				</div>
 				</div>
-				<div layout="row" layout-align="center">
-					<div className="contenedor-interes-boton-contacto margin padding container" layout="column" layout-gt-sm="row">
-						<div className="content-info-interes" flex="">
+				<div layout="row" layout-align="center center" className="quienes-contact">
+					<div className="contenedor-interes-boton-contacto margin-v padding container" layout="column" layout-gt-sm="row" layout-align-gt-sm="center center">
+						<div className="content-info-interes padding-v" flex="">
 							<p className="text-te-interesa">{this.getText('contact_title')}</p>
 							<p className="text-text-interes container-half opacity5">{this.getText('contact_text')}</p>
 						</div>
@@ -195,13 +201,13 @@ export default class QuienesSomos extends Component{
 								<a flex="" href={'mailto: ' + this.getItem('contact_email')}>
 									<div className="boton-mail">
 										<p className="text-mail-boton">Mail</p>
-										<p className="text-mail-mail">{this.getItem('contact_email')}</p>
+										<p className="text-mail-mail" hide-xs="">{this.getItem('contact_email')}</p>
 									</div>
 								</a>
 								<a flex="" href="tel:+573173721618">
 									<div className="boton-llamar">
 										<p className="text-llamar-boton">Llamar</p>
-										<p className="text-llamar-llamar">+57 (313) 868 9045</p>
+										<p className="text-llamar-llamar" hide-xs="">+57 (313) 868 9045</p>
 									</div>
 								</a>
 							</div>
@@ -210,7 +216,7 @@ export default class QuienesSomos extends Component{
 				</div>
 	 			<div className="linea-larga-quienes-somos"></div>
 	 			<Footer />
-	 			<Card ref={(card) => this.card = card} seccion={"Construccion"}/>
+	 			<Card ref={(card) => this.card = card} seccion={"General"}/>
 	 		</div>
 		)
 	}

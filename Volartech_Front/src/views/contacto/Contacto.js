@@ -79,6 +79,7 @@ export default class Contacto extends Component{
 				</div>
 				<div className="fondo-blanco-contacto">
 					<div className="content-info-contacto">
+						<div className="padding"></div>
 						<div>
 							<p className="text-tu-informacion">Tu información:</p>
 						</div>

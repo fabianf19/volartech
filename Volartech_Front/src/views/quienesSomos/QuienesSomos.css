@@ -53,6 +53,16 @@
 	/* margin-left: auto; */
 	/*margin-right: auto;*/
 }
+.ideals-text {
+	width: 100%;
+	max-width: 620px !important;
+}
+.quienes-contact {
+	background: url(../../img/fondos/about-contact-texture.png) no-repeat;
+	background-size: cover;
+	border-top: 1px solid rgba(149, 152, 154, 0.15);
+	min-height: 14rem;
+}
 .contenedor-texto-imagen-tercero{
 	display: flex;
 	max-width: 1200px;
@@ -164,6 +174,12 @@
 .contenedor-texto-third{
 	margin-top: 99px;
 }
+.icon-wrapper {
+	margin-top: -15px;
+}
+.icon-wrapper img {
+	height: 15px;
+}
 .div-text-line-fourth{
 	width: 50px;
 	height: 1px;
@@ -207,11 +223,11 @@
 	margin-top: 64px;
 }
 .quienes-nosotros-comillas{
-	width: 83px;
+	width: 100px;
 	/* height: 101px; */
 	background: url(../../img/icos/comillas.png) no-repeat;
 	background-size: contain;
-	margin-right: 59px;
+	margin-right: 20px;
 }
 .div-clientes{
 	width: 50px;
@@ -252,7 +268,7 @@
 }
 .content-puntos-comentarios{
 	display: flex;
-    margin-bottom: 7rem;
+    /* margin-bottom: 7rem; */
 }
 .punto-comentario{
 	width: 8px;
@@ -309,6 +325,11 @@
     margin-bottom: 18px;
     cursor: pointer;
 }
+@media(max-width: 600px) {
+	.boton-contacto{
+		width: 100%;
+	}
+}
 .text-boton-contacto{
 	font-size: 16px;
 	font-family: 'Fira Sans', sans-serif;
@@ -324,10 +345,10 @@
 	display: flex;
 }
 .boton-mail{
-	background-color: transparent;
+	background-color: #fff;;
 	border: 1px solid #000000;
 	border-radius: 4px;
-	width: 190px;
+	/* width: 190px; */
 	height: 53px;
 	margin-right: 17px;
 	align-items: center;
@@ -351,10 +372,10 @@
 	color: #B1B1B1;
 }
 .boton-llamar{
-	background-color: transparent;
+	background-color: #fff;
 	border: 1px solid #000000;
 	border-radius: 4px;
-	width: 190px;
+	/* width: 190px; */
 	height: 53px;
 	align-items: center;
     display: flex;
@@ -406,8 +427,8 @@
 		width: 290px;
 	    margin-left: auto;
 	    margin-right: auto;
-	    margin-top: 0px;
-	    margin-bottom: 20px;
+	    margin-top: 15px;
+	    margin-bottom: 15px;
 	}
 	.otro-margen-left{
 		/*margin-left: 0px;*/
@@ -462,7 +483,7 @@
     	background-size: contain;
 	}
 	.segundo-fondo-w-w-a{
-		height: 565px;
+		/* height: 565px; */
 	}
 	.contenedor-texto-imagen-tercero{
 		display: block;
@@ -605,6 +626,9 @@
 }
 .black-background {
 	background: #000;
+	background: url(../../img/fondos/quienes-frase.png) no-repeat center;
+	background-size: cover;
+	min-height: 18rem;
 }
 .quote-text {
 	color: #fff;

@@ -3,6 +3,7 @@ import NavbarVolartech from '../../inc/navbarInside';
 import Footer from '../../inc/Footer';
 import Card from '../../inc/Card';
 import './produccion.css'
+import {Dialog} from 'react-mdl';
 
 import PrismicDOM from 'prismic-dom';
 import _ from 'underscore';
@@ -11,7 +12,8 @@ export default class ProduccionVol extends Component{
 	constructor(props) {
 		super(props)
 		this.state = {
-			data: {}
+			data: {},
+			videoEmbed: null
 		}
 		window.PrismicApi
 			.getSingle('video_production')
@@ -41,7 +43,15 @@ export default class ProduccionVol extends Component{
 	render(){
 		return (
 			<div className="background-produccion">
-	 			<NavbarVolartech />
+				<Dialog style={{top: '2rem', width: '80vw'}} open={!!this.state.videoEmbed} onCancel={() => this.setState({...this.state, videoEmbed: null})}>
+					
+						<div layout="row" layout-align="end" className="padding pointer" style={{marginTop: '-1rem'}}>
+							<div onClick={() => this.setState({...this.state, videoEmbed: null})}><img className="icon" src={require('../../img/icos/close.png')} alt="" /></div>
+						</div>
+						<div style={{minWidth: 'calc(80vw -68px)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
+					
+				</Dialog>
+	 			<NavbarVolartech current={1} />
 	 			<div className="first-fond" layout="row" layout-align="center">
 	 				<div className="content-text-dron" layout="column" layout-align="start stretch" layout-gt-sm="row" flex="">
 					 <div flex-gt-sm="50" flex-order-gt-sm="2" layout="row" layout-align="center">
@@ -68,7 +78,7 @@ export default class ProduccionVol extends Component{
 	 			<div className="third-fond min-height-fond" layout="row" layout-align="center center">
 	 				<div className="container" layout="column" layout-align="start end">
 	 					<div className="content-pre-produccion padding" layout="column" layout-align="start end">
-	 						<p className="p-p-p-aproduccion">{this.getText('pre_title')}</p>
+	 						<p className="p-p-p-aproduccion aller aller">{this.getText('pre_title')}</p>
 	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('pre_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
@@ -88,8 +98,8 @@ export default class ProduccionVol extends Component{
 	 				<div className="container padding-v" layout="column" layout-align="start start">
 					 	<div className="padding"></div>
 						<div className="content-produccion padding">
-	 						<p className="p-p-p-aproduccion">{this.getText('produccion_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-half opacity5">{this.getText('producction_text')}</p>
+	 						<p className="p-p-p-aproduccion aller">{this.getText('produccion_title')}</p>
+	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('producction_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -118,8 +128,8 @@ export default class ProduccionVol extends Component{
 					<div className="container" layout="column" layout-align="start end">
 						<div className="padding"></div>
 	 					<div className="content-post-produccion padding " layout="column" layout-align="start end">
-	 						<p className="p-p-p-aproduccion">{this.getText('post_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-half opacity5">{this.getText('post_text')}</p>
+	 						<p className="p-p-p-aproduccion aller">{this.getText('post_title')}</p>
+	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('post_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -148,8 +158,8 @@ export default class ProduccionVol extends Component{
 				 	<div className="container" layout="column" layout-align="start start">
 					 	<div className="padding"></div>
 	 					<div className="content-animacion padding">
-	 						<p className="p-p-p-aproduccion">{this.getText('animacion_title')}</p>
-	 						<p className="text-p-p-p-aproduccion opacity5">{this.getText('animacion_text')}</p>
+	 						<p className="p-p-p-aproduccion aller">{this.getText('animacion_title')}</p>
+	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('animacion_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -166,26 +176,31 @@ export default class ProduccionVol extends Component{
 						 <div className="padding"></div>
 	 				</div>
 	 			</div>
+				<div className="icon-wrapper" layout="row" layout-align="center">
+					<img src={require('../../img/icos/triangle_up_white.png')} alt="" />
+				</div>
 	 			<div className="ultimo-fondo-produccion min-height-fond" layout="column" layout-align="start stretch">
 	 				<div className="content-text-nuestrotrabajo" layout="row" layout-align="center">
-	 					<p className="text-nuestro-trabajo">{this.getText('portafolio_title')}</p>
+	 					<p className="text-nuestro-trabajo aller">{this.getText('portafolio_title')}</p>
 	 				</div>
 	 				<div className="content-text-muestras-trabajo" layout="row" layout-align="center">
 	 					<p className="text-muestras-trabajo opacity5">{this.getText('portafolio_text')}</p>
 					</div>
 	 				<div className="content-videos-product" layout="row" layout-align="center">
 						 <div className="container padding-quarter" layout="row" layout-align="center" layout-wrap="">{
-							_(this.state.data.portafolio_videos || []).map(({title}, index) =>
-								<div key={index} className="content-video padding-quarter" flex="" flex-xs="100" flex-sm="50">
-									<div className="video"></div>
+							_(this.state.data.portafolio_videos || []).map(({title, video: {thumbnail_url_with_play_button, html}}, index) =>
+								<div key={index} className="content-video padding-quarter pointer" flex="" flex-xs="100" flex-sm="50" onClick={() => this.setState({...this.state, videoEmbed: html})}>
+									<div className="ratio-16-9 background-image" style={{backgroundImage: `url(${thumbnail_url_with_play_button})`}}></div>
 									<p className="text-fecha-video">{PrismicDOM.RichText.asText(title)}</p>
 								</div>)
 					}</div>
 					</div>
-					<div layout="row" layout-align="center">
-						<div className="container margin-v padding-v" layout-gt-sm="row">
+				</div>
+				<div>
+					<div layout="row" layout-align="center" className="produccion-contacto">
+						<div className="container margin-v padding-v" layout-gt-sm="row" layout-align-gt-sm="center center">
 							<div className="content-info-interes-prod padding" flex-gt-sm="">
-								<p className="text-te-interesa-prod">{this.getText('contacto_title')}</p>
+								<p className="text-te-interesa-prod aller">{this.getText('contacto_title')}</p>
 								<p className="text-text-interes-prod opacity5">{this.getText('contacto_text')}</p>
 							</div>
 							<div className="padding">
@@ -195,16 +210,16 @@ export default class ProduccionVol extends Component{
 									</div>
 								</a>
 								<div layout="row" className="content-mail-call-prod">
-									<a flex="" href={'mailto:' + this.getItem('contacto_email')}>
+									<a flex="" href={'mailto:' + this.getItem('contacto_email')} className="padding-quarter">
 										<div className="boton-mail-prod">
 											<p className="text-mail-boton-prod">Mail</p>
-											<p className="text-mail-mail-prod">{this.getItem('contacto_email')}</p>
+											<p className="text-mail-mail-prod" hide-xs="">{this.getItem('contacto_email')}</p>
 										</div>
 									</a>
-									<a flex="" href="tel:+573173721618">
+									<a flex="" href="tel:+573173721618" className="padding-quarter">
 										<div className="boton-llamar-prod">
 											<p className="text-llamar-boton-prod">Llamar</p>
-											<p className="text-llamar-llamar-prod">+57 (313) 868 9045</p>
+											<p className="text-llamar-llamar-prod" hide-xs="">+57 (313) 868 9045</p>
 										</div>
 									</a>
 								</div>
