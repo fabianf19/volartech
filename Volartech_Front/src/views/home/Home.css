@@ -397,3 +397,12 @@ a {
 .pointer {
   cursor: pointer;
 }
+/*** Estilos responsive ipad ***/
+@media(min-width: 700px) and (max-width: 1200px){
+	.volartech-title{
+		font-size: 43px;
+	}
+	.contenedor-contenidos-home.container{
+		width: 670px;
+	}
+}
