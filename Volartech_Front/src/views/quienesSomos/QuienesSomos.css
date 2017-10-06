@@ -531,7 +531,7 @@
 	}
 	.texto-clientes{
 		margin-top: 0px;
-		font-size: 23px;
+		font-size: 19px;
 	}
 	.quienes-nosotros-comillas{
 		display: none;
@@ -540,7 +540,7 @@
 		display: block;
 	    justify-content: center;
 	    margin-bottom: 20px;
-	    /* width: 280px; */
+	    width: 290px;
 	    margin-left: auto;
 	    margin-right: auto;
 	}
@@ -563,6 +563,7 @@
 	.content-puntos-comentarios{
 		/* width: 111px; */
 		margin-bottom: 30px;
+		justify-content: center;
 	}
 	.content-nuestro-equipo{
 		margin-bottom: 30px;

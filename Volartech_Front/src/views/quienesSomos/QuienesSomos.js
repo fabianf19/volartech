@@ -137,7 +137,7 @@ export default class QuienesSomos extends Component{
 						</div>
 	 					<div className="contenedor-texto-third padding" flex="">
 	 						<p className="text-third-fond">{this.getText('uav_title')}</p>
-	 						<div className="div-text-line-third"></div>
+	 						{/*<div className="div-text-line-third"></div>*/}
 	 						<p className="text-descripcion-tercero">{this.getText('uav_text')}</p>
 	 					</div>
 	 				</div>

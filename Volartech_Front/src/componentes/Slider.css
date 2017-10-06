@@ -57,7 +57,7 @@
 /***Estilos slider responsive***/
 @media(min-width: 320px) and (max-width: 450px){
 	.slider{
-		width: 280px;
+		width: 287px;
 	}
 	.slider .slider_container{
 		margin-left: 8px;
