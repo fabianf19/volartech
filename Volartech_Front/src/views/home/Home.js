@@ -47,7 +47,7 @@ export default class Home extends Component{
 		let secciones = [
 			<div className="contentedor-texto-perspectiva">
 				<div className="container-half">
-					<p className="volartech-title">
+					<p className="volartech-title aller-display">
 						{this.getText('main_title')}
 					</p>
 					<p className="volartech-sub-title2">{this.getText('main_subtitle')}</p>
@@ -63,9 +63,9 @@ export default class Home extends Component{
 				</div>
 			</div>,
 			<div className="container">
-				<p className="volartech-title">{this.getText('video_title')}</p>
+				<p className="volartech-title aller-display">{this.getText('video_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('video_subtitle')}</p>
-				<p className="volartech-description-prod">{this.getText('video_text')}</p>
+				<p className="volartech-description-prod opacity75">{this.getText('video_text')}</p>
 				<div className="content-play">
 					<a href="/produccion" target="_blank">
 						<div className="boton-product-page"> 
@@ -76,9 +76,9 @@ export default class Home extends Component{
 				</div>
 			</div>,
 			<div className="container">
-				<p className="volartech-title-construccion">{this.getText('construction_title')}</p>
+				<p className="volartech-title-construccion aller-display">{this.getText('construction_title')}</p>
 				<p className="volartech-sub-title2-const">{this.getText('construction_subtitle')}</p>
-				<p className="volartech-description-ing">{this.getText('construction_text')}</p>
+				<p className="volartech-description-ing opacity75">{this.getText('construction_text')}</p>
 			<div className="content-play">
 					<a href="/construccion" target="_blank">
 						<div className="boton-construccion-page"> 
@@ -90,9 +90,9 @@ export default class Home extends Component{
 			</div>,
 
 			<div className="container">
-				<p className="volartech-title">{this.getText('engineering_title')}</p>
+				<p className="volartech-title aller-display">{this.getText('engineering_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('engineering_subtitle')}</p>
-				<p className="volartech-description-ing">{this.getText('engineering_text')}</p>
+				<p className="volartech-description-ing opacity75">{this.getText('engineering_text')}</p>
 				<div className="content-play">
 					<a href="/ingenieria" target="_blank">
 						<div className="boton-ingenieria-page"> 
@@ -118,8 +118,8 @@ export default class Home extends Component{
 					
 				</Dialog>
 
-			 	<div className="background-inicio-page" style={{backgroundImage : 'url(' + bg +')'}}>
-			 		<div className="background-inicio-imagen">
+			 	<div className="background-inicio-page relative" style={{backgroundImage : 'url(' + bg +')'}}>
+			 		<div className="background-inicio-imagen absolute-fill" layout="column">
 			 			<div className="contenedor-navbar">
 				 			<div className="navbar-volartech padding-h" layout="row" layout-xs="column" layout-align-xs="start stretch">
 								<div className="logo-navbar-volartech"></div>
@@ -154,9 +154,11 @@ export default class Home extends Component{
 									</div>
 				 			</div>
 			 			</div>
-			 			<div className="content-textos-play padding" layout="row" layout-align="center">
-			 				<div className="contenedor-contenidos-home container padding">
-				 				{secciones[this.state.selected]}
+			 			<div className="content-textos-play padding" flex="" layout="row" layout-align="center">
+			 				<div className="contenedor-contenidos-home container" layout="row">
+								<div className="padding" flex="">
+									{secciones[this.state.selected]}
+								</div>
 				 				<div className="contenedor-circulos">
 				 					<div className={(this.state.selected === 0) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 0})}></div>
 				 					<div className={(this.state.selected === 1) ? "circulo-cambio active2" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 1})}></div>

@@ -13,6 +13,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Prismic from 'prismic-javascript';
 import './index.css';
+import './styles.css';
 let apiEndpoint = "https://volartech.prismic.io/api/v2";
 
 Prismic.getApi(apiEndpoint).then((api) => {

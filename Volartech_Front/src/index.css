@@ -18912,17 +18912,17 @@
 
 .container-half {
   width: 100%;
-  max-width: 475px;
+  max-width: 600px;
 }
 
 .container-third {
   width: 100%;
-  max-width: 316.66666667px;
+  max-width: 400px;
 }
 
 .container-quarter {
   width: 100%;
-  max-width: 237.5px;
+  max-width: 300px;
 }
 
 .cursor-pointer {
