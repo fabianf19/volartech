@@ -108,3 +108,23 @@
     overflow-y: scroll;
     height: 420px;
 }
+
+.card_container .cerrar{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+@media(min-width: 320px) and (max-width: 450px){
+    .card_container{
+        width: calc(100% - 40px);
+    }
+
+    .card_back .contenedor-boton-servicios{
+        width: calc(100% - 40px);
+    }
+}

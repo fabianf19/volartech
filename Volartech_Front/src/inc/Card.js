@@ -48,6 +48,7 @@ export default class Card extends Component{
 		return (
 			<div className="card_back" onClick={(event) => this.click_event(event)} id="fondo">
 				<div className="card_container">
+					<div className="cerrar" onClick={() => this.hide_card()}>X</div>
 					<div className="fondo-contacto padding-v">
 						<div className="relative">
 							<div className="content-contactanos">
