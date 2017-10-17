@@ -100,7 +100,7 @@ export default class QuienesSomos extends Component{
 							<div className="content-div-line">
 								<div className="quienes-somos-div-text"></div>
 							</div>
-							<div className="content-descripcion-w-w-a padding-v margin-v container-half opacity5">
+							<div className="content-descripcion-w-w-a padding-v margin-v container-half">
 								<p className="text-quienes-somos-descrip">{this.getText('text')}</p>
 							</div>
 						</div>
@@ -140,7 +140,7 @@ export default class QuienesSomos extends Component{
 						</div>
 	 					<div className="contenedor-texto-third padding" flex="">
 	 						<p className="text-third-fond">{this.getText('uav_title')}</p>
-	 						{/*<div className="div-text-line-third"></div>*/}
+	 						<div className="div-text-line-third"></div>
 	 						<p className="text-descripcion-tercero">{this.getText('uav_text')}</p>
 	 					</div>
 	 				</div>

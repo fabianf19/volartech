@@ -20,7 +20,7 @@
     margin-right: auto;
 }
 .text-title-construccion{
-	font-size: 46px;
+	font-size: 44px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 400;
 	margin: 0px;
@@ -28,7 +28,7 @@
 	text-transform: uppercase;
 }
 .sub-title-const{
-	font-size: 24px;
+	font-size: 22px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
 	margin: 0px;
@@ -66,14 +66,14 @@
 .fourth-fond-construccion{
 	width: 100%;
 	/* height: 424px; */
-	background: url(../../img/fondos/tercer-fondo-construccion.png) no-repeat;
+	background: url(../../img/fondos/fond-avance-obra.png) no-repeat;
 	background-color: #141414;
 	background-size: cover;
 } 
 .fifth-fond-construccion{
 	width: 100%;
 	/* height: 468px; */
-	background: url(../../img/fondos/quinto-fondo-construccion.png) no-repeat;
+	background: url(../../img/fondos/fond-time-lapse.png) no-repeat;
 	background-size: cover;
 	background-color: #141414;
 }
@@ -83,7 +83,7 @@
 	}
 }
 .text-descripcion-construccion{
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
 	margin: 0px;
@@ -179,6 +179,7 @@
 }
 .content-avance-obra-f-text{
 	margin-bottom: 32px;
+	text-align: right;
 }
 .otro-width-cons{
 	text-align: right;
@@ -212,7 +213,7 @@
 	height: 60px;
 	background: url(../../img/icos/aros-unidos.png) no-repeat;
 	background-size: contain;
-	margin-right: 39px;
+	/*margin-right: 39px;*/
 }
 .ico-4-const{
 	width: 57px;
@@ -247,29 +248,32 @@
     align-items: center;
 }
 .contenido-text-avance{
-	margin-right: auto;
+	/*margin-right: auto;*/
 }
 .fourth-fond-construccion .content-image-play{
-	margin-right: 0px;
+	margin-right: auto;
 }
 .contenido-titulo-const-avance{
 	margin-bottom: 32px;
+	text-align: right;
 }
 .fourth-fond-construccion .division-primeros-textos{
 	margin-bottom: 20px;
+	margin-left: auto;
 }
 .contenedor-text-area{
 	margin-bottom: 24px;
 }
 .fifth-fond-construccion .contenido-titulo-const-avance{
-	text-align: right;
+	/*text-align: right;*/
+	text-align: left;
 }
 .contenedor-genere-confianza{
 	text-align: right;
 	margin-bottom: 33px;
 }
 .fifth-fond-construccion .division-primeros-textos{
-	margin-left: auto;
+	/*margin-left: auto;*/
 	margin-bottom: 21px;
 }
 .contenedor-time-lapse{
@@ -309,6 +313,8 @@
 	display: flex;
 	margin-bottom: 36px;
 	justify-content: center;
+	height: 249px;
+	overflow: hidden;
 }
 /*.content-1-img-cons{
 	margin-left: auto;
@@ -447,25 +453,7 @@
 	margin: 0px;
 	color: #B1B1B1;
 }
-.text-ver-mas-cons{
-	font-size: 20px;
-	font-family: 'Fira Sans', sans-serif;
-	font-weight: 300;
-	margin: 0px;
-	color: #50565E;
-}
-.contenedor-ver-mas-cons{
-	border-bottom: 1px solid #50565E;
-	width: 72px;
-	margin-left: auto;
-	cursor: pointer;
-}
-.big-content-ver-const{
-	width: 1119px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 119px;
-}
+
 /*** Estilos Responsive Construccion ***/
 @media (max-width: 960px) {
 	.imagen-dron-const{
@@ -714,4 +702,51 @@
 		font-size: 13px;
 	}
 
+}
+.color-ver-mas{
+	font-size: 15px;
+	font-family: 'Fira Sans', sans-serif;
+	font-weight: 300;
+	margin: 0px;
+	color: #50565E;
+	cursor: pointer;
+}
+.contenedor-ver-mas-cons{
+	border-bottom: 1px solid #50565E;
+	width: 56px;
+	margin-left: auto;
+	cursor: pointer;
+}
+.big-content-ver-const{
+	width: 1174px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+.clase-extendida{
+	height: 497px;
+}
+#ver-menos{
+	display: none;
+}
+.min-height-fond-ing{
+    min-height: 440px;
+}
+.fifth-fond-construccion .content-image-play{
+	margin-right: 0px;
+}
+.fifth-fond-construccion .container-half{
+	margin-right: auto;
+}
+.fifth-fond-construccion .contenedor-genere-confianza{
+	text-align: left;	
+}
+.fifth-fond-construccion .contenedor-iconos{
+	float: left;
+}
+.fourth-fond-construccion .contenedor-iconos{
+	float: right;
+}
+#underline-size{
+	width: 73px;
 }
