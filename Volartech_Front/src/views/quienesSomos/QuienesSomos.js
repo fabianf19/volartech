@@ -131,20 +131,6 @@ export default class QuienesSomos extends Component{
 	 					</div>
 	 				</div>
 	 			</div>
-	 			{/* <div className="tercer-fondo-w-w-a" layout="row" layout-align="center">
-	 				<div className="contenedor-texto-imagen-tercero" layout-gt-sm="row" layout="column" flex="">
-					 	<div layout="row" layout-align="center" flex="30">
-						 <div flex="70" flex-gt-sm="100">
-							 <div className="imagen-w-w-a-tercero"></div>
-						 </div>
-						</div>
-	 					<div className="contenedor-texto-third padding" flex="">
-	 						<p className="text-third-fond">{this.getText('uav_title')}</p>
-	 						{/*<div className="div-text-line-third"></div>*/}
-	 						<p className="text-descripcion-tercero">{this.getText('uav_text')}</p>
-	 					</div>
-	 				</div>
-	 			</div> */}
 	 			<div className="cuarto-fondo-w-w-a" layout="row" layout-align="center center">
 	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start end">
  						<p className="text-ideales aller bold">{this.getText('ideals_title')}</p>
