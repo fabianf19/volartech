@@ -131,8 +131,6 @@ export default class QuienesSomos extends Component{
 	 					</div>
 	 				</div>
 	 			</div>
-<<<<<<< HEAD
-=======
 	 			{/* <div className="tercer-fondo-w-w-a" layout="row" layout-align="center">
 	 				<div className="contenedor-texto-imagen-tercero" layout-gt-sm="row" layout="column" flex="">
 					 	<div layout="row" layout-align="center" flex="30">
@@ -147,7 +145,6 @@ export default class QuienesSomos extends Component{
 	 					</div>
 	 				</div>
 	 			</div> */}
->>>>>>> 386ac6335caea443ec710b3baddc5facaf26f80e
 	 			<div className="cuarto-fondo-w-w-a" layout="row" layout-align="center center">
 	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start end">
  						<p className="text-ideales aller bold">{this.getText('ideals_title')}</p>

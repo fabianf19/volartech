@@ -16,6 +16,7 @@ export default class Contacto extends Component{
 			selectorOpen: true
 		}
 		this.updateProp = this.updateProp.bind(this);
+		console.log(this);
 	}
 	updateProp(e, prop) {
 		let newState = {...this.state};

@@ -96,8 +96,8 @@ export default class IngenieriaVol extends Component{
 	 					</div>
 	 				</div>
 	 			</div>
-	 			<div className="fourth-fond-ingenieria min-height-fond">
-	 				<div class="contenedor-video">
+	 			<div className="fourth-fond-ingenieria min-height-fond relative" layout="row" layout-align="center">
+	 				<div class="container">
 	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
 		 					<div className="container-third padding">
 		 						<div className="contenedor-title-ingenieria">
@@ -112,9 +112,9 @@ export default class IngenieriaVol extends Component{
 		 						</div>
 		 					</div>
 	 					</div>
-		                <video className="tamaño-video" autoPlay poster="fondos/video.jpg" loop >
-		                    <source src={ url_video } type="video/mp4" class="video-part"/>
-		                </video>
+						<video className="tamaño-video absolute-fill" autoPlay poster="fondos/video.jpg" loop >
+								<source src={ url_video } type="video/mp4" class="video-part"/>
+						</video>
 		                {/*<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
 		 					<div className="container-third padding">
 		 						<div className="contenedor-title-ingenieria">

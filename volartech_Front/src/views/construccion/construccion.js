@@ -3,7 +3,6 @@ import NavbarVolartech from '../../inc/navbarInside';
 import Footer from '../../inc/Footer';
 import './construccion.css'
 import PrismicDOM from 'prismic-dom';
-import {Dialog} from 'react-mdl';
 import _ from 'underscore';
 import Card from '../../inc/Card';
 import $ from 'jquery';
@@ -44,14 +43,13 @@ export default class ConstruccionVol extends Component{
 	render(){
 		return (
 			<div className="background-construccion">
-		 		<Dialog style={{top: '2rem', width: '80vw'}} open={!!this.state.videoEmbed} onCancel={() => this.setState({...this.state, videoEmbed: null})}>
-					
-						<div layout="row" layout-align="end" className="padding pointer" style={{marginTop: '-1rem'}}>
-							<div onClick={() => this.setState({...this.state, videoEmbed: null})}><img className="icon" src={require('../../img/icos/close.png')} alt="" /></div>
-						</div>
-						<div style={{minWidth: 'calc(80vw -68px)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
-					
-				</Dialog>
+
+				<div className={'embed-dialog ' + (this.state.videoEmbed ? 'active' : '')}>
+					<div className="overlay" onClick={() => this.setState({...this.state, videoEmbed: null})}></div>
+					<div className="inner-wrapper">
+						<div style={{minWidth: 'calc(8s0vw -68psx)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
+					</div>
+				</div>
 				<NavbarVolartech current={2} />
 				<div className="first-fond-construccion" layout="row" layout-align="center">
 	 				<div className="content-text-dron-const" layout="column" layout-align="start stretch" layout-gt-sm="row" flex="">

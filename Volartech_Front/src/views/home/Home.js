@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Footer from '../../inc/Footer';
 import PrismicDOM from 'prismic-dom';
-import {Dialog} from 'react-mdl';
+// import {dialogPolyfill} from 'dialog-polyfill';
 import './Home.css';
 
 let bg1 = require('../../img/fondos/imagen-inicio-volartech.jpg');
@@ -25,7 +25,7 @@ export default class Home extends Component{
 				console.log(data);
 				this.setState({...this.state, data})
 			});
-		this.onCloseModal = this.onCloseModal.bind(this)
+		this.onCloseModal = this.onCloseModal.bind(this);
 	}
 
 	getText(id) {
@@ -109,15 +109,12 @@ export default class Home extends Component{
 		return (
 			<div>
 
-				<Dialog style={{top: '2rem', width: '80vw'}} open={!!this.state.videoEmbed} onCancel={() => this.setState({...this.state, videoEmbed: null})}>
-					
-						<div layout="row" layout-align="end" className="padding pointer" style={{marginTop: '-1rem'}}>
-							<div onClick={() => this.setState({...this.state, videoEmbed: null})}><img className="icon" src={require('../../img/icos/close.png')} alt="" /></div>
-						</div>
-						<div style={{minWidth: 'calc(80vw -68px)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
-					
-				</Dialog>
-
+				<div className={'embed-dialog ' + (this.state.videoEmbed ? 'active' : '')}>
+					<div className="overlay" onClick={() => this.setState({...this.state, videoEmbed: null})}></div>
+					<div className="inner-wrapper">
+						<div style={{minWidth: 'calc(8s0vw -68psx)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
+					</div>
+				</div>
 			 	<div className="background-inicio-page relative" style={{backgroundImage : 'url(' + bg +')'}}>
 			 		<div className="background-inicio-imagen absolute-fill" layout="column">
 			 			<div className="contenedor-navbar">

@@ -58,15 +58,15 @@ export default class Footer extends Component{
 				 				<div className="fifth-line-div"></div>
 				 				<div className="content-all-icons-redes">
 					 				<div className="content-iconos-redes">
-					 					<a href="https://www.facebook.com/dronesvolartech/" target="_blank"><div className="logo-facebook"></div></a>
-					 					<a href="https://www.youtube.com/channel/UCjU0SosEDU69f10iw-y3xsQ" target="_blank"><div className="logo-youtube"></div></a>
-					 					<a href="https://twitter.com/Volartech_Col" target="_blank"><div className="logo-twitter"></div></a>
-					 					<a href="https://www.instagram.com/volartech/" target="_blank"><div className="logo-instagram"></div></a>
-					 					<a href="https://plus.google.com/u/0/100568545316383432225" target="_blank"><div className="logo-google-mas"></div></a>
-					 					<a href="https://www.linkedin.com/company/6427504/" target="_blank"><div className="logo-in"></div></a>
+					 					<a href="https://www.facebook.com/dronesvolartech/" target="_blank" rel="noopener noreferrer"><div className="logo-facebook"></div></a>
+					 					<a href="https://www.youtube.com/channel/UCjU0SosEDU69f10iw-y3xsQ" target="_blank" rel="noopener noreferrer"><div className="logo-youtube"></div></a>
+					 					<a href="https://twitter.com/Volartech_Col" target="_blank" rel="noopener noreferrer"><div className="logo-twitter"></div></a>
+					 					<a href="https://www.instagram.com/volartech/" target="_blank" rel="noopener noreferrer"><div className="logo-instagram"></div></a>
+					 					<a href="https://plus.google.com/u/0/100568545316383432225" target="_blank" rel="noopener noreferrer"><div className="logo-google-mas"></div></a>
+					 					<a href="https://www.linkedin.com/company/6427504/" target="_blank" rel="noopener noreferrer"><div className="logo-in"></div></a>
 					 				</div>
 					 				<div>
-					 					<a href="https://vimeo.com/user69318545" target="_blank"><div className="logo-vimeo"></div></a>
+					 					<a href="https://vimeo.com/user69318545" target="_blank" rel="noopener noreferrer"><div className="logo-vimeo"></div></a>
 					 				</div>
 				 				</div>
 				 				<p className="fifth-div-txt">@volartechco</p>

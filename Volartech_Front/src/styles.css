@@ -75,3 +75,37 @@ img.icon {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.embed-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.embed-dialog {
+  transition: all .3s;
+  z-index: -1;
+  opacity: 0;
+  background: rgba(0,0,0,0.5); 
+}
+.embed-dialog.active {
+  z-index: 999;
+  opacity: 1;
+}
+.embed-dialog .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.embed-dialog .inner-wrapper {
+  width: 80vw;
+  height: auto;
+  background: #000;
+}
