@@ -63,8 +63,8 @@
 .fourth-fond-ingenieria{
 	width: 100%;
 	height: 448px;
-	background: url(../../img/fondos/cuarto-fondo-ing.png) no-repeat;
-	background-size: cover;
+	/*background: url(../../img/fondos/cuarto-fondo-ing.png) no-repeat;
+	background-size: cover;*/
 }
 .fifth-fond-ingenieria{
 	width: 100%;
@@ -72,6 +72,7 @@
 	/* background: url(../../img/fondos/quinto-fondo-ing.png) no-repeat; */
 	background-size: cover;
 	background-color: #0F0F0F;
+	position: absolute;
 }
 .img-droncito{
 	/* width: 100%;
@@ -160,6 +161,8 @@
 .fourth-fond-ingenieria .content-text-dron-ingenieria{
 	max-width: 1200px;
 	/* padding-top: 159px; */
+	position: absolute;
+    z-index: 300000000000000000;
 }
 .fifth-fond-ingenieria .division-primeros-textos-ing{
 	margin-left: auto;
@@ -216,6 +219,8 @@
 	display: flex;
 	margin-bottom: 36px;
 	justify-content: center;
+	overflow: hidden;
+	height: 249px;
 }
 /*.content-1-img{
 	margin-left: auto;
@@ -347,7 +352,7 @@
 	margin: 0px;
 	color: #B1B1B1;
 }
-.text-ver-mas-ing{
+/*.text-ver-mas-ing{
 	font-size: 20px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
@@ -365,7 +370,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 119px;
-}
+}*/
 @media(max-width: 600px) {
 	.size-responsive-content.container-third {
 		max-width: none;
@@ -592,4 +597,29 @@
 		font-size: 40px;
 	}
 }
-
+.background-ingenieria .color-ver-mas{
+	color: #EDA532;
+	font-size: 15px;
+}
+.background-ingenieria .big-content-ver-const{
+	width: 1174px;
+}
+.background-ingenieria .contenedor-ver-mas-cons{
+	width: 56px;
+	border-bottom: 1px solid #EDA532;
+}
+#ver-menos-ing{
+	display: none;
+}
+.clase-extendida-ing{
+	height: 620px;
+}
+#sub-line-vermenos{
+	width: 73px;
+}
+.tamaño-video{
+	width: 100%;
+}
+.contenedor-video{
+	height: 440px;
+}

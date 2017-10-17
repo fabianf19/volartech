@@ -21,7 +21,7 @@
 	background-color: #8E0A2D;
 }
 .text-title-produccion{
-	font-size: 46px;
+	font-size: 44px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 400;
 	margin: 0px;
@@ -29,7 +29,7 @@
 	text-transform: uppercase;
 }
 .sub-title-produccion{
-	font-size: 24px;
+	font-size: 22px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
 	margin: 0px;
@@ -68,7 +68,7 @@
 	min-height: 14rem;
 }
 .text-descripcion-produccion{
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
 	margin: 0px;
@@ -113,9 +113,10 @@
 	font-weight: 300;
 	margin: 0px;
 	color: #FFFFFF;
-	/* width: 414px; */
+	width: 380px;
 	text-align: right;
 	margin-bottom: 38px;
+	line-height: 19px;
 }
 .div-produccion-line{
 	width: 50px;

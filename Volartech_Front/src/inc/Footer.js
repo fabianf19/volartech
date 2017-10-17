@@ -23,16 +23,8 @@ export default class Footer extends Component{
 				 			<div className="content-first-div padding" flex-xs="100" flex-sm="100" flex-md="50" flex="">
 				 				<div className="logo-footer-volarteck"></div>
 				 				<div>
-				 					<p className="first-div-txt othe-font-size1">Perspectiva desde lo alto</p>
-				 				</div>
-				 				<div>
 				 					<p className="first-div-txt">© 2017 Volartech All Rights Reserved</p>
-				 				</div>
-				 				<div className="content-terms-and-conditions">
-				 					<p className="first-div-txt" id="first-div-txt-margin">Terminos y condiciones</p>
-				 					<div className="linea-div-terms"></div>
-				 					<p className="first-div-txt">Politicas de Privacidad</p>
-				 				</div>
+				 				</div>				 				
 				 			</div>
 				 			<div className="content-second-div padding" flex-xs="100" flex-sm="50" flex-md="25">
 								<p className="second-div-txt-title">Nuestras líneas</p>
@@ -53,7 +45,7 @@ export default class Footer extends Component{
 				 				<a href="/contacto"><p className="fourth-div-txt" id="no-cursor">Contactanos</p></a>
 				 				<div className="content-fourth-div-1-image">
 				 					<div className="logo-mail"></div>
-				 					<a href="mailto:contacto@volartech.com"><p className="fourth-div-txt">contacto@volartech.com</p></a>
+				 					<a href="mailto:info@volartech.co"><p className="fourth-div-txt">info@volartech.co</p></a>
 				 				</div>
 				 				<div className="content-fourth-div-2-image">
 				 					<div className="logo-whatsapp"></div>
@@ -64,14 +56,21 @@ export default class Footer extends Component{
 				 			<div className="content-fifth-div padding" flex-xs="100" flex-sm="50" flex-md="25">
 				 				<p className="fifth-div-txt-title">Siguenos</p>
 				 				<div className="fifth-line-div"></div>
-				 				<div className="content-iconos-redes">
-				 					<a href={(this.state.data.facebook || {}).url} target="_blank"><div className="logo-facebook"></div></a>
-				 					<a href={(this.state.data.youtube || {}).url} target="_blank"><div className="logo-youtube"></div></a>
-				 					<a href={(this.state.data.pinterest || {}).url} target="_blank"><div className="logo-pinterest"></div></a>
-				 					<a href={(this.state.data.instagram || {}).url} target="_blank"><div className="logo-instagram"></div></a>
+				 				<div className="content-all-icons-redes">
+					 				<div className="content-iconos-redes">
+					 					<a href="https://www.facebook.com/dronesvolartech/" target="_blank"><div className="logo-facebook"></div></a>
+					 					<a href="https://www.youtube.com/channel/UCjU0SosEDU69f10iw-y3xsQ" target="_blank"><div className="logo-youtube"></div></a>
+					 					<a href="https://twitter.com/Volartech_Col" target="_blank"><div className="logo-twitter"></div></a>
+					 					<a href="https://www.instagram.com/volartech/" target="_blank"><div className="logo-instagram"></div></a>
+					 					<a href="https://plus.google.com/u/0/100568545316383432225" target="_blank"><div className="logo-google-mas"></div></a>
+					 					<a href="https://www.linkedin.com/company/6427504/" target="_blank"><div className="logo-in"></div></a>
+					 				</div>
+					 				<div>
+					 					<a href="https://vimeo.com/user69318545" target="_blank"><div className="logo-vimeo"></div></a>
+					 				</div>
 				 				</div>
 				 				<p className="fifth-div-txt">@volartechco</p>
-				 				<p className="fifth-div-txt">#perspectivadesdeloat</p>
+				 				<p className="fifth-div-txt">#volartech</p>
 				 			</div>
 				 		</div>
 				 	</div>

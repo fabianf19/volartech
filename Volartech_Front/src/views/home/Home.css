@@ -392,6 +392,7 @@ a {
   padding-top: 35px;
   height: 0;
   overflow: hidden;
+  display: none;
 }
 .video-container iframe {
   position: absolute;
@@ -423,4 +424,7 @@ a {
 	.contenedor-contenidos-home.container{
 		width: 670px;
 	}
+}
+.padding.pointer{
+	display: none;
 }

@@ -5,6 +5,9 @@ import './ingenieria.css'
 import PrismicDOM from 'prismic-dom';
 import _ from 'underscore';
 import Card from '../../inc/Card';
+import $ from 'jquery';
+
+var url_video = require("../../img/fondos/lidar_movil_colombia.MP4");
 
 export default class IngenieriaVol extends Component{
 	constructor(props) {
@@ -38,6 +41,7 @@ export default class IngenieriaVol extends Component{
 		this.card.show_card();
 	}
 	render(){
+		
 		return (
 			<div className="background-ingenieria">
 		 		<NavbarVolartech current={3} />
@@ -93,7 +97,40 @@ export default class IngenieriaVol extends Component{
 	 				</div>
 	 			</div>
 	 			<div className="fourth-fond-ingenieria min-height-fond">
-	 				<div>
+	 				<div class="contenedor-video">
+	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
+		 					<div className="container-third padding">
+		 						<div className="contenedor-title-ingenieria">
+		 							<p className="text-title-ingenieria aller">{this.getText('lidar_movil_title1')}</p>
+		 						</div>
+		 						<div className="division-primeros-textos-ing"></div>
+		 						<div className="conetenedor-subtitulos">
+		 							<p className="subtitle-text-ing aller">{this.getText('lidar_movil_title2')}</p>
+		 						</div>
+		 						<div className="content-info-ing">
+		 							<p className="text-info-ing">{this.getText('lidar_movil_text2')}</p>
+		 						</div>
+		 					</div>
+	 					</div>
+		                <video className="tamaño-video" autoPlay poster="fondos/video.jpg" loop >
+		                    <source src={ url_video } type="video/mp4" class="video-part"/>
+		                </video>
+		                {/*<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
+		 					<div className="container-third padding">
+		 						<div className="contenedor-title-ingenieria">
+		 							<p className="text-title-ingenieria aller">{this.getText('lidar_movil_title1')}</p>
+		 						</div>
+		 						<div className="division-primeros-textos-ing"></div>
+		 						<div className="conetenedor-subtitulos">
+		 							<p className="subtitle-text-ing aller">{this.getText('lidar_movil_title2')}</p>
+		 						</div>
+		 						<div className="content-info-ing opacity5">
+		 							<p className="text-info-ing">{this.getText('lidar_movil_text2')}</p>
+		 						</div>
+		 					</div>
+	 					</div>*/}
+		            </div>
+	 				{/*<div>
 	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
 		 					<div className="container-third padding">
 		 						<div className="contenedor-title-ingenieria">
@@ -108,7 +145,7 @@ export default class IngenieriaVol extends Component{
 		 						</div>
 		 					</div>
 	 					</div>
-	 				</div>
+	 				</div>*/}
 	 			</div>
 	 			<div className="fifth-fond-ingenieria min-height-fond" layout="row" layout-align="center">
 	 				<div className="container">
@@ -138,7 +175,7 @@ export default class IngenieriaVol extends Component{
 	 				<div className="content-text-muestras-trabajo-ing">
 	 					<p className="text-muestras-trabajo-ing">{this.getText('portafolio_subtitle')}</p>
 	 				</div>
-	 				<div className="content-img-ing container padding-half" layout="row" layout-align="center" layout-wrap="">
+	 				<div className="content-img-ing container padding-half" id="imagenes-extendida-ing" layout="row" layout-align="center" layout-wrap="">
 						{
 							_(this.state.data.portafolio_videos || []).map(({title, image: {url}}, index) => 
 							<div key={index} className={`content-${index}-img padding-half`} flex-gt-sm="33" flex-sm="50" flex-xs="100">
@@ -147,6 +184,16 @@ export default class IngenieriaVol extends Component{
 							</div>)
 						}
 	 				</div>
+				</div>
+				<div className="big-content-ver-const" id="ver-mas-ing">
+					<div className="contenedor-ver-mas-cons">
+						<p className="color-ver-mas" onClick={() => {$("#imagenes-extendida-ing").addClass("clase-extendida-ing"); $("#ver-menos-ing").show(); $("#ver-mas-ing").hide();}}>Ver más</p>
+					</div>
+				</div>
+				<div className="big-content-ver-const" id="ver-menos-ing">
+					<div className="contenedor-ver-mas-cons" id="sub-line-vermenos">
+						<p className="color-ver-mas" onClick={() => {$("#imagenes-extendida-ing").removeClass("clase-extendida-ing"); $("#ver-menos-ing").hide(); $("#ver-mas-ing").show();}}>Ver menos</p>
+					</div>
 				</div>
 				<div>
 	 				<div className="contenedor-interes-boton-contacto-ing" layout="row" layout-align="center center">

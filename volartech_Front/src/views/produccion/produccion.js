@@ -129,7 +129,7 @@ export default class ProduccionVol extends Component{
 						<div className="padding"></div>
 	 					<div className="content-post-produccion padding " layout="column" layout-align="start end">
 	 						<p className="p-p-p-aproduccion aller">{this.getText('post_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('post_text')}</p>
+	 						<p className="text-p-p-p-aproduccion opacity5">{this.getText('post_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					

@@ -6,6 +6,7 @@ import PrismicDOM from 'prismic-dom';
 import {Dialog} from 'react-mdl';
 import _ from 'underscore';
 import Card from '../../inc/Card';
+import $ from 'jquery';
 
 export default class ConstruccionVol extends Component{
 	constructor(props) {
@@ -75,6 +76,68 @@ export default class ConstruccionVol extends Component{
  						<p className="text-descripcion-construccion container-half padding-h margin-v opacity75">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
+	 			<div className="fourth-fond-construccion min-height-fond" layout="row" layout-align="center center">
+	 				<div className="content-info-const-2 container padding" layout-gt-sm="row" layout="column">
+	 					<div layout-xs="column" layout-align-xs="start center" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
+		 					<a>
+		 						<div className="icono-play-construccion"></div>
+		 					</a>
+		 					<div>
+		 						<p className="text-play-const">Play Tour</p>
+		 					</div>
+		 				</div>
+		 				<div className="contenido-text-avance">
+		 					<div className="contenido-titulo-const-avance">
+		 						<p className="text-title-const aller">{this.getText('obra_aerea_title1')}</p>
+		 					</div>
+		 					<div className="division-primeros-textos"></div>
+							<div className="content-avance-obra-f-text container-half">
+		 						<p className="text-desc-construccion opacity5">{this.getText('obra_aerea_text1')}</p>
+		 					</div>
+		 					<div className="container-half">
+		 						{/* <div className="contenedor-text-area">
+		 							<p className="second-text-const aller">{this.getText('obra_aerea_title2')}</p>
+		 						</div> */}
+		 						<div layout="row" className="contenedor-iconos">
+									<div flex="30">
+										<div className="ico-3-const"></div>
+									</div>
+									{/* <div className="padding-quarter"></div> */}
+		 							{/* <p className="text-desc-construccion otro-width-cons left opacity5" >{this.getText('obra_aerea_text2')}</p> */}
+		 						</div>
+		 					</div>
+		 				</div>
+	 				</div>
+					<div className="padding"></div>
+	 			</div>
+	 			<div className="fifth-fond-construccion min-height-fond-ing" layout="row" layout-align="center center">
+	 				<div className="content-info-const-3 container padding" layout-gt-sm="row" layout="column">
+		 				<div className="container-half">
+		 					<div className="contenido-titulo-const-avance">
+		 						<p className="text-title-const aller">{this.getText('obra_timelapse_title1')}</p>
+		 					</div>
+		 					<div className="division-primeros-textos"></div>
+		 					<div className="contenedor-genere-confianza">
+		 						<p className="text-desc-construccion opacity5">{this.getText('obra_timelapse_text1')}</p>
+		 					</div>
+		 					<div className="contenedor-iconos" layout="row" layout-align="end">
+		 						<div layout-align="end" layout="row">
+									<div className="padding-half"></div>
+									<div className="ico-4-const"></div>
+								</div>
+		 					</div>
+		 				</div>
+						<div layout-xs="column" layout-align-xs="start center" className="content-image-play pointer"  onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_timelapse_video')})}>
+		 					<a>
+		 						<div className="icono-play-construccion"></div>
+		 					</a>
+		 					<div>
+		 						<p className="text-play-const">Play Tour</p>
+		 					</div>
+		 				</div>
+	 				</div>
+					<div className="padding"></div>
+	 			</div>
 	 			<div className="third-fond-construccion min-height-fond" layout="row" layout-align="center center">
 	 				<div className="content-info-const-1 container padding" layout-gt-sm="row" layout="column">
 		 				<div layout="column">
@@ -101,72 +164,10 @@ export default class ConstruccionVol extends Component{
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
 		 					<div className="pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('tour-360_video')})}>
-		 						<p className="text-play-const">Play Video</p>
+		 						<p className="text-play-const">Play Tour</p>
 		 					</div>
 		 				</div>
 	 				</div>
-	 			</div>
-	 			<div className="fourth-fond-construccion min-height-fond" layout="row" layout-align="center center">
-	 				<div className="content-info-const-2 container padding" layout-gt-sm="row" layout="column">
-		 				<div className="contenido-text-avance">
-		 					<div className="contenido-titulo-const-avance">
-		 						<p className="text-title-const aller">{this.getText('obra_aerea_title1')}</p>
-		 					</div>
-		 					<div className="division-primeros-textos"></div>
-							<div className="content-avance-obra-f-text container-half">
-		 						<p className="text-desc-construccion opacity5">{this.getText('obra_aerea_text1')}</p>
-		 					</div>
-		 					<div className="container-half">
-		 						{/* <div className="contenedor-text-area">
-		 							<p className="second-text-const aller">{this.getText('obra_aerea_title2')}</p>
-		 						</div> */}
-		 						<div layout="row">
-									<div flex="30">
-										<div className="ico-3-const"></div>
-									</div>
-									{/* <div className="padding-quarter"></div> */}
-		 							{/* <p className="text-desc-construccion otro-width-cons left opacity5" >{this.getText('obra_aerea_text2')}</p> */}
-		 						</div>
-		 					</div>
-		 				</div>
-		 				<div layout-xs="column" layout-align-xs="start center" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
-		 					<a>
-		 						<div className="icono-play-construccion"></div>
-		 					</a>
-		 					<div>
-		 						<p className="text-play-const">Play Video</p>
-		 					</div>
-		 				</div>
-	 				</div>
-					<div className="padding"></div>
-	 			</div>
-	 			<div className="fifth-fond-construccion min-height-fond" layout="row" layout-align="center center">
-	 				<div className="content-info-const-3 container padding" layout-gt-sm="row" layout="column">
-		 				<div className="container-half">
-		 					<div className="contenido-titulo-const-avance">
-		 						<p className="text-title-const aller">{this.getText('obra_timelapse_title1')}</p>
-		 					</div>
-		 					<div className="division-primeros-textos"></div>
-		 					<div className="contenedor-genere-confianza">
-		 						<p className="text-desc-construccion opacity5">{this.getText('obra_timelapse_text1')}</p>
-		 					</div>
-		 					<div className="contenedor-iconos" layout="row" layout-align="end">
-		 						<div layout-align="end" layout="row">
-									<div className="padding-half"></div>
-									<div className="ico-4-const"></div>
-								</div>
-		 					</div>
-		 				</div>
-						<div layout-xs="column" layout-align-xs="start center" flex-order-gt-xs="-1" className="content-image-play pointer"  onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_timelapse_video')})}>
-		 					<a>
-		 						<div className="icono-play-construccion"></div>
-		 					</a>
-		 					<div>
-		 						<p className="text-play-const">Play Video</p>
-		 					</div>
-		 				</div>
-	 				</div>
-					<div className="padding"></div>
 	 			</div>
 				<div className="icon-wrapper" layout="row" layout-align="center">
 					<img src={require('../../img/icos/triangle_up_white.png')} alt="" />
@@ -179,7 +180,7 @@ export default class ConstruccionVol extends Component{
 	 					<p className="text-muestras-trabajo-const opacity75">{this.getText('portafolio_text')}</p>
 	 				</div>
 					<div layout="row" layout-align="center">
-						<div className="content-img-const container" layout="row" layout-wrap="true" layout-align="center">
+						<div className="content-img-const container" id="imagenes-extendida" layout="row" layout-wrap="true" layout-align="center">
 							{
 								_(this.state.data.portafolio_videos || {}).map(({text, image: {url}}, index) =>
 								<div key={index} className="content-1-img-cons padding-half" flex-gt-sm="33" flex-sm="50" flex-xs="100">
@@ -188,8 +189,17 @@ export default class ConstruccionVol extends Component{
 								</div>)
 							}
 						</div>
-
-
+						
+					</div>
+					<div className="big-content-ver-const" id="ver-mas">
+						<div className="contenedor-ver-mas-cons">
+							<p className="color-ver-mas" onClick={() => {$("#imagenes-extendida").addClass("clase-extendida"); $("#ver-menos").show(); $("#ver-mas").hide();}}>Ver más</p>
+						</div>
+					</div>
+					<div className="big-content-ver-const" id="ver-menos">
+						<div className="contenedor-ver-mas-cons" id="underline-size">
+							<p className="color-ver-mas" onClick={() => {$("#imagenes-extendida").removeClass("clase-extendida"); $("#ver-menos").hide(); $("#ver-mas").show();}}>Ver menos</p>
+						</div>
 					</div>
 				</div>
 				<div>
