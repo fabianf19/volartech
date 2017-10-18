@@ -146,7 +146,7 @@ export default class QuienesSomos extends Component{
 	 				</div>
 	 			</div> */}
 	 			<div className="cuarto-fondo-w-w-a" layout="row" layout-align="center center">
-	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start end">
+	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start start">
  						<p className="text-ideales aller bold">{this.getText('ideals_title')}</p>
 	 					<div className="div-text-line-fourth"></div>
 	 					<p className="text-descripcion-cuarto ideals-text opacity5">{this.getText('ideals_text')}</p>

@@ -5,14 +5,14 @@ import './construccion.css'
 import PrismicDOM from 'prismic-dom';
 import _ from 'underscore';
 import Card from '../../inc/Card';
-import $ from 'jquery';
 
 export default class ConstruccionVol extends Component{
 	constructor(props) {
 		super(props)
 		this.state = {
 			data: {},
-			videoEmbed: null
+			videoEmbed: null,
+			isExpanded: false
 		}
 		window.PrismicApi
 			.getSingle('produccion')
@@ -180,23 +180,18 @@ export default class ConstruccionVol extends Component{
 					<div layout="row" layout-align="center">
 						<div className="content-img-const container" id="imagenes-extendida" layout="row" layout-wrap="true" layout-align="center">
 							{
-								_(this.state.data.portafolio_videos || {}).map(({text, image: {url}}, index) =>
+								_(this.state.data.portafolio_videos || []).chain().first(this.state.isExpanded ? 99 : 3).map(({text, image: {url}}, index) =>
 								<div key={index} className="content-1-img-cons padding-half" flex-gt-sm="33" flex-sm="50" flex-xs="100">
 									<div className="ratio-16-9 background-image" style={{backgroundImage: `url(${url})`}}></div>
 									<p className="text-fecha-img-cons">{PrismicDOM.RichText.asText(text)}</p>
-								</div>)
+								</div>).value()
 							}
 						</div>
 						
 					</div>
 					<div className="big-content-ver-const" id="ver-mas">
-						<div className="contenedor-ver-mas-cons">
-							<p className="color-ver-mas" onClick={() => {$("#imagenes-extendida").addClass("clase-extendida"); $("#ver-menos").show(); $("#ver-mas").hide();}}>Ver más</p>
-						</div>
-					</div>
-					<div className="big-content-ver-const" id="ver-menos">
 						<div className="contenedor-ver-mas-cons" id="underline-size">
-							<p className="color-ver-mas" onClick={() => {$("#imagenes-extendida").removeClass("clase-extendida"); $("#ver-menos").hide(); $("#ver-mas").show();}}>Ver menos</p>
+							<p className="color-ver-mas" onClick={() => {this.setState({...this.state, isExpanded: !this.state.isExpanded})}}>Ver {this.state.isExpanded ? 'Menos' : 'Más'}</p>
 						</div>
 					</div>
 				</div>

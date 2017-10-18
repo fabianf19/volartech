@@ -47,11 +47,20 @@ export default class Footer extends Component{
 				 					<div className="logo-mail"></div>
 				 					<a href="mailto:info@volartech.co"><p className="fourth-div-txt">info@volartech.co</p></a>
 				 				</div>
-				 				<div className="content-fourth-div-2-image">
+				 				<div className="content-fourth-div-2-image" layout="row">
 				 					<div className="logo-whatsapp"></div>
-				 					<a href="tel:+573173721618"><p className="fourth-div-txt">+(57) 317 372 1618</p></a>
+									<div>
+										<a href="tel:+573173721618"><p className="fourth-div-txt">+(57) 317 372 1618</p></a>
+										<p className="fourth-div-txt">Bogotá, Colombia</p>
+									</div>
 				 				</div>
-				 				<p className="fourth-div-txt">Bogotá, Colombia</p>
+								<div className="content-fourth-div-2-image" layout="row">
+				 					<div className="logo-whatsapp"></div>
+									<div>
+										<a href="tel:+13053050972"><p className="fourth-div-txt">+(1) 305 305 0972</p></a>
+										<p className="fourth-div-txt">Miami, USA</p>
+									</div>
+				 				</div>
 				 			</div>
 				 			<div className="content-fifth-div padding" flex-xs="100" flex-sm="50" flex-md="25">
 				 				<p className="fifth-div-txt-title">Siguenos</p>

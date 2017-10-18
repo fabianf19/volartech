@@ -1,7 +1,6 @@
 .background-construccion{
 	width: 100%;
     height: 100%;
-    position: absolute;
 }
 .first-fond-construccion{
 	width: 100%;
@@ -313,7 +312,7 @@
 	display: flex;
 	margin-bottom: 36px;
 	justify-content: center;
-	height: 249px;
+	/* height: 249px; */
 	overflow: hidden;
 }
 /*.content-1-img-cons{
@@ -718,7 +717,7 @@
 	cursor: pointer;
 }
 .big-content-ver-const{
-	width: 1174px;
+	/* width: 1174px; */
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 50px;
@@ -748,5 +747,5 @@
 	float: right;
 }
 #underline-size{
-	width: 73px;
+	/* width: 73px; */
 }

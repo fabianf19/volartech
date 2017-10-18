@@ -9,8 +9,8 @@
 		/* padding: 0 1rem; */
 }
 .logo-navbar-volartech-inside{
-	width: 178px;
-    height: 35px;
+	width: 222px;
+	height: 43px;
     position: relative;
     background: url(../img/icos/logo-volartech-inside.png) no-repeat;
     background-size: cover;
@@ -87,8 +87,8 @@ a.boton-contact-v-inside{
 	    /* display: block; */
 	}
 	.logo-navbar-volartech-inside{
-		width: 140px;
-	    height: 28px;
+		width: 222px;
+    height: 43px;
 	    position: relative;
 				padding: 0;
         margin-left: 0px;
