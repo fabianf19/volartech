@@ -218,7 +218,7 @@ export default class IngenieriaVol extends Component{
 									<a href="tel:+573173721618" className="padding-quarter" flex="">
 										<div className="boton-llamar-ing">
 											<p className="text-llamar-boton-ing">Llamar</p>
-											<p className="text-llamar-llamar-ing" hide-xs="">+57 (313) 868 9045</p>
+											<p className="text-llamar-llamar-ing" hide-xs="">+57 (317) 372 1618</p>
 										</div>
 									</a>
 								</div>

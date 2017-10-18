@@ -11,7 +11,7 @@ exports.contactForm = functions.https.onRequest((req, res) => {
     try {
       let {email, service, displayName, comments} = req.query,
           from_email = new sgHelper.Email(email),
-          to_email = new sgHelper.Email("contacto@volartech.com"),
+          to_email = new sgHelper.Email("info@volartech.co"),
           subject = `Formulario de contacto: ${displayName}`,
           content = new sgHelper.Content(
             "text/plain",

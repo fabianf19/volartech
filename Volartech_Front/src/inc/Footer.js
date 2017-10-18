@@ -37,7 +37,6 @@ export default class Footer extends Component{
 								<p className="third-div-txt-title">Sobre Volartech</p>
 				 				<div className="second-line-div"></div>
 				 				<p href="/quienes" className="third-div-txt">Quienes Somos</p>
-				 				<p href="/quienes" className="third-div-txt">Nuestro Equipo</p>
 				 			</div>
 				 			<div className="content-fourth-div padding" flex-xs="100" flex-sm="50" flex-md="25">
 								<p className="fourth-div-txt-title">Te interesa?</p>

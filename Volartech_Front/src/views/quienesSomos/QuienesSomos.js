@@ -207,7 +207,7 @@ export default class QuienesSomos extends Component{
 								<a flex="" href="tel:+573173721618">
 									<div className="boton-llamar">
 										<p className="text-llamar-boton">Llamar</p>
-										<p className="text-llamar-llamar" hide-xs="">+57 (313) 868 9045</p>
+										<p className="text-llamar-llamar" hide-xs="">+57 (317) 372 1618</p>
 									</div>
 								</a>
 							</div>

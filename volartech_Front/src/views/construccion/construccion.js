@@ -218,7 +218,7 @@ export default class ConstruccionVol extends Component{
 									<a href="tel:+573173721618" flex="" className="padding-quarter">
 										<div className="boton-llamar-const">
 											<p className="text-llamar-boton-const">Llamar</p>
-											<p className="text-llamar-llamar-const" hide-xs="">+57 (313) 868 9045</p>
+											<p className="text-llamar-llamar-const" hide-xs="">+57 (317) 372 1618</p>
 										</div>
 									</a>
 								</div>
