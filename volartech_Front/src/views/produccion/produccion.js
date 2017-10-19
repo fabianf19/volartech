@@ -219,7 +219,7 @@ export default class ProduccionVol extends Component{
 									<a flex="" href="tel:+573173721618" className="padding-quarter">
 										<div className="boton-llamar-prod">
 											<p className="text-llamar-boton-prod">Llamar</p>
-											<p className="text-llamar-llamar-prod" hide-xs="">+57 (313) 868 9045</p>
+											<p className="text-llamar-llamar-prod" hide-xs="">+57 (317) 372 1618</p>
 										</div>
 									</a>
 								</div>

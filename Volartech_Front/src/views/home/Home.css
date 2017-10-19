@@ -6,6 +6,7 @@
     background-size: cover;
     transition : background-image 1s;
     /*position: absolute;*/
+    overflow-x: hidden;
 }
 .navbar-volartech{
 	/* width: 100%; */
@@ -24,12 +25,25 @@
     background: url(../../img/icos/logo-volartech.png) no-repeat;
     background-size: cover;
 	margin-right: auto;
-	transform: scale(1.5);
-    /*margin-left: auto;*/
+	/*transform: scale(1.5);
+    margin-left: auto;*/
 }
 @media(max-width: 600px) {
 	.logo-navbar-volartech{
 		transform: scale(1.125);
+	}
+	.logo-volartech-home{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.contenedor-menu-vol{
+		margin-left: auto;
+		margin-right: auto;
+		width: 304px;
+	}
+	.padding-h{
+		padding-left: initial !important; 
+		padding-right: initial !important;
 	}
 }
 .text-navbar-volartech{
@@ -423,6 +437,13 @@ a {
 	}
 	.contenedor-contenidos-home.container{
 		width: 670px;
+	}
+	.padding-h{
+		padding-left: 1rem !important;
+    	padding-right: 1rem !important;
+	}
+	.text-navbar-volartech{
+		font-size: 14px;
 	}
 }
 /* .padding.pointer{

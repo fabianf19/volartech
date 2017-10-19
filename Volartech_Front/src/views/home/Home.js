@@ -118,31 +118,31 @@ export default class Home extends Component{
 			 	<div className="background-inicio-page relative" style={{backgroundImage : 'url(' + bg +')'}}>
 			 		<div className="background-inicio-imagen absolute-fill" layout="column">
 			 			<div className="contenedor-navbar">
-				 			<div className="navbar-volartech padding-h" layout="row" layout-xs="column" layout-align-xs="start stretch">
+				 			<div className="navbar-volartech padding-h contenedor-menu-vol" layout="row" layout-xs="column" layout-align-xs="start stretch">
 								<div layout="row" layout-align="center">
-									<div className="logo-navbar-volartech"></div>
+									<div className="logo-navbar-volartech logo-volartech-home"></div>
 								</div>
 								<div flex="" className="padding-half"></div>
 								<div className="md-content" layout="row"></div>
 									<div className="content-selector-sections-home">
 										<a href="/quienes">
 											<div className="contenedor-textos-navb">
-												<p className="text-navbar-volartech">Quienes Somos</p>
+												<p className="text-navbar-volartech">Quiénes Somos</p>
 											</div>
 										</a>
 										<a href="/produccion">
 											<div className="contenedor-textos-navb">
-												<p className="text-navbar-volartech">Produccion</p>
+												<p className="text-navbar-volartech">Producción</p>
 											</div>
 										</a>
 										<a href="/construccion">
 											<div className="contenedor-textos-navb">
-												<p className="text-navbar-volartech">Construccion</p>
+												<p className="text-navbar-volartech">Construcción</p>
 											</div>
 										</a>
 										<a href="/ingenieria">
 											<div className="contenedor-textos-navb">
-												<p className="text-navbar-volartech">Ingenieria</p>
+												<p className="text-navbar-volartech">Ingeniería</p>
 											</div>
 										</a>
 										<a href="/contacto" hide-xs="">

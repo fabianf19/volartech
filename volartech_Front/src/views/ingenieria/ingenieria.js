@@ -52,7 +52,7 @@ export default class IngenieriaVol extends Component{
 								<div className="imagen-dron-ing ratio-16-9"></div>
 							</div>
 						</div>
-						<div className="conten-texto-up padding" flex-gt-sm="" layout="column" layout-align="end">
+						<div className="conten-texto-up" flex-gt-sm="" layout="column" layout-align="end">
 		 					<div>
 		 						<p className="text-title-ing aller-display">{this.getText('main_title')}</p>
 		 					</div>
@@ -218,7 +218,7 @@ export default class IngenieriaVol extends Component{
 									<a href="tel:+573173721618" className="padding-quarter" flex="">
 										<div className="boton-llamar-ing">
 											<p className="text-llamar-boton-ing">Llamar</p>
-											<p className="text-llamar-llamar-ing" hide-xs="">+57 (313) 868 9045</p>
+											<p className="text-llamar-llamar-ing" hide-xs="">+57 (317) 372 1618</p>
 										</div>
 									</a>
 								</div>

@@ -18989,3 +18989,11 @@
   height: 1px;
   background: rgba(149, 152, 154, 0.15);
 }
+@media (max-width: 600px){
+  .container{
+    width: 280px;
+  }
+  .padding{
+    padding-top: 1rem;
+  }
+}

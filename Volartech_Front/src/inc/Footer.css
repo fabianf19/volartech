@@ -216,8 +216,8 @@ body{
 	}
 	.content-first-div{
 		width: 289px;
-		margin-left: auto;
-		margin-right: auto; 
+		/*margin-left: auto;
+		margin-right: auto;*/
 		margin-bottom: 19px;
 	}
 	.first-div-txt{

@@ -58,7 +58,7 @@ export default class ConstruccionVol extends Component{
 								<div className="imagen-dron-const ratio-4-3"></div>
 							</div>
 						</div>
-						<div className="contenedor-titulo-construccion padding" flex-gt-sm="" layout="column" layout-align="end">
+						<div className="contenedor-titulo-construccion content-titulo-resp" flex-gt-sm="" layout="column" layout-align="end">
 		 					<div>
 		 						<p className="text-title-construccion aller-display aller">{this.getText('main_title')}</p>
 		 					</div>
@@ -70,40 +70,42 @@ export default class ConstruccionVol extends Component{
 	 				</div>
 	 			</div>
 	 			<div className="second-fond-construccion" layout="row" layout-align="center">
-	 				<div className="content-text-descripcion-cons padding-v container" layout="row">
- 						<p className="text-descripcion-construccion container-half padding-h margin-v opacity75">{this.getText('main_text')}</p>
+	 				<div className="content-text-descripcion-cons padding-v contenedor content-special" layout="row">
+ 						<p className="text-descripcion-construccion container-half padding-h margin-v opacity75 clase-especial">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
 	 			<div className="fourth-fond-construccion min-height-fond" layout="row" layout-align="center center">
-	 				<div className="content-info-const-2 container padding" layout-gt-sm="row" layout="column">
-	 					<div layout-xs="column" layout-align-xs="start center" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
-		 					<a>
-		 						<div className="icono-play-construccion"></div>
-		 					</a>
-		 					<div>
-		 						<p className="text-play-const">Play Tour</p>
-		 					</div>
-		 				</div>
-		 				<div className="contenido-text-avance">
-		 					<div className="contenido-titulo-const-avance">
-		 						<p className="text-title-const aller">{this.getText('obra_aerea_title1')}</p>
-		 					</div>
-		 					<div className="division-primeros-textos"></div>
-							<div className="content-avance-obra-f-text container-half">
-		 						<p className="text-desc-construccion opacity5">{this.getText('obra_aerea_text1')}</p>
-		 					</div>
-		 					<div className="container-half">
-		 						{/* <div className="contenedor-text-area">
-		 							<p className="second-text-const aller">{this.getText('obra_aerea_title2')}</p>
-		 						</div> */}
-		 						<div layout="row" className="contenedor-iconos">
-									<div flex="30">
-										<div className="ico-3-const"></div>
-									</div>
-									{/* <div className="padding-quarter"></div> */}
-		 							{/* <p className="text-desc-construccion otro-width-cons left opacity5" >{this.getText('obra_aerea_text2')}</p> */}
-		 						</div>
-		 					</div>
+	 				<div className="background-fondo-responsive">
+		 				<div className="content-info-const-2 container padding" layout-gt-sm="row" layout="column">
+		 					<div layout-xs="column" layout-align-xs="start center" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
+			 					<a>
+			 						<div className="icono-play-construccion"></div>
+			 					</a>
+			 					<div>
+			 						<p className="text-play-const">Play Tour</p>
+			 					</div>
+			 				</div>
+			 				<div className="contenido-text-avance">
+			 					<div className="contenido-titulo-const-avance">
+			 						<p className="text-title-const aller">{this.getText('obra_aerea_title1')}</p>
+			 					</div>
+			 					<div className="division-primeros-textos"></div>
+								<div className="content-avance-obra-f-text container-half">
+			 						<p className="text-desc-construccion opacity5">{this.getText('obra_aerea_text1')}</p>
+			 					</div>
+			 					<div className="container-half">
+			 						{/* <div className="contenedor-text-area">
+			 							<p className="second-text-const aller">{this.getText('obra_aerea_title2')}</p>
+			 						</div> */}
+			 						<div layout="row" className="contenedor-iconos">
+										<div flex="30">
+											<div className="ico-3-const"></div>
+										</div>
+										{/* <div className="padding-quarter"></div> */}
+			 							{/* <p className="text-desc-construccion otro-width-cons left opacity5" >{this.getText('obra_aerea_text2')}</p> */}
+			 						</div>
+			 					</div>
+			 				</div>
 		 				</div>
 	 				</div>
 					<div className="padding"></div>
@@ -218,7 +220,7 @@ export default class ConstruccionVol extends Component{
 									<a href="tel:+573173721618" flex="" className="padding-quarter">
 										<div className="boton-llamar-const">
 											<p className="text-llamar-boton-const">Llamar</p>
-											<p className="text-llamar-llamar-const" hide-xs="">+57 (313) 868 9045</p>
+											<p className="text-llamar-llamar-const" hide-xs="">+57 (317) 372 1618</p>
 										</div>
 									</a>
 								</div>

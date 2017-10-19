@@ -149,7 +149,7 @@ export default class QuienesSomos extends Component{
 	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start start">
  						<p className="text-ideales aller bold">{this.getText('ideals_title')}</p>
 	 					<div className="div-text-line-fourth"></div>
-	 					<p className="text-descripcion-cuarto ideals-text opacity5">{this.getText('ideals_text')}</p>
+	 					<p className="text-descripcion-cuarto ideals-text">{this.getText('ideals_text')}</p>
 	 				</div>
 	 			</div>
 				<div className="black-background" layout="row" layout-align="center center">
@@ -207,7 +207,7 @@ export default class QuienesSomos extends Component{
 								<a flex="" href="tel:+573173721618">
 									<div className="boton-llamar">
 										<p className="text-llamar-boton">Llamar</p>
-										<p className="text-llamar-llamar" hide-xs="">+57 (313) 868 9045</p>
+										<p className="text-llamar-llamar" hide-xs="">+57 (317) 372 1618</p>
 									</div>
 								</a>
 							</div>
