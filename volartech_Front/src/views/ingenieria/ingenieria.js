@@ -99,17 +99,19 @@ export default class IngenieriaVol extends Component{
 	 			<div className="fourth-fond-ingenieria min-height-fond relative" layout="row" layout-align="center">
 	 				<div class="container">
 	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
-		 					<div className="container-third padding">
-		 						<div className="contenedor-title-ingenieria">
-		 							<p className="text-title-ingenieria aller">{this.getText('lidar_movil_title1')}</p>
-		 						</div>
-		 						<div className="division-primeros-textos-ing"></div>
-		 						<div className="conetenedor-subtitulos">
-		 							<p className="subtitle-text-ing aller">{this.getText('lidar_movil_title2')}</p>
-		 						</div>
-		 						<div className="content-info-ing">
-		 							<p className="text-info-ing">{this.getText('lidar_movil_text2')}</p>
-		 						</div>
+		 					<div className="container-third">
+								<div className="padding">
+									<div className="contenedor-title-ingenieria">
+										<p className="text-title-ingenieria aller">{this.getText('lidar_movil_title1')}</p>
+									</div>
+									<div className="division-primeros-textos-ing"></div>
+									<div className="conetenedor-subtitulos">
+										<p className="subtitle-text-ing aller">{this.getText('lidar_movil_title2')}</p>
+									</div>
+									<div className="content-info-ing">
+										<p className="text-info-ing">{this.getText('lidar_movil_text2')}</p>
+									</div>
+								</div>
 		 					</div>
 	 					</div>
 						<video className="tamaño-video absolute-fill" autoPlay poster="fondos/video.jpg" loop >

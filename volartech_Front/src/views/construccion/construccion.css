@@ -770,7 +770,7 @@
 #underline-size{
 	/* width: 73px; */
 }
-@media (min-width: 900px) and (max-width: 1380px){
+@media (min-width: 900px){
 	.background-fondo-responsive{
 		width: 100%;
 	}

@@ -63,8 +63,8 @@
 .fourth-fond-ingenieria{
 	width: 100%;
 	height: 448px;
-	/*background: url(../../img/fondos/cuarto-fondo-ing.png) no-repeat;
-	background-size: cover;*/
+	background: url(../../img/fondos/cuarto-fondo-ing.png) no-repeat;
+	background-size: cover;
 }
 .fifth-fond-ingenieria{
 	width: 100%;
@@ -642,4 +642,9 @@
 }
 .contenedor-video{
 	height: 440px;
+}
+@media (max-width: 900px) {
+	.tamaño-video {
+		display: none;
+	}
 }
