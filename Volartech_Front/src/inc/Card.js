@@ -113,16 +113,16 @@ export default class Card extends Component{
 		 							<div className="linea-o2"></div>
 		 						</div>
 		 						<div className="content-mail-call-enviar">
-		 							<a href="mailto:contacto@volartech.com">
+		 							<a href="mailto:info@volartech.co">
 			 							<div className="boton-mail-contacto">
 			 								<p className="text-mail-boton-contacto">Mail</p>
-			 								<p className="text-mail-mail-contacto">contacto@volartech.com.co</p>
+			 								<p className="text-mail-mail-contacto">info@volartech.co</p>
 			 							</div>
 		 							</a>
 		 							<a href="tel:+573173721618">
 			 							<div className="boton-llamar-contacto">
 			 								<p className="text-llamar-boton-contacto">Llamar</p>
-			 								<p className="text-llamar-llamar-contacto">+57 (313) 868 9045</p>
+			 								<p className="text-llamar-llamar-contacto">+57 (317) 372 1618</p>
 			 							</div>
 		 							</a>
 		 						</div>
