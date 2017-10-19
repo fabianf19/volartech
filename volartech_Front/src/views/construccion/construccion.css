@@ -684,10 +684,7 @@
 	.text-fecha-img-cons{
 		font-size: 11px;
 	}
-	.big-content-ver-const{
-		width: 290px;
-		margin-bottom: 50px;
-	}
+	
 	.text-ver-mas-cons{
 		font-size: 15px;
 	}
@@ -781,22 +778,33 @@
 		/*padding-left: 5rem !important;*/
 	}
 	.content-special{
-		width: 100% !important;
+		width: 1200px;
 	}
+	/*.big-content-ver-const{
+		width: inherit;
+	}*/
 }
 @media (max-width: 600px){
 	
 	.contenedor-ver-mas-cons{
 		/*width: initial;*/
+		width: 70px;
 	}
 	.content-titulo-resp{
 		width: 300px;
 	    margin-right: auto;
 	    margin-left: auto;
 	}
+	.big-content-ver-const{
+		width: 276px;
+		margin-bottom: 50px;
+	}
 }
 @media (width: 1366px){
 	.clase-especial{
 		padding-left: 5rem !important;
 	}
+}
+.background-fondo-responsive{
+	width: 100%;
 }

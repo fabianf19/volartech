@@ -71,7 +71,7 @@ export default class ConstruccionVol extends Component{
 	 			</div>
 	 			<div className="second-fond-construccion" layout="row" layout-align="center">
 	 				<div className="content-text-descripcion-cons padding-v contenedor content-special" layout="row">
- 						<p className="text-descripcion-construccion container-half padding-h margin-v opacity75 clase-especial">{this.getText('main_text')}</p>
+ 						<p className="text-descripcion-construccion container-half margin-v opacity75 clase-especial">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
 	 			<div className="fourth-fond-construccion min-height-fond" layout="row" layout-align="center center">
