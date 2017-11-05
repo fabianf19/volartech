@@ -18,22 +18,22 @@ export default class NavbarVolartech extends Component{
 		 				</a>
 						<div flex=""></div>
 		 				<div className="content-select-service" layout="row" layout-align="space-around center">
-			 				<a href="/quienes" flex="" className="padding-quarter">
+			 				<a href="/quienes" className="padding-quarter">
 				 				<div className="contenedor-textos-navb-inside">
 				 					<p className="text-navbar-volartech-inside" style={{fontWeight: this.props.current === 0 ? 800 : 400}}>Quiénes Somos</p>
 				 				</div>
 			 				</a>
-			 				<a href="/produccion" flex="" className="padding-quarter">
+			 				<a href="/produccion" className="padding-quarter">
 			 				<div className="contenedor-textos-navb-inside">
 			 					<p className="text-navbar-volartech-inside" style={{fontWeight: this.props.current === 1 ? 800 : 400}}>Producción</p>
 			 				</div>
 			 				</a>
-			 				<a href="/construccion" flex="" className="padding-quarter">
+			 				<a href="/construccion" className="padding-quarter">
 				 				<div className="contenedor-textos-navb-inside">
 				 					<p className="text-navbar-volartech-inside" style={{fontWeight: this.props.current === 2 ? 800 : 400}}>Construcción</p>
 				 				</div>
 			 				</a>
-			 				<a href="/ingenieria" flex="" className="padding-quarter">
+			 				<a href="/ingenieria" className="padding-quarter">
 				 				<div className="contenedor-textos-navb-inside">
 				 					<p className="text-navbar-volartech-inside" style={{fontWeight: this.props.current === 3 ? 800 : 400}}>Ingeniería</p>
 				 				</div>

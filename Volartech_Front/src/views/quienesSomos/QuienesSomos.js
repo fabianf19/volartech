@@ -189,7 +189,7 @@ export default class QuienesSomos extends Component{
 					<div className="contenedor-interes-boton-contacto margin-v padding container" layout="column" layout-gt-sm="row" layout-align-gt-sm="center center">
 						<div className="content-info-interes padding-v" flex="">
 							<p className="text-te-interesa">{this.getText('contact_title')}</p>
-							<p className="text-text-interes container-half opacity5">{this.getText('contact_text')}</p>
+							<p className="text-text-interes container-half opacity75">{this.getText('contact_text')}</p>
 						</div>
 						<div layout="column" layout-align="start stretch">
 							<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>

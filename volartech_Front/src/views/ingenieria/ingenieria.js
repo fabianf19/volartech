@@ -23,6 +23,14 @@ export default class IngenieriaVol extends Component{
 			});
 			this.show_card = this.show_card.bind(this);
 	}
+
+	componentDidMount(){
+		$(".fourth-fond-ingenieria.min-height-fond.relative").removeAttr("layout");
+		setTimeout(() => {
+			$(".fourth-fond-ingenieria.min-height-fond.relative").attr("layout","row");
+		},400);
+	}
+
 	getText(id) {
 		return this.state.data[id] ? PrismicDOM.RichText.asText(this.state.data[id]) : ''
 	}
@@ -47,7 +55,7 @@ export default class IngenieriaVol extends Component{
 		 		<NavbarVolartech current={3} />
 				 <div className="first-fond-ingenieria" layout="row" layout-align="center">
 	 				<div className="content-text-dron-ing" layout="column" layout-align="start stretch" layout-gt-sm="row" flex="">
-					 <div flex-gt-sm="60" flex-order-gt-sm="2" layout="row" layout-align="center">
+					 <div flex-gt-sm="60" flex-order-gt-sm="2" layout="row" layout-align="center" style={{height : 290}}>
 							<div flex-sm="70" flex="100">
 								<div className="imagen-dron-ing ratio-16-9"></div>
 							</div>
@@ -66,8 +74,8 @@ export default class IngenieriaVol extends Component{
 	 			
 	 			<div className="second-fond-ingenieria padding-v" layout="row" layout-align="center">
 	 				<div className="content-text-descripcion container padding margin-v">
-						 <p className="text-descripcion-produccion container-half">
-						 	<span className="padding-h">{this.getText('main_text')}</span>
+						 <p className="text-descripcion-produccion container-half" style={{ textAlign : 'justify' }}>
+						 	<span>{this.getText('main_text')}</span>
 						 </p>
  					</div>
 	 			</div>
@@ -75,7 +83,7 @@ export default class IngenieriaVol extends Component{
 	 				<div>
 	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-gt-sm="row" layout-align="start stretch">
 		 					<div flex-gt-sm="">
-		 						<div className="img-droncito ratio-4-3"></div>
+		 						<div className="img-droncito ratio-16-9"></div>
 		 					</div>
 		 					<div className="size-responsive-content container-third padding" layout="column" layout-align="center">
 		 						<div className="contenedor-title-ingenieria">
@@ -97,7 +105,10 @@ export default class IngenieriaVol extends Component{
 	 				</div>
 	 			</div>
 	 			<div className="fourth-fond-ingenieria min-height-fond relative" layout="row" layout-align="center">
-	 				<div class="container">
+	 				<video className="tamaño-video absolute-fill" autoPlay poster="fondos/video.jpg" loop >
+								<source src={ url_video } type="video/mp4" className="video-part"/>
+						</video>
+	 				<div className="container">
 	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
 		 					<div className="container-third">
 								<div className="padding">
@@ -114,9 +125,7 @@ export default class IngenieriaVol extends Component{
 								</div>
 		 					</div>
 	 					</div>
-						<video className="tamaño-video absolute-fill" autoPlay poster="fondos/video.jpg" loop >
-								<source src={ url_video } type="video/mp4" class="video-part"/>
-						</video>
+						
 		                {/*<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
 		 					<div className="container-third padding">
 		 						<div className="contenedor-title-ingenieria">

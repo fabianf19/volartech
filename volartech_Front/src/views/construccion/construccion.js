@@ -53,7 +53,7 @@ export default class ConstruccionVol extends Component{
 				<NavbarVolartech current={2} />
 				<div className="first-fond-construccion" layout="row" layout-align="center">
 	 				<div className="content-text-dron-const" layout="column" layout-align="start stretch" layout-gt-sm="row" flex="">
-					 <div flex-gt-sm="60" flex-order-gt-sm="2" layout="row" layout-align="center">
+					 <div flex-gt-sm="60" flex-order-gt-sm="2" layout="row" layout-align="center" style={{height : 288}}>
 							<div flex-sm="70" flex="100">
 								<div className="imagen-dron-const ratio-4-3"></div>
 							</div>
@@ -82,7 +82,7 @@ export default class ConstruccionVol extends Component{
 			 						<div className="icono-play-construccion"></div>
 			 					</a>
 			 					<div>
-			 						<p className="text-play-const">Play Tour</p>
+			 						<p className="text-play-const">Play Video</p>
 			 					</div>
 			 				</div>
 			 				<div className="contenido-text-avance">
@@ -132,7 +132,7 @@ export default class ConstruccionVol extends Component{
 		 						<div className="icono-play-construccion"></div>
 		 					</a>
 		 					<div>
-		 						<p className="text-play-const">Play Tour</p>
+		 						<p className="text-play-const">Play Video</p>
 		 					</div>
 		 				</div>
 	 				</div>
@@ -155,7 +155,7 @@ export default class ConstruccionVol extends Component{
 		 						</div>
 		 						<div className="contenedor-icono-time">
 		 							<div className="ico-2-const"></div>
-		 							<p className="text-icon-prod">Time Lapse</p>
+		 							<p className="text-icon-prod">360</p>
 		 						</div>
 		 					</div>
 		 				</div>

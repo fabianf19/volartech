@@ -149,7 +149,7 @@
 	color: #FFFFFF;
 	max-width: 100px;
 	text-align: center;
-	opacity: .5;
+	/*opacity: .5;*/
 }
 .icon-prod {
 	max-height: 3rem;
@@ -416,7 +416,7 @@
 	display: flex;
 }
 .boton-mail-prod{
-	background-color: transparent;
+	background-color: white;
 	border: 1px solid #000000;
 	border-radius: 4px;
 	/* width: 190px; */
@@ -443,7 +443,7 @@
 	color: #B1B1B1;
 }
 .boton-llamar-prod{
-	background-color: transparent;
+	background-color: white;
 	border: 1px solid #000000;
 	border-radius: 4px;
 	/* width: 190px; */

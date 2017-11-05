@@ -9,6 +9,8 @@ let bg2 = require('../../img/fondos/imagen-page-prod.jpg');
 let bg3 = require('../../img/fondos/plano-aereo.jpg');
 let bg4 = require('../../img/fondos/imagen-page-ing.jpg');
 
+const colores = ['white','#8E0A2D','#50565E','#EDA532'];
+
 export default class Home extends Component{
 	
 	constructor(props){
@@ -115,7 +117,7 @@ export default class Home extends Component{
 						<div style={{minWidth: 'calc(8s0vw -68psx)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
 					</div>
 				</div>
-			 	<div className="background-inicio-page relative" style={{backgroundImage : 'url(' + bg +')'}}>
+			 	<div className="background-inicio-page relative" style={{backgroundImage : 'url(' + bg +')', paddingBottom : 10, borderBottom: `10px solid ${colores[this.state.selected]}`}}>
 			 		<div className="background-inicio-imagen absolute-fill" layout="column">
 			 			<div className="contenedor-navbar">
 				 			<div className="navbar-volartech padding-h contenedor-menu-vol" layout="row" layout-xs="column" layout-align-xs="start stretch">

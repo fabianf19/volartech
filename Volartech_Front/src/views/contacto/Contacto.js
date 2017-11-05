@@ -53,7 +53,9 @@ export default class Contacto extends Component{
 										style={{
 											height: this.state.selectorOpen
 												? 180 + 'px'
-												: 60 + 'px'}}>
+												: 60 + 'px',
+												margin: '1rem 0rem'
+											}}>
 									{
 										!this.state.selectorOpen
 											? <div flex="" layout="column" layout-align="space-around center">

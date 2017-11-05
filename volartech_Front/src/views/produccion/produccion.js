@@ -79,7 +79,7 @@ export default class ProduccionVol extends Component{
 	 				<div className="container" layout="column" layout-align="start end">
 	 					<div className="content-pre-produccion padding" layout="column" layout-align="start end">
 	 						<p className="p-p-p-aproduccion aller aller">{this.getText('pre_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('pre_text')}</p>
+	 						<p className="text-p-p-p-aproduccion container-third">{this.getText('pre_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -99,7 +99,7 @@ export default class ProduccionVol extends Component{
 					 	<div className="padding"></div>
 						<div className="content-produccion padding">
 	 						<p className="p-p-p-aproduccion aller">{this.getText('produccion_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('producction_text')}</p>
+	 						<p className="text-p-p-p-aproduccion container-third">{this.getText('producction_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -129,7 +129,7 @@ export default class ProduccionVol extends Component{
 						<div className="padding"></div>
 	 					<div className="content-post-produccion padding " layout="column" layout-align="start end">
 	 						<p className="p-p-p-aproduccion aller">{this.getText('post_title')}</p>
-	 						<p className="text-p-p-p-aproduccion opacity5">{this.getText('post_text')}</p>
+	 						<p className="text-p-p-p-aproduccion">{this.getText('post_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
@@ -159,17 +159,17 @@ export default class ProduccionVol extends Component{
 					 	<div className="padding"></div>
 	 					<div className="content-animacion padding">
 	 						<p className="p-p-p-aproduccion aller">{this.getText('animacion_title')}</p>
-	 						<p className="text-p-p-p-aproduccion container-third opacity5">{this.getText('animacion_text')}</p>
+	 						<p className="text-p-p-p-aproduccion container-third">{this.getText('animacion_text')}</p>
 	 						<div className="div-produccion-line"></div>
 	 					</div>
 	 					
 	 					<div className="conten-iconos-produccion4" layout="row" layout-wrap="">
 	 						<div  className="conten-icono-prod">
-	 							<div className="icono13-prod padding-half"></div>
+	 							<div className="icono13-prod"></div>
 	 							<p className="text-icon-prod">Presentación Interactiva</p>
 	 						</div>
 	 						<div className="conten-icono-prod">
-	 							<div className="icono14-prod padding-half"></div>
+	 							<div className="icono14-prod"></div>
 	 							<p className="text-icon-prod">Motion graphics (2D y 3D)</p>
 	 						</div>
 	 					</div>
