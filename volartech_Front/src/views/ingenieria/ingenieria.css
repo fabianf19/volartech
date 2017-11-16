@@ -1,3 +1,29 @@
+ul {
+	padding-left: 0.5rem;
+}
+ul li {
+  /* color: #3c3c3c;  */
+  /* set color of list item text */
+	list-style: none; 
+	font-size: 1rem; 
+}
+
+ ul li::before {
+  color: #EDA532 !important;  
+  /* color of bullet or square */
+  content: "\2022"; 
+  /* Unicode of character to precede the list item */
+  font-size: 2rem; 
+  /* em or %*/ 
+  padding-right: 0.5rem; 
+  /* use em*/
+  position: relative;
+  top: 0em; 
+  /* use em or % */
+}
+.card-text {
+	font-size: 15px !important;
+}
 .background-ingenieria{
 	width: 100%;
     height: 100%;
@@ -141,8 +167,8 @@
 	text-align: right;
 }
 .third-fond-ingenieria .division-primeros-textos-ing{
-	margin-left: auto;
-	margin-bottom: 24px;
+	/* margin-left: auto; */
+	margin: 12px 0;
 }
 .fourth-fond-ingenieria .contenedor-title-ingenieria{
 	text-align: left;
@@ -165,9 +191,18 @@
 	position: absolute;
     z-index: 300000000000000000;
 }
+@media(max-width: 600px) {
+	.fourth-fond-ingenieria .content-text-dron-ingenieria{
+		max-width: 1200px;
+		margin-top: 48px;
+		/* padding-top: 159px; */
+		position: relative;
+			z-index: 300000000000000000;
+	}
+}
 .fifth-fond-ingenieria .division-primeros-textos-ing{
-	margin-left: auto;
-	margin-bottom: 35px;
+	/* margin-left: auto; */
+	margin: 12px 0;
 }
 .third-fond-ingenieria .contenedor-title-ingenieria{
 	/* margin-top: 76px;
@@ -623,7 +658,7 @@
 	font-size: 15px;
 }
 .background-ingenieria .big-content-ver-const{
-	width: 1174px;
+	/* width: 1174px; */
 }
 .background-ingenieria .contenedor-ver-mas-cons{
 	width: 56px;

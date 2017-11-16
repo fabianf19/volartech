@@ -28,6 +28,11 @@ export default class Home extends Component{
 				this.setState({...this.state, data})
 			});
 		this.onCloseModal = this.onCloseModal.bind(this);
+		this.interval = setInterval(() => {
+			this.setState({...this.state,
+				selected: this.state.selected === 3 ? 0 : this.state.selected + 1
+			})
+		}, 5000)
 	}
 
 	getText(id) {
@@ -67,7 +72,7 @@ export default class Home extends Component{
 			<div className="container">
 				<p className="volartech-title aller-display">{this.getText('video_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('video_subtitle')}</p>
-				<p className="volartech-description-prod container-half opacity75">{this.getText('video_text')}</p>
+				<p className="volartech-description-prod container-half opacity75 text-quienes-somos-description">{this.getText('video_text')}</p>
 				<div className="content-play">
 					<a href="/produccion" >
 						<div className="boton-product-page"> 
@@ -80,7 +85,7 @@ export default class Home extends Component{
 			<div className="container">
 				<p className="volartech-title-construccion aller-display">{this.getText('construction_title')}</p>
 				<p className="volartech-sub-title2-const">{this.getText('construction_subtitle')}</p>
-				<p className="volartech-description-ing container-half opacity75">{this.getText('construction_text')}</p>
+				<p className="volartech-description-ing container-half opacity75 text-quienes-somos-description">{this.getText('construction_text')}</p>
 			<div className="content-play">
 					<a href="/construccion" >
 						<div className="boton-construccion-page"> 
@@ -94,7 +99,7 @@ export default class Home extends Component{
 			<div className="container">
 				<p className="volartech-title aller-display">{this.getText('engineering_title')}</p>
 				<p className="volartech-sub-title2-prod">{this.getText('engineering_subtitle')}</p>
-				<p className="volartech-description-ing container-half opacity75">{this.getText('engineering_text')}</p>
+				<p className="volartech-description-ing container-half opacity75 text-quienes-somos-description">{this.getText('engineering_text')}</p>
 				<div className="content-play">
 					<a href="/ingenieria" >
 						<div className="boton-ingenieria-page"> 
@@ -117,13 +122,16 @@ export default class Home extends Component{
 						<div style={{minWidth: 'calc(8s0vw -68psx)'}} className="video-container" dangerouslySetInnerHTML={{__html: this.state.videoEmbed}}></div>
 					</div>
 				</div>
-			 	<div className="background-inicio-page relative" style={{backgroundImage : 'url(' + bg +')', paddingBottom : 10, borderBottom: `10px solid ${colores[this.state.selected]}`}}>
+			 	<div className="background-inicio-page relative" style={{backgroundImage : 'url(' + bg +')', paddingBottom : 10, borderBottom: `2px solid ${colores[this.state.selected]}`}}>
 			 		<div className="background-inicio-imagen absolute-fill" layout="column">
 			 			<div className="contenedor-navbar">
 				 			<div className="navbar-volartech padding-h contenedor-menu-vol" layout="row" layout-xs="column" layout-align-xs="start stretch">
-								<div layout="row" layout-align="center">
+								{/* <div layout="row" layout-align="center">
 									<div className="logo-navbar-volartech logo-volartech-home"></div>
-								</div>
+								</div> */}
+								<a href="/" layout="row" layout-align="center">
+									<div className="logo-navbar-volartech-inside-inverted"></div>
+								</a>
 								<div flex="" className="padding-half"></div>
 								<div className="md-content" layout="row"></div>
 									<div className="content-selector-sections-home">
@@ -157,11 +165,11 @@ export default class Home extends Component{
 			 			</div>
 						<div className="padding" hide-gt-xs=""></div>
 			 			<div className="content-textos-play padding-v" flex="" layout="row" layout-align="center">
-			 				<div className="contenedor-contenidos-home container" layout="row" layout-xs="column">
+			 				<div className="contenedor-contenidos-home container max-300-xs" layout="row" layout-xs="column" layout-align-xs="center">
 								<div className="padding" flex-gt-xs="">
 									{secciones[this.state.selected]}
 								</div>
-				 				<div className="contenedor-circulos padding-half">
+				 				<div className="contenedor-circulos padding-half" layout-gt-xs="column">
 				 					<div className={(this.state.selected === 0) ? "circulo-cambio active" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 0})}></div>
 				 					<div className={(this.state.selected === 1) ? "circulo-cambio active2" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 1})}></div>
 				 					<div className={(this.state.selected === 2) ? "circulo-cambio active3" : "circulo-cambio"} onClick={() => this.setState({...this.state, selected : 2})}></div>

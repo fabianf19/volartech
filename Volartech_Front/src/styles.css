@@ -1,5 +1,7 @@
 body {
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 body,
 .fira {
@@ -108,4 +110,20 @@ img.icon {
   width: 80vw;
   height: auto;
   background: #000;
+}
+.max-300 {
+  max-width: 300px;
+  margin: 0 auto;
+}
+@media(max-width: 600px) {
+  .center-sm {
+    text-align: center !important;
+  }
+  .width-100-sm {
+    width: 100%;
+  }
+  .max-300-xs {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }

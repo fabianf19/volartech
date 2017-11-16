@@ -60,10 +60,10 @@ export default class ConstruccionVol extends Component{
 						</div>
 						<div className="contenedor-titulo-construccion content-titulo-resp" flex-gt-sm="" layout="column" layout-align="end">
 		 					<div>
-		 						<p className="text-title-construccion aller-display aller">{this.getText('main_title')}</p>
+		 						<p className="text-title-construccion aller-display aller center-sm">{this.getText('main_title')}</p>
 		 					</div>
 		 					<div>
-		 						<p className="sub-title-const aller">{this.getText('main_subtitle')}</p>
+		 						<p className="sub-title-const aller center-sm">{this.getText('main_subtitle')}</p>
 		 					</div>
 							<div show-gt-md="" className="padding"></div>
 						</div>
@@ -71,13 +71,13 @@ export default class ConstruccionVol extends Component{
 	 			</div>
 	 			<div className="second-fond-construccion" layout="row" layout-align="center">
 	 				<div className="content-text-descripcion-cons padding-v contenedor content-special" layout="row">
- 						<p className="text-descripcion-construccion container-half margin-v opacity75 clase-especial">{this.getText('main_text')}</p>
+ 						<p className="text-descripcion-construccion container-half margin-v clase-especial subhead-text center-sm">{this.getText('main_text')}</p>
  					</div>
 	 			</div>
-	 			<div className="fourth-fond-construccion min-height-fond" layout="row" layout-align="center center">
+	 			<div className="fourth-fond-construccion min-height-fond background-left" layout="row" layout-align="center center">
 	 				<div className="background-fondo-responsive">
 		 				<div className="content-info-const-2 container padding" layout-gt-sm="row" layout="column">
-		 					<div layout-xs="column" layout-align-xs="start center" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
+		 					<div flex-order-xs="4" layout-xs="column" layout-align-xs="start center" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
 			 					<a>
 			 						<div className="icono-play-construccion"></div>
 			 					</a>
@@ -85,19 +85,19 @@ export default class ConstruccionVol extends Component{
 			 						<p className="text-play-const">Play Video</p>
 			 					</div>
 			 				</div>
-			 				<div className="contenido-text-avance">
+			 				<div className="contenido-text-avance" layout="column" layout-align-xs="start center">
 			 					<div className="contenido-titulo-const-avance">
-			 						<p className="text-title-const aller">{this.getText('obra_aerea_title1')}</p>
+			 						<p className="text-title-const aller center-sm">{this.getText('obra_aerea_title1')}</p>
 			 					</div>
 			 					<div className="division-primeros-textos"></div>
 								<div className="content-avance-obra-f-text container-half">
-			 						<p className="text-desc-construccion opacity5">{this.getText('obra_aerea_text1')}</p>
+			 						<p className="text-desc-construccion center-sm">{this.getText('obra_aerea_text1')}</p>
 			 					</div>
-			 					<div className="container-half">
+			 					<div className="container-half" layout="row" layout-align="end" layout-align-xs="center">
 			 						{/* <div className="contenedor-text-area">
 			 							<p className="second-text-const aller">{this.getText('obra_aerea_title2')}</p>
 			 						</div> */}
-			 						<div layout="row" className="contenedor-iconos">
+			 						<div layout="row" className="contenedor-iconos" layout-align-xs="center">
 										<div flex="30">
 											<div className="ico-3-const"></div>
 										</div>
@@ -110,18 +110,18 @@ export default class ConstruccionVol extends Component{
 	 				</div>
 					<div className="padding"></div>
 	 			</div>
-	 			<div className="fifth-fond-construccion min-height-fond-ing" layout="row" layout-align="center center">
-	 				<div className="content-info-const-3 container padding" layout-gt-sm="row" layout="column">
-		 				<div className="container-half">
+	 			<div className="fifth-fond-construccion min-height-fond-ing background-right" layout="row" layout-align="center center">
+	 				<div className="content-info-const-3 container padding" layout-gt-sm="row" layout="column" layout-align="center">
+		 				<div className="container-half" layout="column" layout-align-xs="start center">
 		 					<div className="contenido-titulo-const-avance">
-		 						<p className="text-title-const aller">{this.getText('obra_timelapse_title1')}</p>
+		 						<p className="text-title-const aller center-sm">{this.getText('obra_timelapse_title1')}</p>
 		 					</div>
 		 					<div className="division-primeros-textos"></div>
 		 					<div className="contenedor-genere-confianza">
-		 						<p className="text-desc-construccion opacity5">{this.getText('obra_timelapse_text1')}</p>
+		 						<p className="text-desc-construccion center-sm">{this.getText('obra_timelapse_text1')}</p>
 		 					</div>
-		 					<div className="contenedor-iconos" layout="row" layout-align="end">
-		 						<div layout-align="end" layout="row">
+		 					<div className="contenedor-iconos" layout="row" layout-align="start" layout-align-xs="center">
+		 						<div layout-align="start" layout="row">
 									<div className="padding-half"></div>
 									<div className="ico-4-const"></div>
 								</div>
@@ -136,19 +136,19 @@ export default class ConstruccionVol extends Component{
 		 					</div>
 		 				</div>
 	 				</div>
-					<div className="padding"></div>
+					<div className="padding" hide-xs=""></div>
 	 			</div>
-	 			<div className="third-fond-construccion min-height-fond" layout="row" layout-align="center center">
-	 				<div className="content-info-const-1 container padding" layout-gt-sm="row" layout="column">
-		 				<div layout="column">
+	 			<div className="third-fond-construccion min-height-fond background-left" layout="row" layout-align="center center">
+	 				<div className="content-info-const-1 container padding" layout-gt-sm="row" layout="column" layout-align-xs="start center">
+		 				<div layout="column" layout-align-xs="start center">
 		 					<div className="content-text-tour">
-		 						<p className="text-title-const aller">{this.getText('tour-360_title1')}</p>
+		 						<p className="text-title-const aller center-sm">{this.getText('tour-360_title1')}</p>
 		 					</div>
 		 					<div className="division-primeros-textos"></div>
 		 					<div className="first-content-text-description container-half">
-		 						<p className="text-desc-construccion opacity5">{this.getText('tour-360_text1')}</p>
+		 						<p className="text-desc-construccion center-sm">{this.getText('tour-360_text1')}</p>
 		 					</div>
-		 					<div className="contenedor-iconos">
+		 					<div className="contenedor-iconos" layout-xs="row" layout-align-xs="center">
 		 						<div className="contenedor-icono-cubo">
 		 							<div className="ico-1-const"></div>
 		 							<p className="text-icon-prod">3D</p>
@@ -177,7 +177,7 @@ export default class ConstruccionVol extends Component{
 	 					<p className="text-nuestro-trabajo-const aller">{this.getText('portafolio_title')}</p>
 	 				</div>
 	 				<div className="content-text-muestras-trabajo-const">
-	 					<p className="text-muestras-trabajo-const opacity75">{this.getText('portafolio_text')}</p>
+	 					<p className="text-muestras-trabajo-const">{this.getText('portafolio_text')}</p>
 	 				</div>
 					<div layout="row" layout-align="center">
 						<div className="content-img-const container" id="imagenes-extendida" layout="row" layout-wrap="true" layout-align="center">
@@ -202,7 +202,7 @@ export default class ConstruccionVol extends Component{
 	 					<div className="container padding"  layout-gt-sm="row" layout="column" layout-align-gt-sm="center center">
 							<div className="content-info-interes-const" flex-gt-sm="">
 								<p className="text-te-interesa-const">{this.getText('contacto_title')}</p>
-								<p className="text-text-interes-const opacity75">{this.getText('contacto_text')}</p>
+								<p className="text-text-interes-const">{this.getText('contacto_text')}</p>
 							</div>
 							<div>
 								<a href="/contacto" target="_blank" onClick={(event) => this.show_card(event)}>

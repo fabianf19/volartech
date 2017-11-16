@@ -92,16 +92,16 @@ export default class QuienesSomos extends Component{
 			<div className="background-who-we-are">
 	 			<NavbarVolartech current={0} />
 	 			<div className="fondo-who-we-are" layout="row" layout-align="center center">
-					<div className="container padding" layout="column" layout-align="start start">
-						<div className="content-quienes-somos-info">
+					<div className="container padding" layout="column" layout-align="start start" layout-align-xs="start center">
+						<div className="content-quienes-somos-info"  layout="column" layout-align="start start" layout-align-xs="start center">
 							<div className="contentedor-titulo">
-								<p className="text-title-who-we-are margin-v padding-v aller-display">{this.getText('title')}</p>
+								<p className="text-title-who-we-are margin-v padding-v aller-display center-sm">{this.getText('title')}</p>
 							</div>
 							<div className="content-div-line">
 								<div className="quienes-somos-div-text"></div>
 							</div>
 							<div className="content-descripcion-w-w-a padding-v margin-v container-half">
-								<p className="text-quienes-somos-descrip">{this.getText('text')}</p>
+								<p className="text-quienes-somos-descrip center-sm">{this.getText('text')}</p>
 							</div>
 						</div>
 					</div>
@@ -146,15 +146,15 @@ export default class QuienesSomos extends Component{
 	 				</div>
 	 			</div> */}
 	 			<div className="cuarto-fondo-w-w-a" layout="row" layout-align="center center">
-	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start start">
- 						<p className="text-ideales aller bold">{this.getText('ideals_title')}</p>
+	 				<div flex="" className="container padding margin-v max-300-xs" layout="column" layout-align="start start" layout-align-xs="start center">
+ 						<p className="text-ideales aller bold center-sm">{this.getText('ideals_title')}</p>
 	 					<div className="div-text-line-fourth"></div>
-	 					<p className="text-descripcion-cuarto ideals-text">{this.getText('ideals_text')}</p>
+	 					<p className="text-descripcion-cuarto ideals-text center-sm">{this.getText('ideals_text')}</p>
 	 				</div>
 	 			</div>
 				<div className="black-background" layout="row" layout-align="center center">
 	 				<div flex="" className="container padding margin-v" layout="column" layout-align="start center">
- 						<p className="quote-text aller bold center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum odio eleifend viverra placerat. </p>
+ 						<p className="quote-text aller bold center">{this.getText('ideals_quote')}</p>
 	 				</div>
 	 			</div>
 				<div className="icon-wrapper" layout="row" layout-align="center">

@@ -21,7 +21,7 @@ body{
     margin-bottom: 12px;
 }
 .linea-div-terms{
-	background-color: #434343;
+	background-color: #666;
 	width: 1px;
 	height: 14px;
 	margin-right: 4px;
@@ -30,7 +30,7 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 }
 .content-terms-and-conditions{
@@ -47,12 +47,12 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	cursor: pointer;
 }
 .first-line-div{
-	background-color: #434343;
+	background-color: #666;
 	width: 29px;
 	height: 1px;
 	margin-bottom: 18px;
@@ -67,12 +67,12 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	cursor: pointer;
 }
 .second-line-div{
-	background-color: #434343;
+	background-color: #666;
 	width: 29px;
 	height: 1px;
 	margin-bottom: 18px;
@@ -85,7 +85,7 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	cursor: pointer;
 }
@@ -100,7 +100,7 @@ body{
 	margin-bottom: 13px;
 }
 .third-line-div{
-	background-color: #434343;
+	background-color: #666;
 	width: 29px;
 	height: 1px;
 	margin-bottom: 18px;
@@ -112,12 +112,12 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 300;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	cursor: pointer;
 }
 .fifth-line-div{
-	background-color: #434343;
+	background-color: #666;
 	width: 29px;
 	height: 1px;
 	margin-bottom: 18px;
@@ -129,7 +129,7 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	margin-bottom: 7px;
 }
@@ -137,7 +137,7 @@ body{
 	font-size: 13px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	margin-bottom: 7px;
 }
@@ -145,7 +145,7 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	margin-bottom: 7px;
 }
@@ -153,7 +153,7 @@ body{
 	font-size: 14px;
 	font-family: 'Fira Sans', sans-serif;
 	font-weight: 600;
-	color: #434343;
+	color: #666;
 	margin: 0px;
 	margin-bottom: 7px;
 }

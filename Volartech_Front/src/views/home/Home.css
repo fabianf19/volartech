@@ -98,7 +98,7 @@
     font-weight: 300;
     margin: 0px;
     color: #FFFFFF;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
 }
 .icono-play-volartech{
 	background: url(../../img/icos/boton-play-nuevo.png) no-repeat;
@@ -175,7 +175,7 @@
     font-weight: 300;
     margin: 0px;
     color: #FFFFFF;
-    margin-bottom: 39px;
+    margin-bottom: 12px;
 }
 .boton-product-page{
 	width: 196px;
@@ -287,7 +287,7 @@ a {
     font-weight: 300;
     margin: 0px;
     color: #FFFFFF;
-    margin-bottom: 39px;
+    margin-bottom: 12px;
 }
 .content-selector-sections-home{
 	display: flex;

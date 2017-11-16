@@ -62,10 +62,10 @@ export default class IngenieriaVol extends Component{
 						</div>
 						<div className="conten-texto-up" flex-gt-sm="" layout="column" layout-align="end">
 		 					<div>
-		 						<p className="text-title-ing aller-display">{this.getText('main_title')}</p>
+		 						<p className="text-title-ing aller-display center-sm">{this.getText('main_title')}</p>
 		 					</div>
 		 					<div>
-		 						<p className="sub-title-ing aller">{this.getText('main_subtitle')}</p>
+		 						<p className="sub-title-ing aller center-sm">{this.getText('main_subtitle')}</p>
 		 					</div>
 							<div show-gt-md="" className="padding"></div>
 						</div>
@@ -73,8 +73,8 @@ export default class IngenieriaVol extends Component{
 	 			</div>
 	 			
 	 			<div className="second-fond-ingenieria padding-v" layout="row" layout-align="center">
-	 				<div className="content-text-descripcion container padding margin-v">
-						 <p className="text-descripcion-produccion container-half" style={{ textAlign : 'justify' }}>
+	 				<div className="content-text-descripcion container padding">
+						 <p className="text-descripcion-produccion container-half subhead-text center-sm">
 						 	<span>{this.getText('main_text')}</span>
 						 </p>
  					</div>
@@ -85,17 +85,17 @@ export default class IngenieriaVol extends Component{
 		 					<div flex-gt-sm="">
 		 						<div className="img-droncito ratio-16-9"></div>
 		 					</div>
-		 					<div className="size-responsive-content container-third padding" layout="column" layout-align="center">
+		 					<div className="size-responsive-content container-third padding" layout="column" layout-align="center end" layout-align-xs="start center">
 		 						<div className="contenedor-title-ingenieria">
-		 							<p className="text-title-ingenieria aller">{this.getText('lidar_title1')}</p>
+		 							<p className="text-title-ingenieria aller center-sm">{this.getText('lidar_title1')}</p>
 		 						</div>
 		 						<div className="division-primeros-textos-ing"></div>
 		 						<div className="conetenedor-subtitulos">
-		 							<p className="subtitle-text-ing aller">{this.getText('lidar_title2')}</p>
+		 							<p className="subtitle-text-ing aller center-sm">{this.getText('lidar_title2')}</p>
 		 						</div>
 		 						<div className="content-info-ing">
 
-		 							<p className="text-info-ing opacity5" dangerouslySetInnerHTML={{__html: this.getHtml('lidar_text2')}}></p>
+		 							<p className="text-info-ing card-text max-300" dangerouslySetInnerHTML={{__html: this.getHtml('lidar_text2')}}></p>
 		 							{/* <p className="text-info-ing">- Multirotor confiable y robusto de última tecnología.</p>
 		 							<p className="text-info-ing">- Levantamientos topográficos con lidar, permite generar modelos digitales de terreno y elevación con gran densidad de puntos.</p>
 		 							<p className="text-info-ing">- Hasta 300,000 puntos por segundo.</p> */}
@@ -109,9 +109,9 @@ export default class IngenieriaVol extends Component{
 								<source src={ url_video } type="video/mp4" className="video-part"/>
 						</video>
 	 				<div className="container">
-	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center">
-		 					<div className="container-third">
-								<div className="padding">
+	 					<div className="content-text-dron-ingenieria min-height-fond" layout="column" layout-align="center" layout-align-xs="start center">
+		 					<div className="container-third" layout="column" layout-align="center" layout-align-xs="start center">
+								<div className="padding" layout-xs="column" layout-align-xs="start center">
 									<div className="contenedor-title-ingenieria">
 										<p className="text-title-ingenieria aller">{this.getText('lidar_movil_title1')}</p>
 									</div>
@@ -119,7 +119,7 @@ export default class IngenieriaVol extends Component{
 									<div className="conetenedor-subtitulos">
 										<p className="subtitle-text-ing aller">{this.getText('lidar_movil_title2')}</p>
 									</div>
-									<div className="content-info-ing">
+									<div className="content-info-ing card-text">
 										<p className="text-info-ing">{this.getText('lidar_movil_text2')}</p>
 									</div>
 								</div>
@@ -160,17 +160,19 @@ export default class IngenieriaVol extends Component{
 	 			</div>
 	 			<div className="fifth-fond-ingenieria min-height-fond" layout="row" layout-align="center">
 	 				<div className="container">
-	 					<div className="content-text-dron-ingenieria" layout="column" layout-gt-sm="row" layout-align="start stretch" layout-align-gt-sm="start center">
-		 					<div flex-gt-xs="">
-		 						<div className="img-droncito-2 ratio-4-3"></div>
+	 					<div className="content-text-dron-ingenieria" layout="column" layout-gt-sm="row" layout-align="start center" layout-align-gt-sm="start center">
+		 					<div flex-gt-xs="" className="width-100-sm">
+		 						<div className="img-droncito-2 ratio-4-3" style={{
+									 backgroundPosition: 'center'
+								 }}></div>
 		 					</div>
-		 					<div className="size-responsive-content container-third padding">
+		 					<div className="size-responsive-content container-third padding" layout-align-xs="start center" layout-align-gt-xs="start end" layout="column">
 		 						<div className="contenedor-title-ingenieria">
 		 							<p className="text-title-ingenieria aller">{this.getText('topografia_title')}</p>
 		 						</div>
 		 						<div className="division-primeros-textos-ing"></div>
-		 						<div className="content-info-ing opacity5">
-		 							<p className="text-info-ing" dangerouslySetInnerHTML={{__html: this.getHtml('topografia_text')}}></p>
+		 						<div className="content-info-ing">
+		 							<p className="text-info-ing card-text card-text right center-sm" dangerouslySetInnerHTML={{__html: this.getHtml('topografia_text')}}></p>
 		 						</div>
 		 					</div>
 	 					</div>
