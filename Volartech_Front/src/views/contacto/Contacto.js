@@ -42,7 +42,7 @@ export default class Contacto extends Component{
 						</div>
 						<div className="div-line-contacto"></div>
 						<div className="content-respuesta">
-							<p className="text-te-responderemos opacity5">Te responderemos lo más pronto posible.</p>
+							<p className="text-te-responderemos white">Te responderemos lo más pronto posible.</p>
 						</div>
 						<div className="content-servicio-interes">
 							<p className="servicio-interes">Por cuál servicio estas interesado:</p>

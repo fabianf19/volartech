@@ -79,10 +79,10 @@ export default class ConstruccionVol extends Component{
 		 				<div className="content-info-const-2 container padding" layout-gt-sm="row" layout="column">
 		 					<div flex-order-xs="4" layout-xs="column" layout-align-xs="start center" className="content-image-play pointer margin-v padding-v" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_aerea_video')})}>
 			 					<a>
-			 						<div className="icono-play-construccion"></div>
+								 <img alt="play video" className="icono-play" src={require('../../img/icos/boton-play-nuevo.png')} />
 			 					</a>
 			 					<div>
-			 						<p className="text-play-const">Play Video</p>
+			 						<p className="text-play-const w600">Play Video</p>
 			 					</div>
 			 				</div>
 			 				<div className="contenido-text-avance" layout="column" layout-align-xs="start center">
@@ -129,10 +129,10 @@ export default class ConstruccionVol extends Component{
 		 				</div>
 						<div layout-xs="column" layout-align-xs="start center" className="content-image-play pointer"  onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('obra_timelapse_video')})}>
 		 					<a>
-		 						<div className="icono-play-construccion"></div>
+							 <img alt="play video" className="icono-play" src={require('../../img/icos/boton-play-nuevo.png')} />
 		 					</a>
 		 					<div>
-		 						<p className="text-play-const">Play Video</p>
+		 						<p className="text-play-const w600">Play Video</p>
 		 					</div>
 		 				</div>
 	 				</div>
@@ -161,10 +161,10 @@ export default class ConstruccionVol extends Component{
 		 				</div>
 						<div className="content-image-play" flex-order-gt-sm="-1" layout-xs="column" layout-align-xs="start center" >
 		 					<a className="pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('tour-360_video')})}>
-		 						<div className="icono-play-construccion"></div>
+							 <img alt="play video" className="icono-play" src={require('../../img/icos/boton-play-nuevo.png')} />
 		 					</a>
 		 					<div className="pointer" onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('tour-360_video')})}>
-		 						<p className="text-play-const">Play Tour</p>
+		 						<p className="text-play-const w600">Play Tour</p>
 		 					</div>
 		 				</div>
 	 				</div>

@@ -100,10 +100,16 @@
     color: #FFFFFF;
     margin-bottom: 12px;
 }
+.icono-play{
+	width: 45px;
+	height: 45px;
+	margin-right: 11px;
+	cursor: pointer;
+}
 .icono-play-volartech{
 	background: url(../../img/icos/boton-play-nuevo.png) no-repeat;
-	width: 47px;
-	height: 47px;
+	width: 45px;
+	height: 45px;
 	background-size: contain;
 	margin-right: 11px;
 	cursor: pointer;
@@ -115,7 +121,7 @@
 .text-play{
 	font-size: 23px;
 	font-family: 'Fira Sans', sans-serif;
-	font-weight: 400;
+	font-weight: 600;
 	margin: 0px;
 	color: #FFFFFF;
 }

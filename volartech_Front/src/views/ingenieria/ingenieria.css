@@ -91,6 +91,7 @@ ul li {
 	height: 448px;
 	background: url(../../img/fondos/cuarto-fondo-ing.png) no-repeat;
 	background-size: cover;
+	z-index: -1;
 }
 .fifth-fond-ingenieria{
 	width: 100%;
@@ -98,7 +99,7 @@ ul li {
 	/* background: url(../../img/fondos/quinto-fondo-ing.png) no-repeat; */
 	background-size: cover;
 	background-color: #0F0F0F;
-	position: absolute;
+	/* position: absolute; */
 }
 .img-droncito{
 	/* width: 100%;
@@ -145,6 +146,9 @@ ul li {
 	margin: 0px;
 	color: #FFFFFF;
 	text-align: justify;
+}
+.text-info-ing ul {
+	text-align: right;
 }
 .img-droncito-2{
 	background: url(../../img/icos/droncito-dos.png) no-repeat;
@@ -289,6 +293,9 @@ ul li {
 	font-weight: 300;
 	margin: 0px;
 	color: #D1D1D1;
+}
+.white-background {
+	background: #fff;
 }
 .contenedor-interes-boton-contacto-ing{
 	background: url(../../img/fondos/ingenieria_contact.png) no-repeat;
@@ -663,6 +670,7 @@ ul li {
 .background-ingenieria .contenedor-ver-mas-cons{
 	width: 56px;
 	border-bottom: 1px solid #EDA532;
+	text-decoration: none;
 }
 #ver-menos-ing{
 	display: none;
@@ -675,6 +683,8 @@ ul li {
 }
 .tamaño-video{
 	width: 100%;
+	object-fit: cover;
+	z-index: -10;
 }
 .contenedor-video{
 	height: 440px;

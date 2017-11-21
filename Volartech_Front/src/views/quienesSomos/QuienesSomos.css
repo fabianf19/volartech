@@ -7,7 +7,7 @@
 .fondo-who-we-are{
 	width: 100%;
 	/* height: 384px; */
-	background: url(../../img/fondos/quienes-main.png) no-repeat;
+	background: url(../../img/fondos/quienes-main.jpg) no-repeat;
 	background-size: cover;
 	min-height: 30rem;
 }
@@ -80,7 +80,7 @@
 	width: 100%;
 	min-height: 30rem;
 	/* height: 373px; */
-	background: url(../../img/fondos/quienes-ideales.png) no-repeat;
+	background: url(../../img/fondos/quienes-ideales.jpg) no-repeat;
 	background-size: cover;
 }
 .content-descripcion-w-w-a{

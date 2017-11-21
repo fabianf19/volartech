@@ -61,7 +61,8 @@ export default class Home extends Component{
 				</div>
 				<div className="content-play pointer">
 					<a onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('video_url')})}>
-						<div className="icono-play-volartech"> </div>
+						<img alt="play video" className="icono-play" src={require('../../img/icos/boton-play-nuevo.png')} />
+						{/* <div className="icono-play-volartech"> </div> */}
 					</a>
 					<p className="text-play pointer">
 						<a onClick={() => this.setState({...this.state, videoEmbed: this.getEmbed('video_url')})}>Play Video
